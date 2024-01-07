@@ -1,0 +1,36 @@
+.headerCon{
+    width: 100%;
+    height: 7rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.brand{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+nav{
+    width: 87%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.8rem;
+    align-items: center;
+    color:  rgb(149, 4, 4);
+
+}
+.nav_items{
+    
+}
+.nav_items span{
+    font-size: 3rem;
+    
+}
+.Frame{
+    width: 8rem;
+}
