@@ -35,11 +35,11 @@
     width: 7.5%;
 }
 .carousel{
-    width: 80rem;
+    width: 70rem;
     position: absolute;
     top: -23rem;
     /* background-color: green; */
-    left: 8rem;
+    left:11rem;
 }
 .acm_news{
     margin-left: 5rem;
