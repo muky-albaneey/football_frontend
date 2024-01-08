@@ -56,8 +56,8 @@
     justify-content: space-around;
     
 }
-span{
-    font-size: 0.9rem;
+.news_container span{
+    font-size: 0.5rem;
 }
 .news_container .right, .left{
     width: 35%;
