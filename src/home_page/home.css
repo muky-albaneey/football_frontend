@@ -36,6 +36,7 @@
 }
 .carousel{
     width: 70rem;
+    height: 20rem;
     position: absolute;
     top: -23rem;
     /* background-color: green; */
