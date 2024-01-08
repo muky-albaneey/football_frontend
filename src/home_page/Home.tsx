@@ -1,10 +1,7 @@
-import React from 'react'
+
 import './home.css';
 import Search from './Search';
-import Footer from '../footer/Footer';
 import UncontrolledExample from '../carousel/Carousel';
-import Header from '../header/Header';
-// import { image } from '../../public/image.jpg'
 
 
 const Home = () => {
@@ -189,7 +186,8 @@ const Home = () => {
     </h6>
       <section className="patners">
          <img src="./RIDA-logo-1.jpg" alt="prologis" />
-          <img src="./Brails_logo.png" alt="tower" />
+          {/* <img src="./Brails_logo.png" alt="tower" /> */}
+          <img src="./Linear.svg" alt="equinix" />
           <img src="./download.jpg" alt="equinix" />
           {/* <img src="./realty.png" alt="realty" /> */}
       </section>

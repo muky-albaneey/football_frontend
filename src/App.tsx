@@ -1,6 +1,3 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import Home from './home_page/Home'
 import { createBrowserRouter,Route, createRoutesFromElements, RouterProvider} from 'react-router-dom';
 import ErrorElement from './ErrorElement';
