@@ -50,7 +50,7 @@
 .news_container{
     text-align: center;
     width: 100%;
-    height: 43rem;
+    height: 50rem;
     /* background-color: aqua; */
     display: flex;
     justify-content: space-around;
@@ -95,7 +95,7 @@
 width: 30rem;
 }
 .bottom_left_img,.top_left_news_img{
-    width: 13rem;
+    width: 11rem;
 }
 
 .top_left_news, .bottom_left_news{
