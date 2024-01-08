@@ -54,6 +54,7 @@
     /* background-color: aqua; */
     display: flex;
     justify-content: space-around;
+    margin-top: -3rem;
     
 }
 .news_container span{
