@@ -15,17 +15,24 @@
     
 }
 nav{
-    width: 87%;
+    width: 58%;
     height: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 0.8rem;
     align-items: center;
     color:  rgb(149, 4, 4);
 
 }
+.icons{
+    color:  rgb(149, 4, 4);
+    font-size: 2rem;
+    margin-right: 1.2rem;
+
+}
 .nav_items{
-    
+    font-size: 0.7rem;
+    color:  rgb(149, 4, 4);
 }
 .nav_items span{
     font-size: 3rem;
@@ -33,4 +40,13 @@ nav{
 }
 .Frame{
     width: 8rem;
+}
+
+.right_nav{
+    width: 19%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1.3rem;
 }

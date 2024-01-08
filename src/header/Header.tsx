@@ -1,3 +1,5 @@
+import { BsFacebook } from "react-icons/bs"; 
+import { AiOutlineTwitter } from "react-icons/ai"; 
 
 import './header.css'
 
@@ -18,6 +20,10 @@ const Header = () => {
         <div className="nav_items">EVENTS <span>|</span></div>
         
       </nav>
+      <div className="right_nav">
+         <div className="nav_items "><AiOutlineTwitter className='icons' /><BsFacebook className='icons' /> <span>|</span></div>
+        <div className="nav_items">EVELOGINNTS</div>
+      </div>
     </div>
   )
 }
