@@ -1,6 +1,5 @@
 import { BsFacebook } from "react-icons/bs"; 
 import { AiOutlineTwitter } from "react-icons/ai"; 
-
 import './header.css'
 
 const Header = () => {
