@@ -1,19 +1,15 @@
-import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
-import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import { MdOutlineEventSeat } from "react-icons/md"; 
 import { BsSuitClub } from "react-icons/bs"; 
 import { AiOutlineTrophy } from "react-icons/ai"; 
 import { AiOutlineLineChart } from "react-icons/ai"; 
-import { AiFillThunderbolt } from "react-icons/ai"; 
 import { GiJesterHat } from "react-icons/gi"; 
-import { FiShoppingCart } from "react-icons/fi"; 
 import { CgTv } from "react-icons/cg"; 
 import './header.css'
+
 function Header() {
   return (
     <>
@@ -43,20 +39,7 @@ function Header() {
                   <Nav.Link href="#action2"  style={{color:'rgb(149, 4, 4)',fontWeight: 'bold', marginLeft: '2rem'}}>MEMBERSHIP <span>|</span></Nav.Link>
                   <Nav.Link href="#action2"  style={{color:'rgb(149, 4, 4)',fontWeight: 'bold', marginLeft: '2rem'}}><MdOutlineEventSeat />EVENTS <span>|</span></Nav.Link>
                   <Nav.Link href="#action2"  style={{color:'rgb(149, 4, 4)',fontWeight: 'bold', marginLeft: '2rem'}}>LOGIN <span>|</span></Nav.Link>
-                 
-                  {/* <NavDropdown
-                    title="Dropdown"
-                    id={`offcanvasNavbarDropdown-expand-${expand}`}
-                  >
-                    <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
-                    <NavDropdown.Item href="#action4">
-                      Another action
-                    </NavDropdown.Item>
-                    <NavDropdown.Divider />
-                    <NavDropdown.Item href="#action5">
-                      Something else here
-                    </NavDropdown.Item>
-                  </NavDropdown> */}
+                
                 </Nav>
               
               </Offcanvas.Body>

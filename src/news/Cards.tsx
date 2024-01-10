@@ -2,15 +2,11 @@ import Card from 'react-bootstrap/Card';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import data from './data.json'
-import { BsDisplay } from 'react-icons/bs';
 import React from 'react';
 
 function GridExample() {
 
   const [shonw, setShown] =React.useState(false)
-  const styles ={
-    display : shonw ? 'block' : 'none'
-  }
   function isShown(){
     setShown(shonw=> !shonw)
   }

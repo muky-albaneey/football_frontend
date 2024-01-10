@@ -1,5 +1,3 @@
-import React from 'react'
-import Card from 'react-bootstrap/Card';
 import './news.css'
 import GridExample from './Cards';
 import BasicExample from './Cards_2';

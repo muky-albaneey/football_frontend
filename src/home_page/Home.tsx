@@ -12,13 +12,7 @@ const Home = () => {
     <div className='homeContainer'>
      
       <section className="top_container">
-       {/* <div className="lines">
-        <div className="line"></div>
-        <div className="line"></div>
-        <div className="line"></div>
-        <div className="line"></div>
-        <div className="line"></div>
-       </div> */}
+      
        <div className="carousel">
       <UncontrolledExample />
       </div>
@@ -38,7 +32,7 @@ const Home = () => {
           </div>               
           
          </div>
-         {/* <button className="moment_btn">SHOP </button> */}
+         
         <h3>
            OUR NEW <br />
           HOME JERSEY<br />
