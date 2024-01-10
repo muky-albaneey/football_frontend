@@ -96,12 +96,16 @@ const Home = () => {
     Our Sponsors
     </h6>
       <section className="patners">
+         <div className="p_sec_1">
          <img src="./RIDA-logo-1.jpg" alt="prologis" />
           <img src="./bitnob-logo.png" alt="tower" />
-          {/* <img src="./bitnob-logo.png" alt="tower" /> */}
-          {/* <img src="./bitnob-logo.png" alt="tower" /> */}
-          <img src="./Linear.svg" alt="equinix" />
+         </div>
+         
+         <div className="p_sec_2">
+         <img src="./Linear.svg" alt="equinix" />
           <img src="./download.jpg" alt="equinix" />
+         </div>
+        
           {/* <img src="./realty.png" alt="realty" /> */}
       </section>
      </div>

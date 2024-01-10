@@ -6,7 +6,7 @@ import React from 'react';
 
 function GridExample() {
 
-  const [shonw, setShown] =React.useState(false)
+  const [shonw, setShown] =React.useState(true)
   function isShown(){
     setShown(shonw=> !shonw)
   }
