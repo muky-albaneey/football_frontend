@@ -2,126 +2,43 @@
 import './home.css';
 import Search from './Search';
 import UncontrolledExample from '../carousel/Carousel';
+import News from '../news/News';
+import ShapeExample from './Image';
+import { Link } from 'react-router-dom';
 
 
 const Home = () => {
   return (
     <div className='homeContainer'>
-      {/* <Header /> */}
+     
       <section className="top_container">
-       <div className="lines">
+       {/* <div className="lines">
         <div className="line"></div>
         <div className="line"></div>
         <div className="line"></div>
         <div className="line"></div>
         <div className="line"></div>
-       </div>
+       </div> */}
        <div className="carousel">
       <UncontrolledExample />
       </div>
       </section>
-     
       <h1 className='acm_news'>ACM NEWS</h1>
-      <section className="news_container">
-        <div className="right">
-          <div className="top_right_news">
-            <img src='../../public/im_1.jpg' alt="" className='top_right_news_img' />
-            <h4>
-              <span>
-              ACM FANS MAKE DONATION FOR PLATEU VICTIMS
-              </span><br /><br />
-              <span>
-              The images and news from the attacked areas continue to leave us deeply
-             concerned. For this reason, the ACM Fan Council are organizing a fundraising campaign at short    notice and would like to address the following appeal to the ACM fan community...
-              </span>
-            </h4>
-            <button className="see_btn">CLICK TO SEE ALL ACM NEWS </button>
-          </div>
-          
-        </div>
-        <div className="left">
-        <div className="top_left_news">
-              <div className="top_left_news_items">
-               <img src='./photo-1.jpg' alt="" className="top_left_news_img"/>
-               <h5>
-              <span>
-              ABEL ZAKI JOINS TUDUN WADA FC ON LOAN
-              </span><br />
-              <span>
-              A few days before the start of the season in the NLO, the Athletic club midlands have sent out midfielder Abel Zaki, 20, on loan to NLO side Tudun wada fc for the coming season. Before that, he extended his contract with  by ACM one year until the summer of 2024...
-              </span>
-            </h5>
-          
-              </div>
-            
-              <div className="top_left_news_items">
-               <img src='./photo-2.jpg' alt="" className="top_left_news_img"/>
-               <h5>
-               <span>
-               HANDBALL WOMEN STARTS SEASON PREPARITION
-               </span><br />
-               <span>
-               The Athletic Club Midlands women's handball
-            team met up in ACM PARK on Monday
-            to mark the start of their preseason
-            preparations. The ACM players who are in
-            Lagos on Olympic duty will join the team at
-            a later date...
-               </span>
-            </h5>
-              </div>
-                   
-        </div>
-        <div className="bottom_left_news">
-        <div className="bottom_left_news_items">
-               <img src='./photo-3.jpg' alt="" className="bottom_left_img"/>
-               <h5>
-              <span>
-              FAN INFORMATION FOR TRAINING CAMP
-                IN JOS
-              </span><br />
-              <span>
-              This year, the ACM first-team squad will once
-            again spend a week in Jos, from 23 to
-            31 February, to prepare for the upcoming season.
-            As part of the training camp, ACM will play
-            friendly matches against Zeal minds FC and
-            Likeminds FC. The fan representatives... 
-              </span>
-            </h5>          
-              </div>
-            
-              <div className="bottom_left_news_items">
-               <img src='./photo-4.jpg' alt="" className="bottom_left_img"/>
-               <h5>
-               <span>
-               OUR GLOBE COLLECTION
-               </span><br />
-               <span>
-               We are Athletic club Midlands! As ACM fans,this
-            is the message you take out into the world.
-          With the new globe collection, you are
-          sending a very special burgundy and yellow
-          greeting to the planet. The includes hoodies
-          and T-shirts for men and women with...
-               </span>
-            </h5>
-           
-              </div>
-        </div>
-        </div>
+     <News />
+    
      
-      </section>
       <section className="moment_container">
         <div className="top_moment">
         <h1>ALL  FOR  OUR  MOMENT</h1>
         </div>
         <main>
         <div className="moment_img_con">         
-         <img src='./im_2.jpg' alt="" className="moment_img"/>                   
+          <div>
+          <ShapeExample />   
+          </div>               
           
          </div>
-         <button className="moment_btn">SHOP </button>
+         {/* <button className="moment_btn">SHOP </button> */}
         <h3>
            OUR NEW <br />
           HOME JERSEY<br />
@@ -145,7 +62,7 @@ const Home = () => {
           <div className="center">
             <h2>VS</h2>
             <button className="matches_btn">BUY TICKETS</button>
-            <span style={{marginBottom: '-3rem', textDecoration: 'underline', color:'red'}}>see all matches</span>
+            <Link to='/' style={{marginBottom: '-3rem', textDecoration: 'underline', color:'red'}} className='match_link'>see all matches</Link>
           </div>
           <div className="right">
           <img src='./Frame.jpg' alt="" className="matches_img"/>      
@@ -186,7 +103,9 @@ const Home = () => {
     </h6>
       <section className="patners">
          <img src="./RIDA-logo-1.jpg" alt="prologis" />
-          {/* <img src="./Brails_logo.png" alt="tower" /> */}
+          <img src="./bitnob-logo.png" alt="tower" />
+          {/* <img src="./bitnob-logo.png" alt="tower" /> */}
+          {/* <img src="./bitnob-logo.png" alt="tower" /> */}
           <img src="./Linear.svg" alt="equinix" />
           <img src="./download.jpg" alt="equinix" />
           {/* <img src="./realty.png" alt="realty" /> */}

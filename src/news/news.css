@@ -1,0 +1,69 @@
+.newsCon{
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+
+.leftCon,.rightCon{
+    padding: 0.5rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.rightCon{
+    width: 55%;
+    /* background-color: rgb(57, 41, 41); */
+}
+.leftCon{
+    width: 42%;
+    /* background-color: green; */
+}
+
+.card{
+width: 32rem;
+margin: 0 auto;
+}
+.card_2{
+    width: 45rem;
+    height: 50rem;
+}
+.btnNews{
+    width: 100%;
+height: 5rem;
+background-color: rgb(149, 4, 4);
+}
+.show{
+    display: none;
+}
+.latest_shown{
+    display: block;
+}
+  
+@media all and (max-width: 900px) {
+    .leftCon,.rightCon{
+        width: 100%;
+        /* height: 100rem; */
+    }
+    .card{
+        width: 34rem;
+        margin: 0 auto;
+        }
+
+    .hide{
+        display: none;
+    }  
+    .show{
+        display: block;
+        text-decoration: underline;
+        text-align: center;
+        color: rgb(149, 4, 4);
+        font-weight: bold;
+    }
+    .show:hover{
+        cursor: pointer;
+    }
+        
+}
