@@ -19,6 +19,7 @@ function Header() {
             <Navbar.Brand href="#"><img src="./Frame.jpg" alt="" className='Frame'/></Navbar.Brand>
             <Navbar.Brand href="#">ATHLETIC CLUB MIDLANDS</Navbar.Brand>
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
+            <Navbar.Collapse id={`offcanvasNavbar-expand-${expand}`} className="justify-content-end">
             <Navbar.Offcanvas
               id={`offcanvasNavbar-expand-${expand}`}
               aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`}
@@ -26,7 +27,7 @@ function Header() {
             >
               <Offcanvas.Header closeButton>
                 <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>
-                  Offcanvas
+                ATHLETIC CLUB MIDLANDS
                 </Offcanvas.Title>
               </Offcanvas.Header>
               <Offcanvas.Body>
@@ -44,6 +45,7 @@ function Header() {
               
               </Offcanvas.Body>
             </Navbar.Offcanvas>
+            </Navbar.Collapse>
           </Container>
         </Navbar>
       ))}
