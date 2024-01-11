@@ -26,7 +26,7 @@ function Header() {
               id={`offcanvasNavbar-expand-${expand}`}
               aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`}
               placement="end"
-              style={{ maxWidth: '70%' }} 
+              style={{ maxWidth: '60%' }} 
             >
               <Offcanvas.Header closeButton>
                 <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>
