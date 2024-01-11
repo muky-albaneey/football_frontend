@@ -2,14 +2,14 @@ import Card from 'react-bootstrap/Card';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import data from './data.json';
-import React, { useState } from 'react';
+import { useState } from 'react';
 
 function GridExample() {
-  // Initialize the state for each card
+  
   const [cardStates, setCardStates] = useState(data.map(() => true));
 
-  // Toggle the state for a specific card at the given index
-  const toggleCard = (index) => {
+  
+  const toggleCard = (index : number) => {
     setCardStates((prevStates) => {
       const newStates = [...prevStates];
       newStates[index] = !newStates[index];
