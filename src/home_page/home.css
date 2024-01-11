@@ -162,7 +162,7 @@ width: 30rem;
     width: 40%;
     border:7px solid rgb(149, 4, 4); 
     border-radius: 2rem;
-    background-color: rgb(177, 182, 187);
+    /* background-color: rgb(177, 182, 187); */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -184,7 +184,7 @@ width: 30rem;
 }
 .moment_container h3{
 width: 20%;
-font-family: cursive;
+
 font-weight: bold;
 margin-left: -18rem;
 font-size: 3.4rem;
@@ -214,7 +214,15 @@ color:rgb(149, 4, 4);
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    /* font-family: cursive; */
+    
+}
+.matche_info h2,.matche_info h4, .matche_info h6{
+    font-weight: bold;
+    font-family: monospace;
+    font-size: 1rem;
+}
+.matche_info h2{
+    font-size: 2rem;
 }
 .matches main{
     width: 80%;
@@ -235,18 +243,18 @@ color:rgb(149, 4, 4);
     height: 100%;
 }
 .matches main .right{
-    justify-content: flex-start;
+    justify-content: baseline;
+    
 }
 .matches main .left{
     justify-content: center;
-    align-items: last baseline;
+    align-items: end;
 }
 .matches main .center{
     width: 15%;
     height: 75%;
     padding: 1rem;
-    border-radius: .6rem;
-    /* background-color: green; */
+    border-radius: .6rem;    
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -282,15 +290,17 @@ color:rgb(149, 4, 4);
     clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
     height: 100%;
     background-color: rgba(0, 0, 0, 0.6);
+    padding: 14rem;
    
 }
 
 .exp_text{
-    position: absolute;
+    /* position: relative; */
     bottom: 80rem;
     color: whitesmoke;
-    z-index: 10;
-    left: 5rem;
+    font-size: 4rem;
+    /* z-index: 10; */
+    /* left: 5rem; */
 
 }
 
@@ -309,15 +319,12 @@ color:rgb(149, 4, 4);
     width: 100%;
     height: 80%;
     display: flex;
-    /* justify-content: space-around; */
-    /* background-color: red; */
 }
 
 .exp_left{
     width: 60%;
     height: 100%;
-    display: flex;
-    /* align-items: center; */
+    display: flex;    
     justify-content: center;
     flex-direction: column;
     gap: 3rem;
@@ -331,14 +338,12 @@ color:rgb(149, 4, 4);
 }
 .sectionWrapper{
     width: 100%;
-    /* height: 19rem; */
     display: flex;
     justify-content: space-around;
     flex-direction: column;
 }
 .patners{
     width: 100%;
-    /* height: 100%; */
     display: flex;
     justify-content: space-around;
     padding: 2rem;
@@ -366,15 +371,27 @@ color:rgb(149, 4, 4);
     
 }
 .search{
-    width: 50%;
+    width: 70%;
+}
+.sectionWrapper h6{
+    
+    font-weight: bold;
+    font-size: 5rem;
+    text-align: center;
+    
 }
 @media all and (max-width: 900px) {
     .moment_img_con{
         width: 100%;
     }
     .moment_container main{
-        width: 100%;
+        width: 85%;
         flex-direction: column;
+        margin: 0 auto;
+    }
+    .matches main{
+        
+        width: 95%;
     }
     .matches main .center .matches_btn{
         width: 7rem;
@@ -386,8 +403,18 @@ color:rgb(149, 4, 4);
     }
     .match_link{
         width: 10rem;
-        margin-left: 5rem;
+        margin-left: 3rem;
     }
+    .matches main .left,.right{
+        width: 40%;
+        
+    }
+    .matches main .right{
+        /* margin-right: 2rem; */
+        position: relative;
+        right: -2.5rem;
+    }
+   
     .exp_cover_con{
         flex-direction: column;
         font-size: .6rem;
@@ -395,7 +422,9 @@ color:rgb(149, 4, 4);
         align-items: center;
     }
     .search{
-        width: 30rem;
+        width: 50rem;
+        /* padding: 3rem; */
+        /* background-color: red; */
     }
     .top_container{
        
@@ -415,28 +444,42 @@ color:rgb(149, 4, 4);
     }
     
     .patners img{
-        width: 5rem;
-        height: 9rem;
+        width: 18rem;
+        /* height: 9rem; */
         
     }
     .p_sec_1{
-        /* background-color: red; */
+        
         width: 100%;
     }
         .p_sec_2{
-            /* background-color: rgb(0, 255, 153); */
+            
             width: 100%;
         }
         .exp{
-            /* width: 70%; */
-          
+            
+            padding: 4rem;
+            padding-top: 7rem;
            
         }
         
-        .exp_text{
-            
-            bottom: 90rem;
+        .exp h1{
+            font-size: 3rem;
+            /* bottom: 90rem; */
            
         
+        }
+        .exp_text{
+          
+            color: whitesmoke;
+            font-size: 4rem;
+           
+        
+        }
+        .exp_right{
+            width: 70%;
+        }
+        .sectionWrapper h6{
+            font-size: 2rem;
         }
 }

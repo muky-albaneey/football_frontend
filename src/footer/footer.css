@@ -5,12 +5,7 @@
     justify-content: space-between;
     flex-direction: column;
 }
-h6{
-    text-align: center;
-    font-weight: bold;
-    color: red;
-    
-}
+
 .foot_container{
     width: 100%;
     /* height: 10rem; */
@@ -27,6 +22,9 @@ h6{
     justify-content: flex-start;
     align-items: center;
 }
+.foo_right h4{
+    font-weight: bold;
+}
 .foo_left{
     width: 55%;
     height: 100%;
@@ -35,6 +33,24 @@ h6{
     align-items: center;
     color:rgb(149, 4, 4);
     font-size: 1.3rem;
+}
+.social{
+    padding: 0.5rem;
+    width: 100%;
+    margin:1rem  0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icons{
+    width: 50%;
+    display: block;
+    /* color:rgb(149, 4, 4); */
+    font-weight: bold;
+    font-size: 2rem;
+    display: flex;
+    justify-content: space-around;
+    
 }
 @media all and (max-width: 900px) {
     .foot_container{
@@ -45,7 +61,10 @@ h6{
     }
     .foo_left{
     width: 100%;
-        font-size: .4rem;
+        font-size: .5rem;
+    }
+    .icons{
+        width: 100%;
     }
     
 }

@@ -11,6 +11,7 @@ function Search() {
           placeholder="football's news"
           aria-label="Recipient's username"
           aria-describedby="basic-addon2"
+          style={{width: '70%'}}
           
         />
         <Button variant="dark" id="button-addon2" style={{color:'red'}}>

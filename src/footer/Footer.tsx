@@ -1,3 +1,8 @@
+import { FaTelegramPlane } from "react-icons/fa"; 
+import { FaTiktok } from "react-icons/fa"; 
+import { BsWhatsapp } from "react-icons/bs"; 
+import { BsFacebook } from "react-icons/bs"; 
+import { BiX } from "react-icons/bi"; 
 import './footer.css'
 
 const Footer = () => {
@@ -5,9 +10,15 @@ const Footer = () => {
    <div className="fooWrapper">
 
      <div className='foot_container'>
+     <div className="social">
+      <div className="icons">
+      <BiX /><BsFacebook /><BsWhatsapp /><FaTiktok /><FaTelegramPlane />
+      </div>
+    </div>
       <div className="foo_right">
       <h4>Athletic Club Midlands</h4>
       </div>
+      
       <div className="foo_left">
         <div>Imprint</div>
         <div>Data Protection</div>
@@ -20,6 +31,7 @@ const Footer = () => {
         <div>Officials</div>
       </div>
     </div>
+   
    </div>
   )
 }

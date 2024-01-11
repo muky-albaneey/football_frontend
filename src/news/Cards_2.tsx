@@ -1,6 +1,7 @@
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import './news.css';
+import { Link } from 'react-router-dom';
 
 function BasicExample() {
   return (
@@ -12,7 +13,9 @@ function BasicExample() {
         The images and news from the attacked areas continue to leave us deeply
 concerned. For this reason, the ACM Fan Council are organizing a fundraising campaign at short notice and would like to address the               following      appeal to the ACM fan community...
         </Card.Text>
-        <Button className='btnNews' style={{backgroundColor: 'rgb(149, 4, 4)'}}>Go somewhere</Button>
+        <Button className='btnNews' style={{backgroundColor: 'rgb(149, 4, 4)', border: 'none'}}>
+          <Link to='/'  style={{color: 'whitesmoke'}}>Go somewhere</Link>
+        </Button>
       </Card.Body>
     </Card>
   );

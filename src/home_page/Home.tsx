@@ -56,7 +56,7 @@ const Home = () => {
           <div className="center">
             <h2>VS</h2>
             <button className="matches_btn">BUY TICKETS</button>
-            <Link to='/' style={{marginBottom: '-3rem', textDecoration: 'underline', color:'red'}} className='match_link'>see all matches</Link>
+            <Link to='/' style={{marginBottom: '-3rem', textDecoration: 'underline', color:'rgb(149, 4, 4)'}} className='match_link'>see all matches</Link>
           </div>
           <div className="right">
           <img src='./Frame.jpg' alt="" className="matches_img"/>      
@@ -65,14 +65,16 @@ const Home = () => {
       </section>
       <section className="experience">
        <div className="exp_cover">
-        <div className="exp"></div>
-       </div>
-      </section>
-      <h1 className='exp_text'>
+        <div className="exp">
+        <h1 className='exp_text'>
         EXPERIENCE <br />
         ACM <br />
         PARK <br />
         </h1>
+        </div>
+       </div>
+      </section>
+    
         <section className="experience exp_sec">
        <div className="exp_cover text_cover">
         <h1 style={{textAlign: 'center'}}>ACM NEWSLETTER</h1>
@@ -92,7 +94,7 @@ const Home = () => {
        </div>
       </section>
      <div className="sectionWrapper">
-     <h6>
+     <h6 >
     Our Sponsors
     </h6>
       <section className="patners">
