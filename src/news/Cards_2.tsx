@@ -14,7 +14,7 @@ function BasicExample() {
 concerned. For this reason, the ACM Fan Council are organizing a fundraising campaign at short notice and would like to address the               following      appeal to the ACM fan community...
         </Card.Text>
         <Button className='btnNews' style={{backgroundColor: 'rgb(149, 4, 4)', border: 'none'}}>
-          <Link to='/'  style={{color: 'whitesmoke'}}>Go somewhere</Link>
+          <Link to='/'  style={{color: 'whitesmoke'}}>CLICK TO SEE ALL ACM NEWS </Link>
         </Button>
       </Card.Body>
     </Card>
