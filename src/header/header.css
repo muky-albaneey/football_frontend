@@ -11,3 +11,26 @@
     font-size: 1rem;
     color: red;
 }
+
+.nav_item{
+    color:rgb(149, 4, 4);
+    font-weight: bold;
+    margin-left: 2rem;
+    padding: 0.4rem;
+    text-decoration: none;
+}
+
+.log_nav{
+    color: whitesmoke;
+    background-color: rgb(149, 4, 4);
+ 
+    border-radius: .4rem;
+}
+
+@media all and (max-width: 900px) {
+    .nav_item{
+       
+        text-decoration: none;
+    }
+    
+}
