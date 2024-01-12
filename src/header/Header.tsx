@@ -29,12 +29,12 @@ function Header() {
               </Offcanvas.Header>
               <Offcanvas.Body>
               <Nav className="justify-content-end flex-grow-1 pe-3">
-           <NavLink to="#action1" className='nav_item'> CLUB</NavLink>
-          <NavLink to="#action2"  className='nav_item'>SHOP</NavLink>
-           <NavLink to="#action2"  className='nav_item'>FAN</NavLink>
-           <NavLink to="#action2"  className='nav_item'>CONTACT US</NavLink>
-              <NavLink to="#action2"  className='nav_item'>ABOUT US</NavLink>                             
-              <NavLink to="#action2" className='nav_item log_nav'>LOGIN <BiLogIn /></NavLink>
+           <NavLink to="#action1" className='nav_item'> club</NavLink>
+          <NavLink to="#action2"  className='nav_item'>shop</NavLink>
+           <NavLink to="#action2"  className='nav_item'>fan</NavLink>
+           <NavLink to="#action2"  className='nav_item'>contact <span>us</span></NavLink>
+              <NavLink to="#action2"  className='nav_item'>about <span>us</span></NavLink>                             
+              <NavLink to="#action2" className='nav_item log_nav'>login <BiLogIn /></NavLink>
                 
             </Nav>
                 

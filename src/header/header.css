@@ -18,6 +18,7 @@
     margin-left: 2rem;
     padding: 0.4rem;
     text-decoration: none;
+    text-transform: capitalize;
 }
 
 .log_nav{
@@ -26,7 +27,9 @@
  
     border-radius: .4rem;
 }
-
+.nav_item span{
+    text-transform: lowercase;
+}
 @media all and (max-width: 900px) {
     .nav_item{
        
