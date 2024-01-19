@@ -1,6 +1,10 @@
 import './about.css';
 import Group from '../assets/Group.jpg'
 import Frame_about from '../assets/Frame_about.jpg'
+import Group_1 from '../assets/Group_1.jpg'
+import Group_2 from '../assets/Group_2.jpg'
+import Frame_7 from '../assets/Frame_7.jpg'
+
 const About = () => {
   return (
     <section className="aboutWrapper">
@@ -26,12 +30,12 @@ const About = () => {
                     <button className="button"><span>View More</span></button>
             </div>
             <div className="centerAboutRight center_inner imgInnerCon">
-            <img src={Group} alt="" className='inner_img' />
+            <img src={Group_1} alt="" className='inner_img' />
             </div>
         </div>
         <div className="centerAbout center_2">
             <div className="centerAboutLeft center_inner imgInnerCon">
-            <img src={Group} alt="" className='inner_img' />
+            <img src={Group_2} alt="" className='inner_img' />
             </div>
             <div className="centerAboutRight center_inner">
             <div className="upperText upperTextRight">
@@ -65,7 +69,7 @@ const About = () => {
         <img src={Frame_about} alt="" />
         </main>
         <main className="aboutWhy">
-
+        <img src={Frame_7} alt="" />
         </main>
     </section>
   )

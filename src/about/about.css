@@ -148,19 +148,26 @@ margin-bottom: -2rem;
 .aboutWhy{
     width: 100%;
     height: 35rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-
+.aboutWhy img{
+width: 100%;
+height: 100%;
+}
   
 @media all and (max-width: 900px) {
     .topImage{
-        height: 30rem;
+        height: 25rem;
+
     }
     .center_inner{
         width: 100%;
         height: 20rem;
     }
     .inner_img{
-        width: 100%;
+        width: 70%;
     }
     .button {
         width: 50%;
@@ -179,6 +186,9 @@ margin-bottom: -2rem;
       }
 
       .aboutTeam img{
-        width: 98%;
+        width: 80%;
+      }
+      .aboutWhy{
+        height: 15rem;
       }
 }

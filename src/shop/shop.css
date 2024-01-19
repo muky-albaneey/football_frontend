@@ -1,0 +1,48 @@
+.shopWrapperMother{
+  width: 100%;
+  display: flex;
+  flex-direction: column;  
+  justify-content: center;
+  align-items: center;
+}
+.shopCon{
+  width: 50%;
+  margin: 0 auto;
+  position: relative;  
+}
+
+.cart{
+  position: absolute;
+  background-color: rgb(149, 4, 4);
+  color: aliceblue;
+  top: 1rem;
+  right: 1rem;
+  font-size: 2rem;
+  width: 5rem;
+  text-align: center;
+  border-radius: 20%;
+}
+  .shoping-card-container {
+     display: flex;     
+     justify-content: center;
+     gap: 2rem;
+  }
+.custom-card {
+  width: 300px; /* Default size for larger screens */
+  margin-bottom: 16px;
+}
+
+@media (max-width: 768px) {
+  .custom-card {
+    width: 100%; /* Full width for smaller screens */
+  }
+
+  .shoping-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .cart{
+    right: -3rem;
+  }
+}

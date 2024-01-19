@@ -148,6 +148,15 @@ form .inputs input{
 
 @media all and (max-width: 900px) {
     .contactConRight,.contactConLeft{
-        width: 100%;
+        width: 90%;
+    }
+    .bottomCon{
+        margin-left: -10rem;
+    }
+    form .inputs input{
+        width: 40%;
+    }
+    input::placeholder{
+        font-size: 0.7rem;
     }
 }

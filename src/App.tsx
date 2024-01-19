@@ -6,6 +6,7 @@ import About from './about/About';
 import Fan from './fan/Fan';
 import Blog from './blog/Blog';
 import Contact from './contact/Contact';
+import Shop from './shop/Shop';
 
 function App() {
     
@@ -24,6 +25,7 @@ function App() {
         <Route path='fan' errorElement={<ErrorElement />} element={<Fan />} />
         <Route path='blog' errorElement={<ErrorElement />} element={<Blog />} />
         <Route path='contact' errorElement={<ErrorElement />} element={<Contact />} />
+        <Route path='shop' errorElement={<ErrorElement />} element={<Shop />} />
       </Route>
     ))
 
