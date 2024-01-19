@@ -179,7 +179,7 @@ font-weight: bold;
 width: 100%;
 background-color: rgb(149, 4, 4);
 padding: 2.5rem;
-margin-top: -12rem;
+margin-top: -1rem;
 
 }
 @media all and (max-width: 900px) {
@@ -193,7 +193,9 @@ margin-top: -12rem;
     .bayo{
         font-size: 0.7rem;
     }
-    
+    .fanStory{
+        height: 95rem;
+    }
     .bottom{
         margin-top: -15rem;
         
@@ -207,6 +209,7 @@ margin-top: -12rem;
     }
     .topNews{
         /* height: 105rem; */
+        height: 60rem;
     }
     .topItems{
         width: 100%;
@@ -232,6 +235,9 @@ margin-top: -12rem;
         font-size: .5rem;
         width: 10rem;
         margin-left: .3rem;
+    }
+    innerNews{
+        font-size: 0.6rem;
     }
     .innerNews_2{
         margin-top: 0;
