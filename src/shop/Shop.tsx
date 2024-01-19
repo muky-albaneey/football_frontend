@@ -8,7 +8,7 @@ const Shop = () => {
   return (
     <section className="shopWrapperMother">
       <Searching />
-      <nav>
+      <nav className="shopNav">
         <div>
         <NavLink to=''>KITS</NavLink>
         <NavLink to=''>TRAINING</NavLink>
