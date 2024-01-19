@@ -19,7 +19,6 @@ const Home = () => {
       </section>
       <h1 className='acm_news'>ACM NEWS</h1>
      <News />
-    
      
       <section className="moment_container">
         <div className="top_moment">
@@ -93,7 +92,7 @@ const Home = () => {
         </div>
        </div>
       </section>
-     <div className="sectionWrapper">
+     {/* <div className="sectionWrapper">
      <h6 >
     Our Sponsors
     </h6>
@@ -108,10 +107,10 @@ const Home = () => {
           <img src="./download.jpg" alt="equinix" />
          </div>
         
-          {/* <img src="./realty.png" alt="realty" /> */}
+          
       </section>
      </div>
-      {/* <Footer /> */}
+       */}
     </div>
   )
 }

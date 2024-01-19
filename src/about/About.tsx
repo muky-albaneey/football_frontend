@@ -1,0 +1,73 @@
+import './about.css';
+
+const About = () => {
+  return (
+    <section className="aboutWrapper">
+        <main className="topImage">
+            <div className="textCenter">
+                <h1>About Us</h1>
+                <span>Lorem ipsum</span><br />
+                <button className="aboutBtn">See More</button>
+            </div>
+        </main>
+        <main className="mainaboutCenter">
+        <h2>Preparing Players to Achieve Success</h2>
+        <div className="centerAbout center_1">
+            <div className="centerAboutLeft center_inner ">
+                <div className="upperText">
+                <h1>Developing Confident and
+                    Successful Players</h1>
+                    <div className="line"></div>
+                </div>
+                    <article>
+                    Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut al Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut al
+                    </article>
+                    <button className="button"><span>View More</span></button>
+            </div>
+            <div className="centerAboutRight center_inner imgInnerCon">
+            <img src="../../public/Group.jpg" alt="" className='inner_img' />
+            </div>
+        </div>
+        <div className="centerAbout center_2">
+            <div className="centerAboutLeft center_inner imgInnerCon">
+            <img src="../../public/Group.jpg" alt="" className='inner_img' />
+            </div>
+            <div className="centerAboutRight center_inner">
+            <div className="upperText upperTextRight">
+                <h1>      Enjoy playing with a Unique Field Experience</h1>
+                    <div className="line"></div>
+                </div>
+                    <article>
+                    Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut al Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut al
+                    </article>
+                    <button className="button"><span>View More</span></button>
+            </div>
+        </div>
+        <div className="centerAbout center_3">
+            <div className="centerAboutLeft center_inner">
+            <div className="upperText">
+                <h1>Passionate Staff That
+                        Make a Difference</h1>
+                    <div className="line"></div>
+                </div>
+                    <article>
+                    Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut al Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut al
+                    </article>
+                    <button className="button"><span>View More</span></button>
+            </div>
+            <div className="centerAboutRight center_inner imgInnerCon">
+            <img src="../../public/Group.jpg" alt="" className='inner_img' />
+            </div>
+        </div>
+        </main>
+        <main className="aboutTeam">
+        <img src="../../public/Frame_about.jpg" alt="" />
+        </main>
+        <main className="aboutWhy">
+
+        </main>
+    </section>
+  )
+}
+
+export default About

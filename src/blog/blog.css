@@ -1,0 +1,145 @@
+.blogWrapper{
+    width: 100%;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: first baseline;
+    padding: 2rem;
+}
+.blogWrapper h1{
+    margin-left: 5rem;
+}
+.topBlog{
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    
+}
+
+.bogLeft{
+    width: 65%;
+    height: 35rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.blogItems{
+    width: 100%;
+    height: 30%;    
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 1rem;
+    font-family: monospace;
+
+}
+.innerBlogsLeft{
+    width: 30%;
+    height: 100%;
+    background-image: url(../../public/Rectangle_blog_1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+
+    
+}
+.innerBlogsLeft_2{
+    background-image: url(../../public/Rectangle_blog_2.jpg);
+}
+.innerBlogsLeft_3{
+background-image: url(../../public/Rectangle_blog_3.jpg);
+}
+.innerBlogsRight{
+    width: 65%;
+    height: 100%;
+    /* background-color: black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+}
+.bogRight{
+    width: 33%;
+    background-image: url(../../public/Frame_blog.jpg);
+    height: 35rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bottomBlog{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* background-color: green; */
+    margin: 2rem auto;
+}
+
+.bottomBlogLeft{
+    width: 40%;
+    height: 40rem;
+   padding: 3rem;
+   display: flex;
+   justify-content: flex-end;
+}
+.imgBlogBottom{
+    width: 80%;
+    height: 90%;
+    background-image: url(../../public/Rectangle_13.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bottomBlogRight{
+    width: 52%;
+    height: 30rem;
+    padding: 3rem;
+    /* background-color: rebeccapurple; */
+   
+}
+.blogTexts{
+    width: 90%;
+    height: 70%;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+@media all and (max-width: 900px) {
+   
+    .imgBlogBottom{
+        width: 100%;
+        height: 100%;
+        background-position: right;
+    }
+    
+    .blogItems{
+        font-size: 0.5rem;
+        font-weight: bold;
+
+    }
+    .bogLeft{
+        width: 100%;
+    }
+    .bogRight{
+        width: 100%;
+    }
+    .bottomBlogLeft{
+        width: 100%;
+        justify-content: center;
+        padding: 0;
+    }
+    .bottomBlogRight{
+        width: 100%;
+    }
+    .blogTexts{
+        font-size: 3rem;
+    }
+    
+}

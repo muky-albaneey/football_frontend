@@ -1,0 +1,243 @@
+.fanWrapper{
+    width: 100%;
+    background-color: whitesmoke;
+}
+
+.topFanImage{
+    width: 100%;
+    height: 35rem;
+    background-image: url(../../public/Frame_an_3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+background-size: cover;
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+align-items: baseline;
+padding-left: 5rem;
+font-weight: bold;
+color: whitesmoke;
+}
+
+.btnBottom{
+    padding: 1.3rem;
+    background: rgb(149, 4, 4);
+    border: 1px solid rgb(149, 4, 4);
+    border-radius: .5rem;
+    color: whitesmoke;
+}
+.topFanText{
+    width: 100%;
+    height: 40rem;
+    padding: 1rem;
+    /* background-color: green; */
+}
+.top h1{
+    font-weight: bold;
+    text-align: justify;
+    margin: 2rem;
+}
+.topFanText h1{
+    font-weight: bold;
+}
+.bayo{
+    font-size: 1.7rem;
+}
+.content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.contentLeft{
+    width: 60%;
+    height: 70%;
+    background-image: url(../../public/Frame_fan_2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.contentRight{
+    width: 60%;
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-end ;
+}
+.contentInner{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: red; */
+}
+
+.topFanBtn{
+    padding: 2rem;
+    background: rgb(149, 4, 4);
+    border: 1px solid rgb(149, 4, 4);
+    border-radius: .5rem;
+    color: whitesmoke;
+    font-weight: bold;
+}
+.center{
+    width: 100%;
+    height: 25rem;
+    background-image: url(../../public/Frame_fan.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.fanStory{
+    width: 100%;
+    height: 70rem;    
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+.fanStory h1{
+    font-weight: bold;
+}
+.fanStory hr{
+    border: 1px solid rgb(240, 14, 14);
+    color: rgb(149, 4, 4);
+    background: rgb(149, 4, 4);  
+    width: 20%;
+    height: .3rem;
+}
+
+.topNews{
+    height: 45rem;
+    width: 100%;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+
+}
+.topItems{
+    width: 45%;
+    height: 50%;
+    background-image: url(../../public/Frame_5.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 4.5rem;
+}
+.topItems_2{
+    background-image: url(../../public/Frame_4.jpg);
+    
+}
+.topItems_3{
+    background-image: url(../../public/Frame_6.jpg);
+}
+.innerNews{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.7rem;
+}
+.innerNews_2{
+    margin-top: 2rem;
+}
+.innerNews h2{
+     color: whitesmoke;
+     font-weight: bold;
+}
+.innerNews h3{
+ color: whitesmoke;
+ font-weight: bold;
+}
+.newsRed{
+    margin-bottom: 2rem;
+    width: 20%;
+    padding: .3rem;
+    background-color: rgb(149, 4, 4);
+}
+
+.time{
+color: whitesmoke;
+font-weight: bold;
+}
+.topLine{
+    width: 100%;
+    background: rgb(149, 4, 4);
+    height: 5rem;
+}
+.newsRed_1{
+    display: none;
+}
+.arrow{
+   /* font-size: 13rem; */
+}
+.reds{
+width: 100%;
+background-color: rgb(149, 4, 4);
+padding: 2.5rem;
+margin-top: -12rem;
+
+}
+@media all and (max-width: 900px) {
+    .top h1{
+            
+        font-size: 1rem;
+    }
+    .bayo{
+        font-size: 0.7rem;
+    }
+    
+    .bottom{
+        margin-top: -15rem;
+    }
+    .btnBottom{
+        font-size: 0.7rem;
+    }
+    .topFanText h1{
+        font-size: 1rem;
+        
+    }
+    .topNews{
+        /* height: 105rem; */
+    }
+    .topItems{
+        width: 100%;
+    }
+    .newsRed{
+        width: 50%;
+    }
+    .contentRight{
+        width: 30%;
+    }
+    .contentInner h2{
+        font-weight: bold;
+        font-size: 6rem;
+    }
+    .newsRed_1{
+        display: block;
+    }
+    .contentInner h2{
+        font-size: 0.8rem;
+    }
+    .topFanBtn{
+        padding: 0.6rem;
+        font-size: .5rem;
+        width: 10rem;
+        margin-left: .3rem;
+    }
+    .innerNews_2{
+        margin-top: 0;
+    }
+    .reds{
+        margin-top: 9rem;
+        }
+        .tops h1{
+            color: red;
+            
+        }
+       
+}

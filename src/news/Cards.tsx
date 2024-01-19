@@ -2,11 +2,11 @@ import Card from 'react-bootstrap/Card';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import data from './data.json';
-import { useState } from 'react';
+import React from 'react';
 
 function GridExample() {
   
-  const [cardStates, setCardStates] = useState(data.map(() => true));
+  const [cardStates, setCardStates] = React.useState(data.map(() => true));
 
   
   const toggleCard = (index : number) => {

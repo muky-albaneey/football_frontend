@@ -2,6 +2,10 @@ import Home from './home_page/Home'
 import { createBrowserRouter,Route, createRoutesFromElements, RouterProvider} from 'react-router-dom';
 import ErrorElement from './ErrorElement';
 import Layout from './Layout';
+import About from './about/About';
+import Fan from './fan/Fan';
+import Blog from './blog/Blog';
+import Contact from './contact/Contact';
 
 function App() {
     
@@ -15,6 +19,11 @@ function App() {
         loader={async ()=>{
           return null
         }}element={<Home />} />
+
+        <Route path='about' errorElement={<ErrorElement />} element={<About />} />
+        <Route path='fan' errorElement={<ErrorElement />} element={<Fan />} />
+        <Route path='blog' errorElement={<ErrorElement />} element={<Blog />} />
+        <Route path='contact' errorElement={<ErrorElement />} element={<Contact />} />
       </Route>
     ))
 
