@@ -1,5 +1,6 @@
 import './about.css';
-
+import Group from '../assets/Group.jpg'
+import Frame_about from '../assets/Frame_about.jpg'
 const About = () => {
   return (
     <section className="aboutWrapper">
@@ -25,12 +26,12 @@ const About = () => {
                     <button className="button"><span>View More</span></button>
             </div>
             <div className="centerAboutRight center_inner imgInnerCon">
-            <img src="../../public/Group.jpg" alt="" className='inner_img' />
+            <img src={Group} alt="" className='inner_img' />
             </div>
         </div>
         <div className="centerAbout center_2">
             <div className="centerAboutLeft center_inner imgInnerCon">
-            <img src="../../public/Group.jpg" alt="" className='inner_img' />
+            <img src={Group} alt="" className='inner_img' />
             </div>
             <div className="centerAboutRight center_inner">
             <div className="upperText upperTextRight">
@@ -56,12 +57,12 @@ const About = () => {
                     <button className="button"><span>View More</span></button>
             </div>
             <div className="centerAboutRight center_inner imgInnerCon">
-            <img src="../../public/Group.jpg" alt="" className='inner_img' />
+            <img src={Group} alt="" className='inner_img' />
             </div>
         </div>
         </main>
         <main className="aboutTeam">
-        <img src="../../public/Frame_about.jpg" alt="" />
+        <img src={Frame_about} alt="" />
         </main>
         <main className="aboutWhy">
 
