@@ -21,10 +21,10 @@ function GridExample() {
     <Row xs={1} md={2} className="g-4">
       {data.map((items, index) => (
         <Col key={index}>
-          <Card className='card'>
-            <Card.Img variant="top" src={items.img} style={{ height: '15rem' }} />
+          <Card id='card'>
+            <Card.Img variant="top" src={items.img} id='imgCard_2' />
             <Card.Body>
-              <Card.Title>
+              <Card.Title id='cardTitle'>
                 {items.title}
                 <Card.Subtitle
                   className='show'
@@ -34,7 +34,7 @@ function GridExample() {
                   {cardStates[index] ? 'see more' : 'hide text'}
                 </Card.Subtitle>
               </Card.Title>
-              <Card.Text className={cardStates[index] ? `hide` : 'latest_shown'}>
+              <Card.Text id='desc_2' className={cardStates[index] ? `hide` : 'latest_shown'} >
                 {items.text}
               </Card.Text>
             </Card.Body>

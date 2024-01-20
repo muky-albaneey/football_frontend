@@ -6,7 +6,7 @@
 
 .top_container{
     width: 100%;
-    height: 50rem;
+    height: 35rem;
     background-image: url('../../public//lines.jpg');
     background-repeat: no-repeat;
     background-position: left;
@@ -19,113 +19,39 @@
     width: 65rem;
     height: 20rem;
     position: absolute;
-    top: 3rem;
+    top: 1rem;
     /* background-color: green; */
     left:11rem;
 }
 .acm_news{
     margin-left: 5rem;
     margin-top: 1rem;
+    font-family: monospace;
+    font-weight: bold;
 }
 
-.news_container{
-    text-align: center;
-    width: 100%;
-    height: 50rem;
-    /* background-color: aqua; */
-    display: flex;
-    justify-content: space-around;
-    margin-top: -3rem;
-    
-}
-.news_container span{
-    font-size: 0.8rem;
-}
-.news_container .right, .left{
-    width: 35%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    /* background-color: rgb(50, 51, 51); */
-    justify-content: space-around;
-    align-items: center;
-    padding: 1rem;
-    font-size: .5rem;
-}
-.news_container .right .see_btn{
-    width: 100%;
-    padding: 1rem;
-    border: none;
-    border-radius: .1rem;
-    color: whitesmoke;
-    background-color: rgb(149, 4, 4);
-}
-.news_container.right h4{
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    font-size: .5rem;
-}
-.news_container .left{
-    width: 50%;
-}
-.top_right_news_img{
-
-}
-.top_right_news_img{
-width: 30rem;
-}
-.bottom_left_img,.top_left_news_img{
-    width: 11rem;
-}
-
-.top_left_news, .bottom_left_news{
-    height: 47%;    
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 5rem;
-}
-.top_left_news_items, .bottom_left_news_items{    
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    flex-direction: column;
-    gap: 2rem;
-    /* gap: 0.1rem; */
-}
-.top_left_news_items h5, .bottom_left_news_items h5{
-   display: flex;
-   justify-content: space-between;
-   flex-direction: column;
-   text-align: justify;
-   
-}
-.top_left_news_items h5 :nth-child(1), .bottom_left_news_items h5 :nth-child(1){
-        text-align: center;
-}
 .moment_container{
-    width: 100%;
-    /* height: 35rem; */
+    width: 100%;    
     display: flex;
     flex-direction: column;
-    color: whitesmoke;
-    gap: 1rem;
-    /* background-color: green; */
+    gap: 1rem;    
 
 }
+
 .moment_container .top_moment, .moment_container .bottom_moment{
     width: 100%;
     height: 4rem;
     background-color: rgb(149, 4, 4);
 }
-.moment_container h1{
-    margin-left: 2rem;
-    margin-top: 1rem;
+.top_moment h1{
+    font-family: monospace;
+    font-weight: bold;
+    color: aliceblue;
+    margin: .4rem auto;
+    margin-left: 1rem;
 }
 .moment_container main{
-    width: 80%;
-    /* height: 80%; */
+    width: 80%;    
     display: flex; 
      justify-content: space-around;  
     align-items: center;
@@ -139,8 +65,7 @@ width: 30rem;
 .moment_img_con{
     width: 40%;
     border:7px solid rgb(149, 4, 4); 
-    border-radius: 2rem;
-    /* background-color: rgb(177, 182, 187); */
+    border-radius: 2rem;    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -152,22 +77,20 @@ width: 30rem;
     background-color: rgb(149, 4, 4);
     padding: .9rem;
     width: 5rem;
-    /* position: absolute; */
-    /* top: 23rem; */
-    /* left: 27rem; */
     border: none;
     border-radius: .5rem;
     color: whitesmoke;
 
 }
-.moment_container h3{
+.moment_container main h3{
 width: 20%;
-
-font-weight: bold;
+font-weight: bolder;
+font-family: monospace;
 margin-left: -18rem;
 font-size: 3.4rem;
-font-style: italic;
+font-style: oblique;
 color:rgb(149, 4, 4);
+
 }
 .imgAds{
     width: 15rem;
@@ -176,12 +99,10 @@ color:rgb(149, 4, 4);
 
 
 .matches{
-    width: 100%;
-    /* height: 50rem; */
+    width: 100%;    
     display: flex;
     flex-direction: column;
-    padding: 0.5rem;
-    /* background-color: red; */
+    padding: 0.5rem;   
 }
 
 .matches_img{
@@ -192,11 +113,14 @@ color:rgb(149, 4, 4);
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 1.2rem;
     
 }
 .matche_info h2,.matche_info h4, .matche_info h6{
     font-weight: bold;
-    font-family: monospace;
+   
     font-size: 1rem;
 }
 .matche_info h2{
@@ -205,30 +129,23 @@ color:rgb(149, 4, 4);
 .matches main{
     width: 80%;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     padding: 5rem;
     margin: 0 auto;    
     border: 1px solid rgb(149, 4, 4);
     border-radius: 1.4rem;
+    gap: 2rem;
     
 }
 .matches main .left,.right{
-    width: 30%;
-    /* background-color: rgb(58, 45, 45); */
+    width: 30%;    
     display: flex;
     align-items: center;
     height: 100%;
 }
-.matches main .right{
-    justify-content: baseline;
-    
-}
-.matches main .left{
-    justify-content: center;
-    align-items: end;
-}
-.matches main .center{
+
+.matches main .centers{
     width: 15%;
     height: 75%;
     padding: 1rem;
@@ -239,10 +156,11 @@ color:rgb(149, 4, 4);
     flex-direction: column
 }
 
-.matches main .center .matches_btn{
+.matches main .centers .matches_btn{
     background-color: rgb(149, 4, 4);
-    padding: 1.3rem;
-    width: 30rem;
+    font-size: 0.8rem;
+    width: 6rem;
+    height: 2rem;
     border: none;
     border-radius: .4rem;
     color: whitesmoke;
@@ -268,30 +186,30 @@ color:rgb(149, 4, 4);
     clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
     height: 100%;
     background-color: rgba(0, 0, 0, 0.6);
-    padding: 14rem;
-   
+    padding: 14rem;   
 }
 
-.exp_text{
-    /* position: relative; */
+.exp_text{   
     bottom: 80rem;
     color: whitesmoke;
-    font-size: 4rem;
-    /* z-index: 10; */
-    /* left: 5rem; */
-
+    font-size: 4rem;  
 }
-
+.exp_text h1{
+    color: aliceblue;
+    font-weight: bold;
+}
 .exp_sec{
     background-image: url('../../public//newsletter_2.jpg');
    display: flex;
    flex-direction: column;
    color: whitesmoke;
-
+   justify-content: center;
 }
+
 .text_cover{
     display: flex;
    flex-direction: column;
+   justify-content: center;
 }
 .exp_cover_con{
     width: 100%;
@@ -358,6 +276,11 @@ color:rgb(149, 4, 4);
     text-align: center;
     
 }
+.text_cover h1{
+    text-align: center;
+    font-family: monospace;
+    font-weight: bold;
+}
 @media all and (max-width: 900px) {
     .moment_img_con{
         width: 100%;
@@ -387,10 +310,9 @@ color:rgb(149, 4, 4);
         width: 40%;
         
     }
-    .matches main .right{
-        /* margin-right: 2rem; */
+    .matches main .right{        
         position: relative;
-        right: -2.5rem;
+        /* right: -1.5rem; */
     }
    
     .exp_cover_con{
@@ -402,8 +324,7 @@ color:rgb(149, 4, 4);
     .search{
         width: 50rem;
     }
-    .top_container{
-       
+    .top_container{       
         background-size: 50%;
         background-size: 22.2em;
         background-size: 26em;
@@ -413,23 +334,19 @@ color:rgb(149, 4, 4);
         width:20rem;
         position: absolute;
         top: 5rem;
-        left:1rem;
+        left:2rem;
     }
     .patners{
       flex-direction: column;
     }
     
     .patners img{
-        width: 18rem;
-        /* height: 9rem; */
-        
+        width: 18rem;                
     }
-    .p_sec_1{
-        
+    .p_sec_1{        
         width: 100%;
     }
-        .p_sec_2{
-            
+        .p_sec_2{            
             width: 100%;
         }
         .exp{
@@ -440,22 +357,30 @@ color:rgb(149, 4, 4);
         }
         
         .exp h1{
-            font-size: 3rem;
-            /* bottom: 90rem; */
-           
-        
+            font-size: 3rem; 
+            
         }
-        .exp_text{
-          
+
+        .exp_text{          
             color: whitesmoke;
             font-size: 4rem;
-           
-        
+                 
         }
+
         .exp_right{
-            width: 70%;
+            width: 90%;
+            align-items: baseline;
+            padding: 1rem;
         }
         .sectionWrapper h6{
             font-size: 2rem;
+        }
+        .exp_left{
+            width: 80%;
+            gap: .3rem;
+
+        }
+        .exp_left p{
+            font-size: .8rem;
         }
 }

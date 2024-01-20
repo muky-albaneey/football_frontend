@@ -18,8 +18,8 @@ const Home = () => {
       </div>
       </section>
       <h1 className='acm_news'>ACM NEWS</h1>
-     <News />
      
+      <News />
       <section className="moment_container">
         <div className="top_moment">
         <h1>ALL  FOR  OUR  MOMENT</h1>
@@ -52,7 +52,7 @@ const Home = () => {
           <div className="left">
             <img src='./willbro.jpg' alt="" className="matches_img"/>      
           </div>
-          <div className="center">
+          <div className="centers">
             <h2>VS</h2>
             <button className="matches_btn">BUY TICKETS</button>
             <Link to='/' style={{marginBottom: '-3rem', textDecoration: 'underline', color:'rgb(149, 4, 4)'}} className='match_link'>see all matches</Link>
@@ -76,7 +76,7 @@ const Home = () => {
     
         <section className="experience exp_sec">
        <div className="exp_cover text_cover">
-        <h1 style={{textAlign: 'center'}}>ACM NEWSLETTER</h1>
+        <h1>ACM NEWSLETTER</h1>
         <div className="exp_cover_con">
         <div className="exp_left">
           <p>
@@ -92,25 +92,7 @@ const Home = () => {
         </div>
        </div>
       </section>
-     {/* <div className="sectionWrapper">
-     <h6 >
-    Our Sponsors
-    </h6>
-      <section className="patners">
-         <div className="p_sec_1">
-         <img src="./RIDA-logo-1.jpg" alt="prologis" />
-          <img src="./bitnob-logo.png" alt="tower" />
-         </div>
-         
-         <div className="p_sec_2">
-         <img src="./Linear.svg" alt="equinix" />
-          <img src="./download.jpg" alt="equinix" />
-         </div>
-        
-          
-      </section>
-     </div>
-       */}
+    
     </div>
   )
 }

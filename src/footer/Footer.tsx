@@ -29,7 +29,7 @@ const Footer = () => {
      <div className='foot_container'>
      <div className="social">
       <div className="icons">
-      <BiX /><BsFacebook /><BsWhatsapp /><FaTiktok /><FaTelegramPlane />
+      <BiX className='iconBg' /><BsFacebook className='iconBg' /><BsWhatsapp className='iconBg' /><FaTiktok className='iconBg' /><FaTelegramPlane className='iconBg' />
       </div>
     </div>
       <div className="foo_right">
@@ -42,9 +42,9 @@ const Footer = () => {
         <div>Terms of Use</div>
         <div>FAQ</div>
         <div>Help</div>
-        <div>Contact</div>
-        <div>Infos</div>
-        <div>Blog</div>
+        {/* <div>Contact</div> */}
+        {/* <div>Infos</div> */}
+        {/* <div>Blog</div> */}
         <div>Officials</div>
       </div>
     </div>

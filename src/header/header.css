@@ -7,9 +7,12 @@
 .links{
     color: red;
 }
-.brandText{
-    font-size: 1rem;
-    color: red;
+#brandText{
+    /* font-size: 1rem; */
+    /* color: red; */
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 1.4rem;
 }
 
 .nav_item{

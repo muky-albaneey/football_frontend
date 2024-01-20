@@ -15,7 +15,7 @@ function Header() {
         <Navbar key={expand} sticky='top' expand={expand} className="mb-3 bg-body-tertiary">
           <Container fluid>
             <Navbar.Brand><NavLink  to='/'><img src="./Frame.jpg" alt="" className='Frame'/></NavLink></Navbar.Brand>
-            <Navbar.Brand href="#" className="brandText">ATHLETIC CLUB MIDLANDS</Navbar.Brand>
+            <Navbar.Brand href="#" id="brandText">ATHLETIC CLUB MIDLANDS</Navbar.Brand>
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
             <Navbar.Offcanvas
               id={`offcanvasNavbar-expand-${expand}`}
