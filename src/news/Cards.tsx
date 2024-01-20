@@ -3,7 +3,7 @@ import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import data from './data.json';
 import React from 'react';
-
+import './news.css';
 function GridExample() {
   
   const [cardStates, setCardStates] = React.useState(data.map(() => true));
