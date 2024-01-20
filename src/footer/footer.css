@@ -24,8 +24,9 @@
 .foo_right h4{
     font-weight: bold;
     text-align: center;
-    font-family: monospace;
+    font-family: monospace;    
 }
+
 .foo_left{
     width: 55%;
     height: 100%;
@@ -92,19 +93,19 @@ width: 50%;
   padding: 2rem;
   flex-wrap: wrap;
 }
+
 .patners img{
   width: 15rem;
-  height: 9rem;
-  
+  height: 9rem;  
 }
-.sectionWrapper h6{
-    
+
+.sectionWrapper h6{    
     font-weight: bold;
     font-size: 1.7rem;
     text-align: center;
-    font-family: monospace;
-    
+    font-family: monospace;    
 }
+
 @media all and (max-width: 900px) {
     .foot_container{
         flex-direction: column;

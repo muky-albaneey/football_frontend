@@ -177,10 +177,6 @@ height: 100%;
       .button span{
         margin-left: -3rem;
       }
-      .button::after {
-        
-      }
-
       .upperText h1{
         font-size: 1.2rem;
       }

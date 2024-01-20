@@ -28,10 +28,8 @@ const Home = () => {
         <div className="moment_img_con">         
           <div>
           <ShapeExample />   
-          </div>               
-          
-         </div>
-         
+          </div>                         
+         </div>         
         <h3>
            OUR NEW <br />
           HOME JERSEY<br />

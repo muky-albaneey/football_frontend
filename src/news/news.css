@@ -1,6 +1,5 @@
 .newsCon{
-    width: 100%;
-    /* background-color: red; */
+    width: 100%;    
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -14,24 +13,19 @@
     align-items: center;
 }
 .rightCon{
-    width: 55%;
-    /* background-color: rgb(57, 41, 41); */
+    width: 55%;    
 }
 .leftCon{
-    width: 42%;
-    /* background-color: green; */
+    width: 42%;    
 }
 
 #card{
-width: 26rem;
-/* height: 23rem; */
+width: 17rem;
 margin: 0 auto;
 
 }
 #card_2{
     width: 30rem;
-    /* height: 5rem; */
-    /* background-color: rgb(181, 205, 43); */
    
 }
 #cardTitle{
@@ -82,7 +76,7 @@ margin-left: 3rem;
         width: 100%;
         /* height: 100rem; */
     }
-    .card{
+    #card{
         width: 20rem;
         margin: 0 auto;
         }
@@ -106,10 +100,32 @@ margin-left: 3rem;
     #imgCard{
         margin-bottom: -.5rem;
     }
-    #cardTextDesc{
-        
-    }
+   
     #desc_2{
         font-size: 0.8rem;
     }
 }
+
+@media all and (max-width: 390px) {
+    #desc_2{
+        font-size: 0.6rem;
+    }
+    #cardTextDesc{
+        font-size: 0.6rem;
+    }
+
+    #btnNews{
+        margin-left: 2rem;
+     height: 3rem;
+       font-size: 0.7rem;
+       
+       }
+       #card{
+        width: 16rem;
+        margin: 0 auto;
+        }
+        #cardTitle{
+            font-size: 0.75rem;
+        }  
+}
+

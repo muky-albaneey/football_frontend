@@ -9,8 +9,7 @@
     height: 35rem;
     background-image: url('../../public//lines.jpg');
     background-repeat: no-repeat;
-    background-position: left;
-    /* background-color: red; */
+    background-position: left;    
     
 }
 
@@ -19,8 +18,7 @@
     width: 65rem;
     height: 20rem;
     position: absolute;
-    top: 1rem;
-    /* background-color: green; */
+    top: 1rem;    
     left:11rem;
 }
 .acm_news{
@@ -35,7 +33,6 @@
     display: flex;
     flex-direction: column;
     gap: 1rem;    
-
 }
 
 .moment_container .top_moment, .moment_container .bottom_moment{
@@ -153,7 +150,8 @@ color:rgb(149, 4, 4);
     display: flex;
     justify-content: space-around;
     align-items: center;
-    flex-direction: column
+    flex-direction: column;
+    background-color: rgb(149, 4, 4);
 }
 
 .matches main .centers .matches_btn{
@@ -290,8 +288,9 @@ color:rgb(149, 4, 4);
         flex-direction: column;
         margin: 0 auto;
     }
-    .matches main{
-        
+
+
+    .matches main{        
         width: 95%;
     }
     .matches main .center .matches_btn{
@@ -383,4 +382,43 @@ color:rgb(149, 4, 4);
         .exp_left p{
             font-size: .8rem;
         }
+
+        .moment_container main h3{
+           
+            margin-left: -11rem;
+            font-size: 3.4rem;
+            
+            
+            
+            }
+
+}
+
+@media all and (max-width: 390px) {
+    .carousel{
+        width:14rem;
+        position: absolute;
+        top: 5rem;
+        left:2rem;
+    }
+    .moment_container main h3{
+           
+        
+        font-size: 2.4rem;
+        
+        
+        
+        }
+        
+
+.matches main{
+    width: 100%;
+    gap: 1rem;
+}
+.matches main .centers{
+    
+}
+.matches main .centers .matches_btn{
+    
+}
 }

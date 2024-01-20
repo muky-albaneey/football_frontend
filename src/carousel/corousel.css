@@ -9,3 +9,11 @@
     }
     
 }
+
+@media all and (max-width: 390px) {
+    .d-block{
+        height:19.6rem;
+        width: 8rem;
+    }
+    
+}
