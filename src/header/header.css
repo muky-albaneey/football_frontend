@@ -1,15 +1,12 @@
-
 .Frame{
-    width: 8rem;
+    width: 6rem;
 }
 
 
 .links{
     color: red;
 }
-#brandText{
-    /* font-size: 1rem; */
-    /* color: red; */
+#brandText{   
     font-family: monospace;
     font-weight: bold;
     font-size: 1.4rem;

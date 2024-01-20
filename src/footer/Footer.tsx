@@ -22,14 +22,27 @@ const Footer = () => {
          <img src="./Linear.svg" alt="equinix" />
           <img src="./download.jpg" alt="equinix" />
          </div>
-        
-          {/* <img src="./realty.png" alt="realty" /> */}
+          
       </section>
      </div>
      <div className='foot_container'>
      <div className="social">
       <div className="icons">
-      <BiX className='iconBg' /><BsFacebook className='iconBg' /><BsWhatsapp className='iconBg' /><FaTiktok className='iconBg' /><FaTelegramPlane className='iconBg' />
+     <div>
+     <BiX className='iconBg' />
+      </div> 
+      <div>
+      <BsFacebook className='iconBg' />
+      </div>
+      <div>
+      <BsWhatsapp className='iconBg' />
+      </div>
+      <div>
+      <FaTiktok className='iconBg' />
+      </div>
+      <div>
+      <FaTelegramPlane className='iconBg' />
+      </div>
       </div>
     </div>
       <div className="foo_right">
@@ -42,9 +55,6 @@ const Footer = () => {
         <div>Terms of Use</div>
         <div>FAQ</div>
         <div>Help</div>
-        {/* <div>Contact</div> */}
-        {/* <div>Infos</div> */}
-        {/* <div>Blog</div> */}
         <div>Officials</div>
       </div>
     </div>
