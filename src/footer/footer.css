@@ -158,7 +158,7 @@ width: 50%;
           
       }
       .p_sec_1 img{
-        width: 37%;
+        width: 25%;
       }
       .p_sec_1{
           display: flex;
@@ -166,7 +166,7 @@ width: 50%;
           gap: 2rem;
       }
       .p_sec_2 img{
-        width: 37%;
+        width: 25%;
       }
           .p_sec_2{
             display: flex;
