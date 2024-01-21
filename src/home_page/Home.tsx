@@ -31,7 +31,7 @@ const Home = () => {
           </div>                         
          </div>         
         <h3>
-           OUR NEW  JERSEY<br />
+           OUR NEW  JERSEY<br />  
            24/25
         </h3>
         </main>
