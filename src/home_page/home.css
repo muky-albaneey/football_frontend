@@ -346,6 +346,7 @@ color:rgb(149, 4, 4);
     }
     #exp_btn{
         width: 70%;
+        padding: 0.9rem;
     }
     .search{
         width: 50rem;
