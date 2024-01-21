@@ -162,6 +162,7 @@ color:rgb(149, 4, 4);
     border: none;
     border-radius: .4rem;
     color: whitesmoke;
+    text-transform: capitalize;
 }
 
 .experience{
