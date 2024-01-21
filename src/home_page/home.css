@@ -396,7 +396,7 @@ color:rgb(149, 4, 4);
 
 @media all and (max-width: 390px) {
     .carousel{
-        width:14rem;
+        width:20rem;
         position: absolute;
         top: 5rem;
         left:2rem;
