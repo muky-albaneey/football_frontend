@@ -39,14 +39,14 @@ a{
         text-decoration: none !important;
     }
       #brandText{
-        font-size: .3rem;
+        font-size: .7rem;
     }
 }
 @media all and (max-width: 340px) {
     #brandText{
        
         
-        font-size: .3rem;
+        font-size: .7rem;
     }
     
 }
