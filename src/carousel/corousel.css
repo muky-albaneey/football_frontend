@@ -4,16 +4,16 @@
 
 @media all and (max-width: 900px) {
     .d-block{
-        height:35.6rem;
-        width: 16.5rem;
+        height:14.6rem;
+        width: 13.5rem;
     }
     
 }
 
 @media all and (max-width: 390px) {
     .d-block{
-        height:23rem;
-        width: 14rem;
+        height:14.6rem;
+        width: 12.5rem;
     }
     
 }
