@@ -352,10 +352,12 @@ color:rgb(149, 4, 4);
     .exp_text h1{
         text-align: center;
        font-size: 0.5rem;
+       margin-left: 0;
     }
     #exp_btn{
         width: 70%;
         padding: 0.9rem;
+        margin-left: 0;
     }
     .search{
         width: 50rem;
