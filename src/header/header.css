@@ -17,7 +17,7 @@
     font-weight: bold;
     margin-left: 2rem;
     padding: 0.4rem;
-    text-decoration: none;
+    text-decoration: none !important;
     text-transform: capitalize;
 }
 
@@ -30,15 +30,15 @@
 .nav_item span{
     text-transform: lowercase;
 }
+a{
+    text-decoration: none !important;
+}
 @media all and (max-width: 900px) {
     .nav_item{
        
-        text-decoration: none;
+        text-decoration: none !important;
     }
-    #brandText{
-       
-        
-        font-size: .7rem;
+      #brandText{
     }
 }
 @media all and (max-width: 340px) {
