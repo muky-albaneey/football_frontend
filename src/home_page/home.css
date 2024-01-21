@@ -396,10 +396,10 @@ color:rgb(149, 4, 4);
 
 @media all and (max-width: 390px) {
     .carousel{
-        width:20rem;
+        width:18.5rem;
         position: absolute;
         top: 5rem;
-        left:2rem;
+        left:1rem;
     }
     .moment_container main h3{
            
