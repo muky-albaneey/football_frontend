@@ -35,7 +35,11 @@
        
         text-decoration: none;
     }
-    
+    #brandText{
+       
+        
+        font-size: .7rem;
+    }
 }
 @media all and (max-width: 340px) {
     #brandText{
