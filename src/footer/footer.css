@@ -3,7 +3,7 @@
     display: flex;
     justify-content: space-between;
     flex-direction: column;    
-    height: 20rem;
+    /* height: 20rem; */
 }
 
 .foot_container{
@@ -104,8 +104,8 @@ width: 50%;
 }
 
 .patners img{
-  /* width: 17rem; */
-  /* height: 9rem;   */
+  width: 17rem;
+  height: 9rem;  
 }
 
 .sectionWrapper h6{    
