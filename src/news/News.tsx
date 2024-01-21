@@ -3,7 +3,7 @@ import GridExample from './Cards';
 import BasicExample from './Cards_2';
 const News = () => {
   return (
-   <section className="newsCon">
+   <section id="newsCon">
     <div className="leftCon">
       <BasicExample />
     </div>

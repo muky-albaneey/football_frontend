@@ -98,13 +98,15 @@ color:rgb(149, 4, 4);
 
 .matches{
     width: 100%;    
+    height: 30rem;
+    /* background-color: green; */
     display: flex;
     flex-direction: column;
-    padding: 0.5rem;   
+    padding: 0.1rem;   
 }
 
 .matches_img{
-    width: 20rem;
+    width: 15rem;
 }
 .matche_info{
     display: flex;
@@ -113,16 +115,18 @@ color:rgb(149, 4, 4);
     flex-direction: column;
     font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
-    font-size: 1.2rem;
+    font-size: .9rem;
     
 }
-.matche_info h2,.matche_info h4, .matche_info h6{
+
+.matche_info h4, .matche_info h6{
     font-weight: bold;
    
-    font-size: 1rem;
+    font-size: .8rem;
 }
 .matche_info h2{
-    font-size: 2rem;
+    font-size: 1rem;
+    font-weight: bold;
 }
 .matches main{
     width: 80%;
@@ -205,13 +209,13 @@ color:rgb(149, 4, 4);
     font-family: monospace;
     /* background-color: red; */
     text-align: center;
-    
+    margin-left: -59rem;
 }
 .exp_text h1{
-    margin-left: -9rem;
+    
 }
 #exp_btn{
-    width: 20%;
+    width: 17%;
     padding: 1rem;
     border: none;
     border-radius: 2rem;
@@ -220,7 +224,7 @@ color:rgb(149, 4, 4);
     font-weight: bold;
     text-align: center;
     margin: 0 auto;
-    
+    margin-left: 12rem;
 
 }
 .exp_sec{
@@ -349,6 +353,9 @@ color:rgb(149, 4, 4);
         justify-content: center;
         align-items: center;
     }
+    .exp_text{
+        margin-left: -2rem;
+    }
     .exp_text h1{
         text-align: center;
        font-size: 0.5rem;
@@ -464,5 +471,15 @@ color:rgb(149, 4, 4);
 .exp_left p{
     font-size: .7rem;
 }
+/* .exp_text h1{
+    text-align: center;
+   font-size: 0.3rem;
+   margin-left: 0;
+}
+#exp_btn{
+    width: 70%;
+    padding: 0.9rem;
+    margin-left: 0;
+} */
 
 }
