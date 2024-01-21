@@ -68,6 +68,7 @@ const Home = () => {
         ACM <br />
         PARK <br />
         </h1>
+        <button id="exp_btn">TICKET SHOP</button>
         </div>
        </div>
       </section>

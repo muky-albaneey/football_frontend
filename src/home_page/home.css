@@ -181,20 +181,39 @@ color:rgb(149, 4, 4);
 
 .exp{
     width: 100%;
-    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    /* clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%); */
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.6);
-    padding: 14rem;   
+    background-color: rgba(0, 0, 0, 0.3);
+    /* padding: 14rem;  
+      */
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      gap: 4rem;
+      padding-left: 3rem;
 }
 
-.exp_text{   
+.exp_text{  
+    /* height: 20rem;
+    width: 50rem;  */
     bottom: 80rem;
     color: whitesmoke;
     font-size: 4rem;  
+    /* background-color: red; */
 }
 .exp_text h1{
     color: aliceblue;
     font-weight: bold;
+}
+#exp_btn{
+    width: 30%;
+    padding: 2rem;
+    border: none;
+    border-radius: 2rem;
+    color: aliceblue;
+    background-color: rgb(149, 4, 4);
+    font-weight: bold;
+
 }
 .exp_sec{
     background-image: url('../../public//newsletter_2.jpg');
@@ -321,6 +340,12 @@ color:rgb(149, 4, 4);
         font-size: .6rem;
         justify-content: center;
         align-items: center;
+    }
+    .exp_text h1{
+       font-size: 0.5rem;
+    }
+    #exp_btn{
+        width: 70%;
     }
     .search{
         width: 50rem;
