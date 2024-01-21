@@ -52,7 +52,7 @@ const Home = () => {
           </div>
           <div className="centers">
             <h2>VS</h2>
-            <button className="matches_btn">BUY TICKETS</button>
+            <button id="matches_btn">buy ticket</button>
             <Link to='/' style={{marginBottom: '-3rem', textDecoration: 'underline', color:'rgb(149, 4, 4)'}} className='match_link'>see all matches</Link>
           </div>
           <div className="right">

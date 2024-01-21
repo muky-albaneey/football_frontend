@@ -151,14 +151,14 @@ color:rgb(149, 4, 4);
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
-    background-color: rgb(149, 4, 4);
+    /* background-color: rgb(149, 4, 4); */
 }
 
-.matches main .centers .matches_btn{
+.matches main .centers #matches_btn{
     background-color: rgb(149, 4, 4);
     font-size: 0.8rem;
-    width: 6rem;
-    height: 2rem;
+    width: 8rem;
+    height: 3rem;
     border: none;
     border-radius: .4rem;
     color: whitesmoke;
@@ -202,6 +202,7 @@ color:rgb(149, 4, 4);
    flex-direction: column;
    color: whitesmoke;
    justify-content: center;
+   padding: 0.7rem;
 }
 
 .text_cover{
@@ -236,13 +237,7 @@ color:rgb(149, 4, 4);
     justify-content: space-around;
     flex-direction: column;
 }
-/* .patners{
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    padding: 2rem;
-    flex-wrap: wrap;
-} */
+
 .p_sec_1{
       width: 50%;
     height: 100%;
@@ -293,13 +288,20 @@ color:rgb(149, 4, 4);
     .matches main{        
         width: 95%;
     }
-    .matches main .center .matches_btn{
-        width: 7rem;
-        padding: 0.6rem;
-        font-size: 0.7rem;
+    .matches main .center #matches_btn{
+        width: 10rem;        
+        font-size: 0.4rem;
     }
     .matches_img{
         width: 7rem;
+    }
+    .matches main .left {
+        margin-right: 2rem;
+
+    }
+    .matches main .right {
+        margin-left: 2rem;
+
     }
     .match_link{
         width: 10rem;
@@ -335,13 +337,7 @@ color:rgb(149, 4, 4);
         top: 5rem;
         left:2rem;
     }
-    /* .patners{
-      flex-direction: column;
-    } */
-    
-    /* .patners img{
-        width: 18rem;                
-    } */
+   
     .p_sec_1{        
         width: 100%;
     }
@@ -415,10 +411,24 @@ color:rgb(149, 4, 4);
     width: 100%;
     gap: 1rem;
 }
-.matches main .centers{
-    
+.matches main .center #matches_btn{
+    width: 3rem; 
+    height: 3rem;       
+    font-size: 0.4rem;
 }
-.matches main .centers .matches_btn{
-    
+.matches_img{
+    width: 5rem;
 }
+.matches main .left {
+    margin-right: 3rem;
+
+}
+.exp_left p{
+    font-size: .7rem;
+}
+
+/* .matches main .right {
+    margin-left: 5rem;
+
+} */
 }
