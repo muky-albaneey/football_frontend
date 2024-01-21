@@ -181,7 +181,7 @@ color:rgb(149, 4, 4);
 
 .exp{
     width: 100%;
-    /* clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%); */
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
     height: 100%;
     background-color: rgba(0, 0, 0, 0.3);
     /* padding: 14rem;  
@@ -197,17 +197,14 @@ color:rgb(149, 4, 4);
     /* height: 20rem;
     width: 50rem;  */
     bottom: 80rem;
-    color: whitesmoke;
-    font-size: 4rem;  
+    color: aliceblue;
+    font-size: 2rem;  
     /* background-color: red; */
 }
-.exp_text h1{
-    color: aliceblue;
-    font-weight: bold;
-}
+
 #exp_btn{
-    width: 30%;
-    padding: 2rem;
+    width: 20%;
+    padding: 1rem;
     border: none;
     border-radius: 2rem;
     color: aliceblue;
