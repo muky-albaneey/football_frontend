@@ -31,7 +31,7 @@ const Home = () => {
           </div>                         
          </div>         
         <h3>
-           OUR NEW <br />
+           OUR NEW 
           HOME JERSEY<br />
            24/25
         </h3>
@@ -65,8 +65,8 @@ const Home = () => {
         <div className="exp">
         <h1 className='exp_text'>
         EXPERIENCE <br />
-        ACM <br />
-        PARK <br />
+        ACM 
+        PARK
         </h1>
         <button id="exp_btn">TICKET SHOP</button>
         </div>

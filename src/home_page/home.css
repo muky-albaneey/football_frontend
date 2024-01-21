@@ -83,9 +83,10 @@
 width: 20%;
 font-weight: bolder;
 font-family: monospace;
+text-align: center;
 margin-left: -18rem;
 font-size: 3.4rem;
-font-style: oblique;
+/* font-style: oblique; */
 color:rgb(149, 4, 4);
 
 }
@@ -191,7 +192,8 @@ color:rgb(149, 4, 4);
       justify-content: center;
       flex-direction: column;
       gap: 4rem;
-      padding-left: 3rem;
+      /* margin-left: -2rem; */
+      /* padding-left: 10rem; */
 }
 
 .exp_text{  
@@ -199,10 +201,15 @@ color:rgb(149, 4, 4);
     width: 50rem;  */
     bottom: 80rem;
     color: aliceblue;
-    font-size: 2rem;  
+    font-size: 4rem;  
+    font-family: monospace;
     /* background-color: red; */
+    text-align: center;
+    
 }
-
+.exp_text h1{
+    margin-left: -9rem;
+}
 #exp_btn{
     width: 20%;
     padding: 1rem;
@@ -211,6 +218,9 @@ color:rgb(149, 4, 4);
     color: aliceblue;
     background-color: rgb(149, 4, 4);
     font-weight: bold;
+    text-align: center;
+    margin: 0 auto;
+    
 
 }
 .exp_sec{
@@ -340,6 +350,7 @@ color:rgb(149, 4, 4);
         align-items: center;
     }
     .exp_text h1{
+        text-align: center;
        font-size: 0.5rem;
     }
     #exp_btn{
