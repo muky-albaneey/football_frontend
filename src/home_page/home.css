@@ -317,7 +317,7 @@ color:rgb(149, 4, 4);
     }
     .moment_container main h3{
         padding-left:10rem;
-        color: red;
+        /* color: red; */
     }
 
     .matches main{        
@@ -475,15 +475,16 @@ color:rgb(149, 4, 4);
 .exp_left p{
     font-size: .7rem;
 }
-/* .exp_text h1{
+.exp_text h1{
     text-align: center;
    font-size: 0.3rem;
    margin-left: 0;
+   word-spacing: .3rem;
 }
 #exp_btn{
-    width: 70%;
+    width: 100%;
     padding: 0.9rem;
     margin-left: 0;
-} */
+}
 
 }

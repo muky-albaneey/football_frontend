@@ -64,8 +64,7 @@ const Home = () => {
         <div className="exp">
         <h1 className='exp_text'>
         EXPERIENCE <br />
-        ACM 
-        PARK
+        ACM PARK
         </h1>
         <button id="exp_btn">TICKET SHOP</button>
         </div>
