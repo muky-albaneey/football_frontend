@@ -29,7 +29,7 @@ const Home = () => {
           <div>
           <ShapeExample />   
           </div>             
-          <button className="jersyBtn">shop</button>            
+          <button className="jerseyBtn">shop</button>            
          </div>         
         <h3>
            OUR NEW  JERSEY<br />  
