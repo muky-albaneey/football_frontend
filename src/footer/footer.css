@@ -58,8 +58,8 @@
 .icons div{
     background-color: rgb(13, 11, 11);
     border-radius: 5rem;
-    width: 13%;
-    height: 7rem;
+    width: 6%;
+    height: 2rem;
     display: flex;
     justify-content: center;    
     align-items: center;
@@ -67,8 +67,8 @@
 .iconBg{
     
     color: aliceblue;
-    width: 4rem;
-    height: 3rem;
+    width: 2rem;
+    height: 1.2rem;
     border-radius: 50%;    
     text-align: center;
 }
@@ -180,7 +180,7 @@ width: 50%;
             padding-top: 0;
           }
           .p_sec_2 :nth-child(1){
-            /* margin-top: -2rem; */
+            
           }
           .sectionWrapper h6{            
             font-size: 1.9rem;

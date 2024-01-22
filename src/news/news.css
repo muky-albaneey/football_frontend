@@ -3,7 +3,7 @@
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-
+    margin-top: -5rem;
 }
 
 .leftCon,.rightCon{
@@ -29,17 +29,18 @@ margin: 0 auto;
    
 }
 #cardTitle{
-    font-size: .8rem;
+    font-size: 1rem;
     font-family: monospace;
     font-weight: bold;
     text-align: center;
 }
 #imgCard{
     width: 90%;
+    height: 13rem;
     margin: 1rem auto;
 }
 #imgCard_2{
-    height: 13rem;
+    height: 10rem;
 }
 /* 
 .card_2_img{
@@ -47,7 +48,7 @@ margin: 0 auto;
 } */
 #btnNews{
  width: 80%;
-height: 5rem;
+height: 3rem;
 background-color: rgb(149, 4, 4);
 border: none;
 font-weight: bold;
@@ -58,11 +59,11 @@ margin-left: 3rem;
 #cardTextDesc{
     font-family: Arial, Helvetica, sans-serif;
     text-align: justify;
-    /* font-size: 0.3rem; */
+    font-size: .9rem;
 }
 #desc_2{
-    font-size: 0.6rem;    
-    font-weight: bold;
+    font-size: .8rem;    
+    /* font-weight: bold; */
     font-family: Arial, Helvetica, sans-serif;
     text-align: justify;
 }
