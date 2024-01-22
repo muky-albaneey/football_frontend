@@ -104,8 +104,8 @@ width: 50%;
 }
 
 .patners img{
-  width: 17rem;
-  height: 9rem;  
+  width: 7rem;
+  height: 4rem;  
 }
 
 .sectionWrapper h6{    
@@ -139,11 +139,15 @@ width: 50%;
     
 .icons div{
    
-    width: 25%;
-    height: 3rem;
+    width: 9%;
+    height: 1.3rem;
 }
+
+ /* width: 2rem; */
+    /* height: 1.2rem; */
 .iconBg{
-    height: 2rem;
+    width: 1.5rem;
+    height: .9rem;
    
    
   
@@ -153,13 +157,13 @@ width: 50%;
       }
       
       .patners img{
-          width: 11rem;
-          height: 5rem;
+      
+        /* height: 4rem;   */
           
       }
       .p_sec_1 img{
-        width: 35%;
-        height: 4rem;
+        width: 4rem;
+        height: 3rem;
       }
       .p_sec_1{
           display: flex;
@@ -167,14 +171,14 @@ width: 50%;
           gap: 2rem;
       }
       .p_sec_2 img{
-        width: 35%;
-        height: 4rem;
+        width: 4rem;
+        height: 3rem;
       }
           .p_sec_2{
             display: flex;
             gap: 2rem;
-              width: 100%;
-              margin-bottom: -6rem;
+            margin-bottom: -6rem;
+            width: 100%;
           }
           .sectionWrapper{
             padding-top: 0;

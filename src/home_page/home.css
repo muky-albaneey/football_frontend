@@ -1,7 +1,6 @@
 .homeContainer{
     width: 100%;
     position: relative;
-
 }
 
 .top_container{
@@ -9,8 +8,7 @@
     height: 33rem;
     background-image: url('../../public//lines.jpg');
     background-repeat: no-repeat;
-    background-position: left;    
-    
+    background-position: left;        
 }
 
 
