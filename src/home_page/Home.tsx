@@ -28,7 +28,8 @@ const Home = () => {
         <div className="moment_img_con">         
           <div>
           <ShapeExample />   
-          </div>                         
+          </div>             
+          <button className="jersyBtn">shop</button>            
          </div>         
         <h3>
            OUR NEW  JERSEY<br />  
