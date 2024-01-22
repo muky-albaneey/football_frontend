@@ -444,16 +444,17 @@ color:rgb(149, 4, 4);
         top: 5;
         left:1rem;
     }
-    .moment_container main h3{
-           
-        
-        font-size: 2.4rem;
-        
-        
+    .moment_container main h3{        
+        font-size: 2.4rem;     
         
         }
         
-
+        .acm_news{
+            margin-left: 0rem;
+            text-align: center;
+            margin-top: 0;
+            padding-top: .2rem;
+        }
 .matches main{
     width: 100%;
     gap: 1rem;
