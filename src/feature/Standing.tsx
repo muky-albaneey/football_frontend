@@ -55,14 +55,10 @@ const Standing = () => {
         <div className="standingHeader">
     <h1>standings</h1>
         </div>
-      {/* <div className="standingLeft">
-
-      </div> */}
+   
       <div className="standingCenter">
             
 
-{/* function BasicExample() { */}
-{/* //   return ( */}
     <Table striped bordered hover>
       <thead>
         <tr>
@@ -93,9 +89,7 @@ const Standing = () => {
       <div className="standingFooter">
         <Link to=''>see all standing</Link>
       </div>
-      {/* <div className="standingRight">
-
-      </div> */}
+     
     </section>
   )
 }

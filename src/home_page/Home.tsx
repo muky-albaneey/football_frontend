@@ -4,7 +4,6 @@ import Search from './Search';
 import UncontrolledExample from '../carousel/Carousel';
 import News from '../news/News';
 import ShapeExample from './Image';
-import { Link } from 'react-router-dom';
 import Features from '../feature/Features';
 import Standing from '../feature/Standing';
 import home from '../assets/home.jpg';
