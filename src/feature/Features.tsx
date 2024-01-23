@@ -1,5 +1,6 @@
 import Carousel from 'react-bootstrap/Carousel';
 import './feature.css';
+import { Link } from 'react-router-dom';
 
 function Features() {
   return (
@@ -53,7 +54,7 @@ function Features() {
             <div className="rightFeatureMatchDetails fetureDetails"></div>
           </main>
           <div className="leftFeatureMatcFooter">
-            see all
+            <Link to=''>see all</Link>
           </div>
         </Carousel.Item>
       </Carousel>
