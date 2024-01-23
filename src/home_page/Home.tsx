@@ -5,6 +5,7 @@ import UncontrolledExample from '../carousel/Carousel';
 import News from '../news/News';
 import ShapeExample from './Image';
 import { Link } from 'react-router-dom';
+import Features from '../feature/Features';
 
 
 const Home = () => {
@@ -16,6 +17,14 @@ const Home = () => {
        <div className="carousel">
       <UncontrolledExample />
       </div>
+      </section>
+      <section className="features">
+        <div className="featureLeft">
+         <Features />
+        </div>
+        <div className="featureRight">
+        featureRight
+        </div>
       </section>
       <h1 className='acm_news'>ACM NEWS</h1>
      

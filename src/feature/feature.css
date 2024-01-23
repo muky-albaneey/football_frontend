@@ -1,0 +1,58 @@
+#featureWrapper{
+background-color: aqua;
+   width: 100%;
+   display: flex;
+   justify-content: flex-start;
+   align-items: center;
+   position: relative;
+}
+#carouselFeature{
+    width: 95%;
+    /* background-color: aliceblue; */
+    position: absolute;
+    left: 1rem;
+    top: -15rem;
+}
+
+#featureItem{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.leftFeatureMatcHeader{
+    width: 100%;
+    height: 8.5rem;
+    background-color: rgb(136, 114, 114);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    
+}
+.leftFeatureMatcHeader :where(h5){
+    font-size: 0.9rem;
+}
+.leftFeatureMatcHeader :where(h1){
+    font-size: 1rem;
+}
+.leftFeatureMatcFooter{
+    width: 100%;
+    height: 3.2rem;
+    background-color: rgb(136, 114, 114);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#featureItemContent{
+    width: 100%;
+    height: 18rem;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
