@@ -5,7 +5,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import { Link, NavLink } from 'react-router-dom';
 import './header.css'
-
+import Frame from '../assets/Frame.jpg'
 
 function Header() {
   return (
@@ -13,7 +13,7 @@ function Header() {
       {['md'].map((expand) => (
         <Navbar key={expand} sticky='top' expand={expand} className="mb-3 bg-body-tertiary">
           <Container fluid>
-            <Navbar.Brand><NavLink  to='/'><img src="./Frame.jpg" alt="" className='Frame'/></NavLink></Navbar.Brand>
+            <Navbar.Brand><NavLink  to='/'><img src={Frame} alt="" className='Frame'/></NavLink></Navbar.Brand>
             <Navbar.Brand href="#" id="brandText">ATHLETIC CLUB MIDLANDS</Navbar.Brand>
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
             <Navbar.Offcanvas

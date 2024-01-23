@@ -110,7 +110,11 @@
     border: none;
     border-radius: 1rem;
 }
-
+.leftFeatureMatcFooter{
+    text-decoration: underline;
+  text-transform: capitalize;
+  font-weight: bold; 
+}
 @media all and (max-width: 900px) {
     
     

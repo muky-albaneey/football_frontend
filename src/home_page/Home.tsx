@@ -6,7 +6,9 @@ import News from '../news/News';
 import ShapeExample from './Image';
 import { Link } from 'react-router-dom';
 import Features from '../feature/Features';
-
+import Standing from '../feature/Standing';
+import home from '../assets/home.jpg';
+import away from '../assets/away.jpg';
 
 const Home = () => {
   return (
@@ -18,14 +20,7 @@ const Home = () => {
       <UncontrolledExample />
       </div>
       </section>
-      <section className="features">
-        <div className="featureLeft">
-         <Features />
-        </div>
-        <div className="featureRight">
-        featureRight
-        </div>
-      </section>
+      
       <h1 className='acm_news'>ACM NEWS</h1>
      
       <News />
@@ -36,9 +31,15 @@ const Home = () => {
         <main>
         <div className="moment_img_con">         
           <div>
-          <ShapeExample />   
+          <ShapeExample img={home}/>   
           </div>             
-          <button className="jerseyBtn">shop</button>            
+          <button className="jerseyBtn">shop now</button>            
+         </div>
+         <div className="moment_img_con">         
+          <div>
+          <ShapeExample img={away}/>   
+          </div>             
+          <button className="jerseyBtn">shop now</button>            
          </div>         
         <h3>
            OUR NEW  JERSEY<br />  
@@ -47,8 +48,17 @@ const Home = () => {
         </main>
         <div className="bottom_moment"></div>
       </section>
+      
       <section className="matches">
-        <div className="matche_info">
+      <section className="features">
+        <div className="featureLeft">
+         <Features />
+        </div>
+        <div className="featureRight">
+        <Standing />
+        </div>
+      </section>
+        {/* <div className="matche_info">
         <h2>MATCHES</h2>
         <h4>NLO</h4>
         <h6>MATCHDAY 12</h6>
@@ -67,7 +77,8 @@ const Home = () => {
           <div className="right">
           <img src='./Frame.jpg' alt="" className="matches_img"/>      
           </div>
-        </main>
+        </main> */}
+        
       </section>
       <section className="experience">
        <div className="exp_cover">
