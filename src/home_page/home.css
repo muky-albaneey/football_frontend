@@ -20,14 +20,17 @@
     left:11rem;
 }
 .features{
-    width: 100%;
+    width: 95%;
     height: 30rem;
     background-color: green;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    margin-top: -3rem;
+    margin: 0 auto;
+    /* margin-top: -13rem; */
+    position: relative;
+    top: -4.2rem;
 }
 .features :where(.featureLeft, .featureRight){
     width: 49.5%;
