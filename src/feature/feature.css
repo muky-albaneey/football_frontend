@@ -1,5 +1,5 @@
 #featureWrapper{
-background-color: aqua;
+/* background-color: aqua; */
    width: 100%;
    display: flex;
    justify-content: flex-start;
@@ -26,7 +26,7 @@ background-color: aqua;
 .leftFeatureMatcHeader{
     width: 100%;
     height: 8.5rem;
-    background-color: rgb(136, 114, 114);
+    /* background-color: rgb(136, 114, 114); */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -45,16 +45,17 @@ background-color: aqua;
 .leftFeatureMatcFooter{
     width: 100%;
     height: 3.2rem;
-    background-color: rgb(136, 114, 114);
+    /* background-color: rgb(136, 114, 114); */
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    color: rgb(149, 4, 4);
 }
 #featureItemContent{
     width: 100%;
     height: 18rem;
-    background-color: black;
+    /* background-color: black; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -63,22 +64,59 @@ background-color: aqua;
 #featureItemContent :where(.fetureDetails){
     width: 32%;
     height: 90%;
-    background-color: red;
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 #featureItemContent :where(.leftFeatureMatchDetails){
     width: 32%;
     height: 90%;
-    background-color: red;
+    /* background-color: red; */
 }
 
 #featureItemContent :where(.centerFeatureMatchDetails){
     width: 32%;
     height: 90%;
-    background-color: rgb(48, 35, 35);
+    /* background-color: rgb(48, 35, 35); */
+    gap: 1rem;
 }
 #featureItemContent :where(.rightFeatureMatchDetails){
     width: 32%;
     height: 90%;
-    background-color: rgb(42, 155, 32);
+    /* background-color: rgb(42, 155, 32); */
+}
+
+.featuresImg{
+    width: 7rem;
+    height: 7rem;
+    
+}
+
+
+
+.centerFeatureMatchDetails :where(h1){
+    font-size: 2rem;font-weight: bold;
+}
+.centerFeatureMatchDetails :where(.featureTicketBtn){
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: rgb(149, 4, 4);
+    width: 70%;
+    padding: 1rem;
+    color: aliceblue;
+    border: none;
+    border-radius: 1rem;
+}
+
+@media all and (max-width: 900px) {
+    
+    
+}
+
+@media all and (max-width: 390px) {
+    
+    
 }

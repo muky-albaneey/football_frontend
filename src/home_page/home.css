@@ -22,7 +22,7 @@
 .features{
     width: 95%;
     height: 30rem;
-    background-color: green;
+    background-color: white;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -41,7 +41,7 @@
     
 }
 .featureLeft{
-    background-color: rebeccapurple;
+    /* background-color: rebeccapurple; */
     position: relative;
 }
 .featureRight{
@@ -472,7 +472,9 @@ color:rgb(149, 4, 4);
             
             
             }
-
+            .features :where(.featureLeft, .featureRight){
+                width: 100%;
+            }
 }
 
 @media all and (max-width: 390px) {
@@ -524,4 +526,7 @@ color:rgb(149, 4, 4);
     margin-left: 0;
 }
 
+.features :where(.featureLeft, .featureRight){
+    width: 100%;
+}
 }
