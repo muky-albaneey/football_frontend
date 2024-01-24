@@ -34,7 +34,7 @@ const Home = () => {
           </div>             
           <button className="jerseyBtn">shop now</button>            
          </div>
-         <div className="moment_img_con">         
+         <div className="moment_img_con moment_img_con_2">         
           <div>
           <ShapeExample img={away}/>   
           </div>             
@@ -56,27 +56,7 @@ const Home = () => {
         <div className="featureRight">
         <Standing />
         </div>
-      </section>
-        {/* <div className="matche_info">
-        <h2>MATCHES</h2>
-        <h4>NLO</h4>
-        <h6>MATCHDAY 12</h6>
-        <h6>2 February 2024</h6>
-        <h6>16:30</h6>
-        </div>
-        <main>
-          <div className="left">
-            <img src='./willbro.jpg' alt="" className="matches_img"/>      
-          </div>
-          <div className="centers">
-            <h2>VS</h2>
-            <button id="matches_btn">buy ticket</button>
-            <Link to='/' style={{marginBottom: '-3rem', textDecoration: 'underline', color:'rgb(149, 4, 4)'}} className='match_link'>see all matches</Link>
-          </div>
-          <div className="right">
-          <img src='./Frame.jpg' alt="" className="matches_img"/>      
-          </div>
-        </main> */}
+      </section>    
         
       </section>
       <section className="experience">

@@ -87,7 +87,7 @@ const Standing = () => {
     </Table>
       </div>
       <div className="standingFooter">
-        <Link to=''>see all standing</Link>
+        <Link to=''>See all standing</Link>
       </div>
      
     </section>
