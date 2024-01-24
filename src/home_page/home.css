@@ -3,6 +3,7 @@
     position: relative;
 }
 
+
 .top_container{
     width: 100%;
     height: 33rem;
@@ -13,7 +14,7 @@
 
 
 .carousel{
-    width: 70rem;
+    width: 60rem;
     height: 20rem;
     position: absolute;
     top: 1rem;    
@@ -75,12 +76,13 @@
     none;
     border-radius: 1rem;
 }
-.top_moment h1{
+.top_moment :where(h1){
     /* font-family: monospace; */
     font-weight: bold;
     color: aliceblue;
     margin: .4rem auto;
     margin-left: 1rem;
+    font-size: 0.9rem;padding-top: 1rem;
 }
 .moment_container main{
     width: 80%;    
@@ -119,12 +121,13 @@
 font-weight: bolder;
 /* font-family: monospace; */
 text-align: center;
-font-size: 3.4rem;
+font-size: 1.4rem;
 color:rgb(149, 4, 4);
+width: 100%;
 
 }
 .imgAds{
-    width: 15rem;
+    width: 11rem;
     margin: 0 auto;
 }
 

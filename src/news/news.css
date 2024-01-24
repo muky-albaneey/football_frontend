@@ -20,7 +20,7 @@
 }
 
 #card{
-width: 22rem;
+width: 20.3rem;
 margin: 0 auto;
 
 }
@@ -29,14 +29,14 @@ margin: 0 auto;
    
 }
 #cardTitle{
-    font-size: 1rem;
+    font-size: .7rem;
     font-family: monospace;
     font-weight: bold;
     text-align: center;
 }
 #imgCard{
-    width: 90%;
-    height: 13rem;
+    width: 75%;
+    height: 11rem;
     margin: 1rem auto;
 }
 #imgCard_2{
@@ -47,9 +47,9 @@ margin: 0 auto;
     width: 10rem;
 } */
 #btnNews{
- width: 80%;
-height: 3rem;
-font-size: 1rem;
+ width: 75%;
+height: 2.3rem;
+font-size: .8rem;
 background-color: rgb(149, 4, 4);
 border: none;
 font-weight: bold;
