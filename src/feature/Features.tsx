@@ -1,7 +1,6 @@
 import Carousel from 'react-bootstrap/Carousel';
 import './feature.css';
 import { Link } from 'react-router-dom';
-import d from '../assets/bayern.png';
 import fcb from '../assets/fcb.png';
 import Real_madrid from '../assets/Real_madrid.png';
 import Frame from '../assets/Frame.jpg';
