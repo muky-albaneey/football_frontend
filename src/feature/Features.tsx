@@ -8,23 +8,7 @@ import Frame from '../assets/Frame.jpg';
 import bayern from '../assets/bayern.png';
 
 function Features() {
-    const stand =  [
-        {
-            id : 1,
-          
-            logo : fcb
-        },
-        {
-            id : 1,
-          
-            logo : Real_madrid
-        },
-        {
-            id : 1,
-          
-            logo : bayern
-        },
-    ]
+  
   return (
     <section id="featureWrapper">
       <Carousel id='carouselFeature' controls prevIcon={<CustomPrevIcon />} nextIcon={<CustomNextIcon />} interval={9000} fade indicators={false}>
