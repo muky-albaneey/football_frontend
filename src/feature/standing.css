@@ -10,7 +10,9 @@
 }
 #standingWrapper :where(.standingHeader){
     
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
+    font-variant: small-caps;
+    
 }
 #standingWrapper :where(.standingHeader, .standingFooter){
     width: 100%;

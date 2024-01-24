@@ -140,7 +140,7 @@ width: 100%;
 
 .experience{
     width: 100%;
-    height: 35rem;
+    height: 25rem;
     background-image: url('../../public//second.jpg');
     background-position: center;
     margin-bottom: 5rem;
@@ -189,7 +189,10 @@ width: 100%;
     font-weight: bold;
     text-align: center;
     margin: 0 auto;
-    margin-left: 12rem;
+    margin-top: -2rem;
+    margin-left: 11rem;
+    transform: rotate(5deg);
+    
 }
 .exp_sec{
     background-image: url('../../public//newsletter_2.jpg');
@@ -269,6 +272,9 @@ width: 100%;
     /* font-family: monospace; */
     font-weight: bold;
 }
+#exp_btn:hover{
+    padding: 0.4rem;
+}
 @media all and (max-width: 900px) {
     .moment_img_con{
         width: 100%;
@@ -288,7 +294,7 @@ width: 100%;
 
     .exp_cover_con{
         flex-direction: column;
-        font-size: .6rem;
+        font-size: .5rem;
         justify-content: center;
         align-items: center;
     }
@@ -297,13 +303,17 @@ width: 100%;
     }
     .exp_text h1{
         text-align: center;
-       font-size: 0.5rem;
+       font-size: 0.3rem;       
        margin-left: 0;
     }
+
     #exp_btn{
         width: 70%;
-        padding: 0.9rem;
-        margin-left: 0;
+        padding: 0.9rem;        
+        margin-top: -1rem;
+        margin-left: -4rem;
+        transform: rotate(25deg);
+
     }
     .search{
         width: 50rem;
@@ -360,7 +370,7 @@ width: 100%;
 
         }
         .exp_left p{
-            font-size: .8rem;
+            font-size: .7rem;
         }
 
         .moment_container main h3{
@@ -405,7 +415,7 @@ width: 100%;
         }
 
 .exp_left p{
-    font-size: .7rem;
+    font-size: .5rem;
 }
 .exp_text h1{
     text-align: center;
@@ -413,12 +423,17 @@ width: 100%;
    margin-left: 0;
    word-spacing: .3rem;
 }
+
 #exp_btn{
     width: 100%;
-    padding: 0.9rem;
-    margin-left: 0;
-}
+    padding: 0.5rem;
+    /* margin-left: 0; */
+    /* margin-top: -rem; */
+    margin-bottom: -2rem;
+    margin-left: -4rem;
 
+    transform: rotate(30deg);
+}
 .features :where(.featureLeft, .featureRight){
     width: 100%;
 }
