@@ -51,14 +51,14 @@ margin: 0 auto;
 
 #btnNews{
  width: 75%;
-height: 3.3rem;
+height: 2.3rem;
 font-size: .8rem;
 background-color: #7B0924;
 border: none;
 font-weight: bold;
 font-family: monospace;
 margin-left: 3rem;
-margin: 0 auto;
+
 
 }
 #cardTextDesc{
@@ -131,6 +131,9 @@ margin: 0 auto;
 @media all and (max-width: 390px) {
     #desc_2{
         font-size: 0.6rem;
+    }
+    #card_2{
+        height: 18rem;
     }
     #cardTextDesc{
         font-size: 0.6rem;
