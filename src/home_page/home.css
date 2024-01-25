@@ -275,6 +275,11 @@ margin-top: 1.8rem;
     /* padding: 0.4rem; */
 }
 @media all and (max-width: 900px) {
+   .experience{
+    /* background-position: left; */
+    /* background-size: cover; */
+    /* background-repeat: no-repeat; */
+   }
     .moment_img_con{
         width: 100%;
         
