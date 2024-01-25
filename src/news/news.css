@@ -79,7 +79,9 @@ margin-left: 3rem;
 }
   
 @media all and (max-width: 900px) {
-
+#card_2{
+    height: 20rem;
+}
     #newsCon{       
         margin-top: -1rem;
     }
