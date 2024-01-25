@@ -51,13 +51,14 @@ margin: 0 auto;
 
 #btnNews{
  width: 75%;
-height: 2.3rem;
+height: 3.3rem;
 font-size: .8rem;
 background-color: #7B0924;
 border: none;
 font-weight: bold;
 font-family: monospace;
 margin-left: 3rem;
+margin: 0 auto;
 
 }
 #cardTextDesc{
@@ -110,9 +111,9 @@ margin-left: 3rem;
         /* font-size: 0.75rem; */
     }  
     #btnNews{
-        width: 75%;
-        height: 1.5rem;        
-        margin-left: 2rem;     
+        width: 55%;
+        height: 2.5rem;        
+        margin-left: 5rem;     
        font-size: 0.5rem;
        
        }

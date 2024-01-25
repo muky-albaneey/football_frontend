@@ -73,7 +73,7 @@
     font-weight: bold;
     border: 
     none;
-    border-radius: 1rem;
+    border-radius: .4rem;
 }
 .top_moment :where(h1){    
     font-weight: bold;
@@ -303,7 +303,7 @@ margin-top: 1.8rem;
         font: 0.3rem;
     }
     #exp_btn{
-       width: 95%;
+       width: 55%;
        margin-left: -1rem;
     }
 
