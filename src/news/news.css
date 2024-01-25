@@ -3,7 +3,7 @@
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    margin-top: -5rem;
+    /* margin-top: -5rem; */
 }
 
 .leftCon,.rightCon{
@@ -42,10 +42,11 @@ margin: 0 auto;
 #imgCard_2{
     height: 8rem;
 }
-/* 
-.card_2_img{
-    width: 10rem;
-} */
+
+#columns #specialCard{
+     /* color: red; */
+}
+
 #btnNews{
  width: 75%;
 height: 2.3rem;

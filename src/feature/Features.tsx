@@ -31,7 +31,7 @@ function Features() {
           <div className="centerFeatureMatchDetails fetureDetails">
               <h1>VS</h1>
               <button className="featureTicketBtn">
-                  buy tikect
+                BUY TICKETS
               </button>
           </div>
           <div className="rightFeatureMatchDetails fetureDetails">
