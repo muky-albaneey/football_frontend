@@ -21,7 +21,7 @@ function GridExample() {
     <Row xs={1} md={2} className="g-4">
       {data.map((items, index) => (
         <Col key={index} id='columns'>
-          <Card  id={index === 0 || index === 2 ? 'specialCard' : 'card'}>
+          <Card  id={index === 0 || index === 2 ? 'specialCard' : 'card'} className={index === 2 ? 'thirdCard' : 'card'} >
             <Card.Img variant="top" src={items.img} id='imgCard_2' />
             <Card.Body>
               <Card.Title id='cardTitle'>

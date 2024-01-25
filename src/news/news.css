@@ -43,8 +43,9 @@ margin: 0 auto;
     height: 8rem;
 }
 
-#columns #specialCard{
-     /* color: red; */
+#columns .thirdCard{
+     color: red;
+     line-height: 1.7rem;
 }
 
 #btnNews{
