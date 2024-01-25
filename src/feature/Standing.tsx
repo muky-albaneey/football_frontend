@@ -53,6 +53,7 @@ const Standing = () => {
   return (
     <section id='standingWrapper'>
         <div className="standingHeader">
+    <h1>Table</h1>
     <h1>standings</h1>
         </div>
    

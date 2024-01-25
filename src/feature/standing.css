@@ -14,6 +14,13 @@
     font-variant: small-caps;
     
 }
+#standingWrapper :where(.standingHeader) :first-child{
+    
+    /* text-transform: uppercase; */
+    font-size: 0.8rem;
+    margin-bottom: -.5rem;
+    
+}
 #standingWrapper :where(.standingHeader, .standingFooter){
     width: 100%;
     text-align: center;
