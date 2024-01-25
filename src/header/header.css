@@ -4,7 +4,7 @@
 
 
 .links{
-    color: red;
+    color: #7B0924;
 }
 #brandText{   
     font-family: monospace;
@@ -13,7 +13,7 @@
 }
 
 .nav_item{
-    color:rgb(149, 4, 4);
+    color:#7B0924;
     font-weight: bold;
     margin-left: 2rem;
     padding: 0.4rem;
@@ -22,8 +22,8 @@
 }
 
 .log_nav{
-    color: whitesmoke;
-    background-color: rgb(149, 4, 4);
+    color: #FFFFFF;
+    /* background-color: rgb(149, 4, 4); */
  
     border-radius: .4rem;
 }

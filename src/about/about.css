@@ -32,11 +32,11 @@ align-items: center;
 gap: 0.5rem;
     background-color: rgba(228, 114, 114, 0.4);
     padding-top: 9rem;
-    color: whitesmoke;
+    color: #FFFFFF;
 }
 .textCenter h1{
     font-weight: bold;
-    color: whitesmoke;
+    color: #FFFFFF;
 
 }
 .aboutBtn{
@@ -45,7 +45,7 @@ gap: 0.5rem;
     width: 10rem;
     background: rgb(149, 4, 4);
     border: 1px solid rgb(149, 4, 4);
-    color: whitesmoke;
+    color: #FFFFFF;
     font-weight: bold;
 }
 
@@ -60,7 +60,7 @@ gap: 0.5rem;
 .mainaboutCenter h2{
     text-align: center;
     font-weight: bold;
-    color: whitesmoke;
+    color: #FFFFFF;
 }
 .centerAbout{
 width: 100%;
@@ -81,7 +81,7 @@ padding: 1.2rem;
     align-items: baseline;
     gap: 3rem;
     flex-direction: column;
-    color: whitesmoke;
+    color: #FFFFFF;
 }
 .upperText{
     display: flex;
@@ -100,9 +100,9 @@ margin-bottom: -2rem;
     height: 4rem;
     position: relative;
     background-color: rgb(149, 4, 4);
-    color: #fff; 
+    color: #FFFFFF; 
     overflow: hidden;    
-    border: .2rem solid whitesmoke;
+    border: .2rem solid #FFFFFF;
     border-radius: .4rem;
     margin-top: -1.7rem;
   }
@@ -142,7 +142,7 @@ margin-bottom: -2rem;
     display: flex;
     justify-content: center;
     align-items: center;    
-    background-color: whitesmoke;
+    background-color: #FFFFFF;
     
 }
 .aboutWhy{
@@ -171,7 +171,7 @@ height: 100%;
     }
     .button {
         width: 50%;
-        border: .2rem solid whitesmoke;
+        border: .2rem solid #FFFFFF;
         border-radius: .4rem;
       }
       .button span{

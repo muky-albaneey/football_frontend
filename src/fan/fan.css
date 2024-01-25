@@ -112,7 +112,7 @@ color: whitesmoke;
 .topNews{
     height: 45rem;
     width: 100%;
-    background-color: whitesmoke;
+    background-color: #FFFFFF;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -146,11 +146,11 @@ color: whitesmoke;
     margin-top: 2rem;
 }
 .innerNews h2{
-     color: whitesmoke;
+     color: #FFFFFF;
      font-weight: bold;
 }
 .innerNews h3{
- color: whitesmoke;
+ color: #FFFFFF;
  font-weight: bold;
 }
 .newsRed{
@@ -161,7 +161,7 @@ color: whitesmoke;
 }
 
 .time{
-color: whitesmoke;
+color: #FFFFFF;
 font-weight: bold;
 }
 .topLine{

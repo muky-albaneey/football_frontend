@@ -3,6 +3,7 @@ import { FaTiktok } from "react-icons/fa";
 import { BsWhatsapp } from "react-icons/bs"; 
 import { BsFacebook } from "react-icons/bs"; 
 import { BiX } from "react-icons/bi"; 
+import Frame from '../assets/Frame.jpg'
 import './footer.css'
 
 const Footer = () => {
@@ -26,6 +27,10 @@ const Footer = () => {
       </section>
      </div>
      <div className='foot_container'>
+      <div className="teamLogo">
+        <img src={Frame} alt="" />
+        <h1>AC MIDLANDS ON SOCIAL MEDIA</h1>
+      </div>
      <div className="social">
       <div className="icons">
      <div>
@@ -44,18 +49,36 @@ const Footer = () => {
       <FaTelegramPlane className='iconBg' />
       </div>
       </div>
+      
     </div>
+    <hr style={{width:'95%',fontSize: '2rem', fontWeight: 'bold', margin: '0 auto', color: '#FFFFFF',marginBottom: '.5rem'}} />
+      <div className="combineF">
       <div className="foo_right">
-      <h4>Athletic Club Midlands</h4>
+      <h4><span>Copyright © 2024</span> Athletic Club Midlands</h4>
       </div>
       
       <div className="foo_left">
-        <div>Imprint</div>
-        <div>Data Protection</div>
-        <div>Terms of Use</div>
-        <div>FAQ</div>
-        <div>Help</div>
-        <div>Officials</div>
+        <div>
+          <h6>Partners</h6>
+          <h6>Transfer windows</h6>
+        </div>
+        <div>
+          <h6>Contacts</h6>
+          <h6>Privacy</h6>
+        </div>
+        <div>
+
+          <h6>Terms of Use</h6>
+          <h6>Brand Protection</h6>
+        </div>
+
+        <div>
+          <h6>FAQ</h6>
+          <h6>Help</h6>
+        </div>
+        <div></div>
+        
+      </div>
       </div>
     </div>
    
