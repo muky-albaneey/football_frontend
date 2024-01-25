@@ -148,7 +148,11 @@ width: 100%;
 .exp_cover{
     width: 100%;
     height: 100%;
-    background-color: rgba(246, 248, 249, 0.2);
+    background-color: rgba(5, 17, 22, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;padding-left: 7rem;
 }
 
 .exp{
