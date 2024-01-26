@@ -7,9 +7,9 @@
     color: #7B0924;
 }
 #brandText{   
-    font-family: monospace;
     font-weight: bold;
     font-size: 1.4rem;
+    font-family: manrope;
 }
 
 .nav_item{
@@ -17,6 +17,7 @@
     font-weight: bold;
     margin-left: 2rem;
     padding: 0.4rem;
+    font-family: manrope;
     text-decoration: none !important;
     text-transform: capitalize;
 }

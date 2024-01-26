@@ -31,8 +31,8 @@ function Header() {
           <Link to="shop"  className='nav_item' style={{textDecoration : 'none'}}>shop</Link>
            <NavLink to="fan"  className='nav_item' style={{textDecoration : 'none'}}>fan</NavLink>
            <NavLink to="blog"  className='nav_item' style={{textDecoration : 'none'}}>blog</NavLink>
-           <NavLink to="contact"  className='nav_item' style={{textDecoration : 'none'}}>contact <span>us</span></NavLink>
-              <NavLink to="about"  className='nav_item' style={{textDecoration : 'none'}}>about <span>us</span></NavLink>                             
+           <NavLink to="contact"  className='nav_item' style={{textDecoration : 'none'}}>contact us<span></span></NavLink>
+              <NavLink to="about"  className='nav_item' style={{textDecoration : 'none'}}>about us<span></span></NavLink>                             
               <NavLink to="#action2" className='nav_item log_nav' style={{textDecoration : 'none'}}>login <BiLogIn /></NavLink>
                 
             </Nav>

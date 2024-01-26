@@ -2,6 +2,9 @@ import Table from 'react-bootstrap/Table';
 import './standing.css'
 import { Link } from 'react-router-dom';
 import Frame from '../assets/Frame.jpg'
+import willbro from '../assets/willbro.jpg'
+import fcb from '../assets/fcb.png'
+import bayern from '../assets/bayern.png'
 const Standing = () => {
 
   const stand =  [
@@ -18,35 +21,40 @@ const Standing = () => {
             name: 'fc club ',
             pts :22,
             p: 12,
-            g: 18
+            g: 18,
+              logo : willbro
         },
         {
             id : 2,
             name: 'fc club ',
             pts :22,
             p: 12,
-            g: 18
+            g: 18,
+              logo : fcb
         },
         {
             id : 2,
             name: 'fc club ',
             pts :22,
             p: 12,
-            g: 18
+            g: 18,
+              logo : bayern
         },
         {
             id : 2,
             name: 'fc club ',
             pts :22,
             p: 12,
-            g: 18
+            g: 18,
+              logo : Frame
         },
         {
             id : 2,
             name: 'fc club ',
             pts :22,
             p: 12,
-            g: 18
+            g: 18,
+            logo : fcb
         }
     ]
     
