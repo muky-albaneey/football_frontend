@@ -25,7 +25,7 @@ const Standing = () => {
               logo : willbro
         },
         {
-            id : 2,
+            id : 3,
             name: 'fc club ',
             pts :22,
             p: 12,
@@ -33,7 +33,7 @@ const Standing = () => {
               logo : fcb
         },
         {
-            id : 2,
+            id : 4,
             name: 'fc club ',
             pts :22,
             p: 12,
@@ -41,7 +41,7 @@ const Standing = () => {
               logo : bayern
         },
         {
-            id : 2,
+            id : 5,
             name: 'fc club ',
             pts :22,
             p: 12,
@@ -49,7 +49,7 @@ const Standing = () => {
               logo : Frame
         },
         {
-            id : 2,
+            id : 6,
             name: 'fc club ',
             pts :22,
             p: 12,
@@ -72,7 +72,7 @@ const Standing = () => {
       <thead>
         <tr>
           <th></th>
-          <th>NLO league</th>
+          <th style={{textTransform: 'uppercase'}}>Nlo League</th>
           <th>Pts</th>
           <th>P</th>
           <th>G</th>

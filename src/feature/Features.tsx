@@ -10,7 +10,7 @@ function Features() {
   
   return (
     <section id="featureWrapper">
-      <Carousel id='carouselFeature' controls prevIcon={<CustomPrevIcon />} nextIcon={<CustomNextIcon />} interval={9000} fade indicators={false}>
+      <Carousel id='carouselFeature' controls prevIcon={<CustomPrevIcon />} nextIcon={<CustomNextIcon />} interval={5000} fade indicators={false}>
         <Carousel.Item id='featureItem'>
           <div className="leftFeatureMatcHeader">
             <h1>MATCHES</h1>
@@ -61,7 +61,7 @@ function Features() {
             <div className="centerFeatureMatchDetails fetureDetails">
                 <h1>VS</h1>
                 <button className="featureTicketBtn">
-                    buy tikect
+                BUY TICKET
                 </button>
             </div>
             <div className="rightFeatureMatchDetails fetureDetails">
@@ -88,7 +88,7 @@ function Features() {
             <div className="centerFeatureMatchDetails fetureDetails">
                 <h1>VS</h1>
                 <button className="featureTicketBtn">
-                    buy tikect
+                    BUY TICKET
                 </button>
             </div>
             <div className="rightFeatureMatchDetails fetureDetails">
