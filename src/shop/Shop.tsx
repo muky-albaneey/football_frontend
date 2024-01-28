@@ -1,25 +1,26 @@
-import { BiCart } from "react-icons/bi"; 
+// import { BiCart } from "react-icons/bi"; 
 import Shoping from './Shoping'
 import './shop.css';
-import Searching from "./Searching";
+// import Searching from "./Searching";
 import { NavLink } from "react-router-dom";
+import Shoping_two from "./Shoping_two";
 
 const Shop = () => {
   return (
     <section className="shopWrapperMother">
-      <Searching />
-      <nav className="shopNav">
-        <div>
-        <NavLink to=''>KITS</NavLink>
+      {/* <Searching /> */} 
+      <main id="navs">
+      <NavLink to=''>KITS</NavLink>
         <NavLink to=''>TRAINING</NavLink>
         <NavLink to=''>MEN</NavLink>
         <NavLink to=''>WOMEN</NavLink>
         <NavLink to=''>KIDS</NavLink>
-        </div>
-      </nav>
+      </main>
+
       <section className='shopCon'>
-      <Shoping />
-      <span className='cart'><BiCart /></span>
+      <Shoping_two />
+      <Shoping />      
+      {/* <span className='cart'><BiCart /></span> */}
     </section>
     </section>
   )

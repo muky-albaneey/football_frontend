@@ -15,18 +15,6 @@ interface DataType {
   imageUrl: string;
 }
 
-// const columns: TableColumnsType<DataType> = [
-//   {
-//     title: 'ACM AWAY KIT',
-//     dataIndex: 'card1',
-//     render: (_, record) => <CardComponent data={record} image={away} />,
-//   },
-//   {
-//     title: 'ACM HOME KIT',
-//     dataIndex: 'card2',
-//     render: (_, record) => <CardComponent data={record} image={home} />,
-//   },
-// ];
 
 const data: DataType[] = [
   {
@@ -55,27 +43,27 @@ const data: DataType[] = [
 
 const handleViewDetails = (record: DataType) => {
   console.log('View details for:', record);
-  // Add your logic for handling the view details action
+  
 };
 
 const CardComponent: React.FC<{ data: DataType; image: string }> = ({ data, image }) => (
   <Card
     className='custom-card' // Use a custom class for styling
     cover={<img alt="example" src={image} className='img_card' />}
+    style={{ borderBottom: '1px solid #e8e8e8', paddingBottom: '16px' }}
     actions={[
       <Button style={{backgroundColor : 'rgb(149, 4, 4)', color: 'aliceblue'}} key="view" onClick={() => handleViewDetails(data)}>
        SHOP
       </Button>,
     ]}
   >
-    <Card.Meta
-      
-      title={data.name}
-      description={
-        <span>
+    <Card.Meta  
+    title={data.name}
+    description={
+      <span>
           <TbCurrencyNaira />  {data.price},<br />
           <GiJesterHat />  {data.address}
-        </span>
+      </span>
       }
       
     />
@@ -92,35 +80,27 @@ const Shoping: React.FC = () => {
 
   const selectedData = data.slice((currentPage - 1) * pageSize, currentPage * pageSize);
 
-  // const rowSelection: TableRowSelection<DataType> = {
-  //   selectedRowKeys: selectedData.map((item) => item.key),
-  //   onChange: () => {},
-  // };
-
-  // const tableData = selectedData.map((item) => ({
-  //   key: item.key,
-  //   card1: item,
-  //   card2: item,
-  //   ...item,
-  // }));
-
-  return (
-    <div>
+    return (
+    <div className="conShop">
       <div className="shoping-cards">
         {selectedData.map((item) => (
           <div key={item.key} className="shoping-card-container">
-            <CardComponent data={item} image={away} />
-            <CardComponent data={item} image={home} />
+            <CardComponent data={item} image={away}  />
+            <CardComponent data={item} image={home}  />
           </div>
         ))}
       </div>
-      <Pagination
+    <div className="controls">
+    <Pagination
         current={currentPage}
         total={data.length}
         pageSize={pageSize}
         onChange={onPageChange}
-        style={{ marginTop: 16, textAlign: 'center' }}
+        className={`pagination_one`}
+        // id='pagination_bottom'
+        // style={{ marginTop: 16, textAlign: 'center' }}
       />
+    </div>
     </div>
   );
 };
