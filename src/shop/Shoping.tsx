@@ -1,11 +1,13 @@
-import { GiJesterHat } from "react-icons/gi"; 
-import { TbCurrencyNaira } from "react-icons/tb"; 
+
+// export default Shoping;
 import React, { useState } from 'react';
-import { Card, Button,  Pagination } from 'antd';
+import { Card, Button, Pagination } from 'antd';
+import { TbCurrencyNaira } from 'react-icons/tb';
+import { GiJesterHat } from 'react-icons/gi';
 
 import home from '../assets/home.jpg';
 import away from '../assets/away.jpg';
-
+import './Shoping.css'; // Import a CSS file for styling
 
 interface DataType {
   key: React.Key;
@@ -14,7 +16,6 @@ interface DataType {
   address: string;
   imageUrl: string;
 }
-
 
 const data: DataType[] = [
   {
@@ -38,34 +39,31 @@ const data: DataType[] = [
     address: 'New Arrival',
     imageUrl: away,
   },
-  
 ];
 
 const handleViewDetails = (record: DataType) => {
   console.log('View details for:', record);
-  
 };
 
 const CardComponent: React.FC<{ data: DataType; image: string }> = ({ data, image }) => (
   <Card
     className='custom-card' // Use a custom class for styling
     cover={<img alt="example" src={image} className='img_card' />}
-    style={{ borderBottom: '1px solid #e8e8e8', paddingBottom: '16px' }}
+    style={{ borderBottom: '1px solid #e8e8e8', }}
     actions={[
-      <Button style={{backgroundColor : 'rgb(149, 4, 4)', color: 'aliceblue'}} key="view" onClick={() => handleViewDetails(data)}>
-       SHOP
+      <Button style={{ backgroundColor: 'rgb(149, 4, 4)', color: 'aliceblue' }} key="view" onClick={() => handleViewDetails(data)}>
+        SHOP
       </Button>,
     ]}
   >
-    <Card.Meta  
-    title={data.name}
-    description={
-      <span>
-          <TbCurrencyNaira />  {data.price},<br />
-          <GiJesterHat />  {data.address}
-      </span>
+    <Card.Meta
+      title={data.name}
+      description={
+        <span>
+          <TbCurrencyNaira /> {data.price},<br />
+          <GiJesterHat /> {data.address}
+        </span>
       }
-      
     />
   </Card>
 );
@@ -80,27 +78,25 @@ const Shoping: React.FC = () => {
 
   const selectedData = data.slice((currentPage - 1) * pageSize, currentPage * pageSize);
 
-    return (
+  return (
     <div className="conShop">
       <div className="shoping-cards">
         {selectedData.map((item) => (
           <div key={item.key} className="shoping-card-container">
-            <CardComponent data={item} image={away}  />
-            <CardComponent data={item} image={home}  />
+            <CardComponent data={item} image={away} />
+            <CardComponent data={item} image={home} />
           </div>
         ))}
       </div>
-    <div className="controls">
-    <Pagination
-        current={currentPage}
-        total={data.length}
-        pageSize={pageSize}
-        onChange={onPageChange}
-        className={`pagination_one`}
-        // id='pagination_bottom'
-        // style={{ marginTop: 16, textAlign: 'center' }}
-      />
-    </div>
+      <div className="controls">
+        <Pagination
+          current={currentPage}
+          total={data.length}
+          pageSize={pageSize}
+          onChange={onPageChange}
+          className={`pagination_one`}
+        />
+      </div>
     </div>
   );
 };

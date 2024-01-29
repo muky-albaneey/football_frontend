@@ -1,35 +1,27 @@
-// Searching.jsx
+import { AiOutlineSearch } from "react-icons/ai"; 
+import Button from 'react-bootstrap/Button';
+import Form from 'react-bootstrap/Form';
+import InputGroup from 'react-bootstrap/InputGroup';
+import './search.css'
+function ButtonsExample() {
+  return (
+    <section className='search_btn'>
+     
 
-import React from 'react';
-import { AudioOutlined } from '@ant-design/icons';
-import { Input, Space } from 'antd';
-import type { SearchProps } from 'antd/es/input/Search';
-import './search.css';
+      <InputGroup className="mb-3">
+        <Form.Control
+          placeholder="Search"
+          aria-label="Recipient's username"
+          aria-describedby="basic-addon2"
+        />
+        <Button variant="outline-secondary" id="button-addon2">
+          <AiOutlineSearch className='searchBtn'/>
+        </Button>
+      </InputGroup>
 
-const { Search } = Input;
+    
+    </section>
+  );
+}
 
-const customSuffix = (
-  <AudioOutlined
-    style={{
-      fontSize: 26,
-      color: '#1677ff',
-      height: '40px', // Adjust the height of the search icon
-      lineHeight: '40px', // Align the icon vertically within the input
-    }}
-  />
-);
-
-const onSearch: SearchProps['onSearch'] = (value, _e, info) => console.log(info?.source, value);
-
-const Searching: React.FC = () => (
-  <Space direction="vertical">
-    <Search
-      placeholder="input search text"
-      onSearch={onSearch}
-      className='searching'
-      suffix={customSuffix}
-    />
-  </Space>
-);
-
-export default Searching;
+export default ButtonsExample;

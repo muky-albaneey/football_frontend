@@ -1,0 +1,118 @@
+.paginationWrapper,.fixture{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2rem;
+}
+.fixture{
+    
+    border: .1rem solid silver;
+}
+.CardBlog{
+
+}
+.cardPAgination{
+    width: 40rem;
+    
+}
+.lineBlog{
+    width: 100%;
+    padding: 0.1rem;
+    background-color: silver;
+}
+.paginatioItem{
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+}
+
+.centerPagination{
+    flex-direction: column;
+}
+.headerPagination{
+    gap: 5rem;
+}
+.bottomPagination{
+    gap: 2rem;
+}
+.paginationBtn{
+    width: 8rem;
+    height: 5rem;
+    border: none;
+    border-radius: .5rem;
+    font-weight: bold;
+}
+.paginationCon{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+}
+.paginationNav{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    gap: 2rem;
+}
+.brandPAge{
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    color: #7B0924;
+    font-weight: bold;
+    font-size: 3.2rem;
+}
+.paginationNav a{
+    font-size: 1.6rem;
+    color: black;
+    font-weight: 500;
+}
+
+.topPageHeader{
+    width: 100%;
+    
+    display: flex;
+    justify-content: space-around;
+}
+.topPageHeader a{
+    color: #7B0924;
+    font-weight: bold;
+}
+#pageFN{
+    color: #7B0924;
+    text-decoration: underline;
+}
+.paginationRight{
+    padding: 2rem;  
+    height: 27rem;
+    /* background-color: red;  */
+}
+#topPAgination{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.paginationRight a{
+    margin-left: 3rem;
+}
+.linkPagination_one{
+    /* color: #7B0924; */
+    
+    background-color: #FFFFFF;
+    text-decoration: none;
+    padding: 1rem 4rem;
+    border: 1px solid gray;
+    font-weight: bold;
+}
+
+.linkPagination{
+    width: 30rem;
+    background-color: silver;
+    text-decoration: none;
+    padding: 1rem 4rem;
+    border: 1px solid gray;
+    font-weight: bold;
+}

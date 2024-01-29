@@ -1,73 +1,236 @@
-#pagination-top {
-    position: absolute;
-   
-  }
-  .conShop{
-    position: relative;
-    
-  }
-
-  .sided{
-    position: absolute;
-    right: 15rem;
-    z-index: 99;
-    top: -2.7em;
-  }
-  .controls{
-    position: absolute;
-    left: 45rem;
-    margin-top: 2rem;
-  }
-  #pagination_bottom{
-    right: -10rem;
-  }
-  /* .shoping-cards img{    
-    height: 19rem;
-  } */
+.shopWrapperMother{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#navs{
+  max-width: 65%;
+  padding: 1.1rem;
+  min-height: 1.2rem;
+  background-color: #7B0924;
+  min-width: 90%;
+  margin: 0 auto; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12rem;
   
-  .ant-pagination-prev,
-  .ant-pagination-next {
-    
-  }
-  
+}
 
-  @media  all and (max-width: 900px) {
-    .custom-card {
-      width: 20%;
+#navs :where(a){
+  color: #FFFFFF;
+  font-weight: bold;
+}
+  .shoping-card-container {
+    display: flex;    
+    justify-content: space-around;
+    width: 42rem;
+    margin-top: -6rem;
+ }
+ #navHeader{
+  width: 100%;
+  display: flex;  
+  justify-content: space-between;
+  align-items: center;
+ }
+ .left_navHeader{
+  width: 25%;
+  padding-left: 3rem;
+}
+
+ .sided{
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: .2rem 0;
+  gap: 5rem;
+ }
+
+ .drops{
+  width: 10rem;  
+  display: flex;
+  justify-content: flex-end;  
+  position: relative;
+  z-index: 99;  
+  border-radius: .5rem;
+  transition: all 15s;
+ }
+ .hide{
+  display: none;
+ }
+ ul{  
+  height: 10rem;
+  list-style: circle;  
+ }
+ ul li{
+  font-size: 1.2rem;
+  font-weight: 500;
+ }
+.hideBtn{
+  position: relative;  
+}
+ .controls{
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 1rem 0;
+  
+ }
+
+ .navs_2{
+  width: 50%;
+  height: 4rem;
+ }
+ .hideBtn,.normsBtn{
+  font: 1rem;
+  width: 17rem;
+  border: none;
+  background: transparent;
+ }
+
+ .dropDown{
+  width: 40rem;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 22rem;
+  left: -4rem;
+  transition: all 3s;
+  z-index: 99;
+ }
+ #trade{
+  width: 100%;
+  display: flex;
+  padding: 0.7rem;
+  justify-content: space-between;
+ }
+.save_more{
+  width: 17rem;
+  height: 4rem;
+  background-color: #7B0924;
+  color: #FFFFFF;
+  border: none;
+  border-radius: .4rem;
+
+}
+.cart{
+  background-color: #7B0924;
+  padding: 1.2rem;
+  border: none;
+  border-radius: .2rem;
+  color: #FFFFFF;
+ 
+ 
+}
+.cartItem{
+  font-size: 2rem;
+}
+
+ @media (max-width: 908px) {
+    .shoping-card-container {
+       flex-direction: column;
+       align-items: center;
+       width: 22rem;
+    }
+    .drops{
+      width: 7rem;
+      display: flex;
+      justify-content: center;
       position: relative;
-      /* left: 40rem; */
-      
-      /* width: 15rem; */
-      /* width: 100%;  */
+      left: .7rem;
+      background-color: #7B0924;
+      color: #FFFFFF;
+     }
+    .dropDown{      
+      position: absolute;
+      top: 21.8rem;
+      left: 5.6rem;
+      width: 30%;
+     }
+     .hideBtn,.normsBtn{
+      font-size: 0.4rem;
+      width: 7.4rem;
+      font-size: .9rem;
+     }
+     .normsBtn_second{
+      font-size: .7rem;
+     }
+     .normsBtn_second_hide{
+      font-size: 0.3rem;
+     }
+     .hideBtn{      
+     }
+     ul li{
+      font-size: 1.3rem;
+      font-weight: 500;
+     }
+    
+    #navs{
+      font-size: 0.6rem;
+      gap: 1rem;
     }
-    .shopimg-cards {
-   
-    }
-  .conShop{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    /* left: -10rem; */
-  }
-  .conShop{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-    .shoping-cards img{  
-      
-      height:10rem;
+
+    .pagination_two{
+      right: 0;
     }
     .sided{
-      left: 47rem;
-      top: 1rem;
-      
+      gap: 0;
     }
-    .controls{
-      bottom: -.1rem;
-      left: 43rem;
+
+    .left_navHeader{
+      padding-left: 0;
     }
-    
+
+    .FrameShop{
+      width: 5rem;
+    }
+ }
+ 
+
+ @media all and (max-width: 390px) {
+  .dropDown{ 
+    top: 21.1rem;
+   }
+   .FrameShop{
+    width: 3.4rem;
   }
+  
+  .left_navHeader span{
+    font-size: .9rem;
+  }
+
+  .save_more{
+    width: 9rem;
+    height: 1.8rem;
+  font-size: 0.7rem;
+  }
+
+  .cart{    
+    padding: .6rem;
+   
+   
+  }
+  .cartItem{
+    font-size: 1.2rem;
+  }
+  .shoping-card-container {
+    flex-direction: column;
+    align-items: center;
+    width: 15rem;
+ }
+
+ .pagination_two{
+  width: 8rem;
+  font-size: .1rem;
+ }
+
+ #navs{
+  font-size: 0.5rem;
+  
+}
+ }
+

@@ -5,7 +5,7 @@ import fcb from '../assets/fcb.png';
 import Real_madrid from '../assets/Real_madrid.png';
 import Frame from '../assets/Frame.jpg';
 import bayern from '../assets/bayern.png';
-
+import willbro from '../assets/willbro.jpg'
 function Features() {
   
   return (
@@ -25,7 +25,7 @@ function Features() {
           <main id="featureItemContent">
           
           <div className="leftFeatureMatchDetails fetureDetails">
-          <img src={fcb} alt='' className="featuresImg imgAway"/>     
+          <img src={willbro} alt='' className="featuresImg imgAway"/>     
 
           </div>
           <div className="centerFeatureMatchDetails fetureDetails">
@@ -83,6 +83,33 @@ function Features() {
           <main id="featureItemContent">
             <div className="leftFeatureMatchDetails fetureDetails">
             <img src={bayern} alt="" className="featuresImg imgAway"/>     
+
+            </div>
+            <div className="centerFeatureMatchDetails fetureDetails">
+                <h1>VS</h1>
+                <button className="featureTicketBtn">
+                    BUY TICKET
+                </button>
+            </div>
+            <div className="rightFeatureMatchDetails fetureDetails">
+            <img src={Frame} alt="" className="featuresImg"/>    
+            </div>
+          </main>
+          <div className="leftFeatureMatcFooter">
+          <Link to=''>See all matches</Link>
+          </div>
+        </Carousel.Item>
+        <Carousel.Item id='featureItem'>
+          <div className="leftFeatureMatcHeader">
+            <h1>MATCHES</h1>
+            <h5>NLO</h5>
+            <h4>MATCHDAY 12</h4>
+            <h5>2 February 2024</h5>
+            <h5>16:30</h5>
+          </div>
+          <main id="featureItemContent">
+            <div className="leftFeatureMatchDetails fetureDetails">
+            <img src={fcb} alt="" className="featuresImg imgAway"/>     
 
             </div>
             <div className="centerFeatureMatchDetails fetureDetails">

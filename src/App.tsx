@@ -7,6 +7,8 @@ import Fan from './fan/Fan';
 import Blog from './blog/Blog';
 import Contact from './contact/Contact';
 import Shop from './shop/Shop';
+import Blogging from './blog/Blogging';
+import Fixture from './blog/Fixture';
 
 function App() {
     
@@ -23,9 +25,12 @@ function App() {
 
         <Route path='about' errorElement={<ErrorElement />} element={<About />} />
         <Route path='fan' errorElement={<ErrorElement />} element={<Fan />} />
-        <Route path='blog' errorElement={<ErrorElement />} element={<Blog />} />
+        <Route path='blog' errorElement={<ErrorElement />} element={<Blogging />} >
+          <Route index errorElement={<ErrorElement />} element={<Fixture />} />
+        </Route>
         <Route path='contact' errorElement={<ErrorElement />} element={<Contact />} />
         <Route path='shop' errorElement={<ErrorElement />} element={<Shop />} />
+        {/* <Route path='pagination' errorElement={<ErrorElement />} element={<Blogging />} /> */}
       </Route>
     ))
 
