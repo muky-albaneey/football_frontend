@@ -154,10 +154,12 @@ width: 50%;
     }
     .foo_right{
         width: 100%;
-        justify-content: center;        
+        justify-content: center;  
+        flex-wrap: wrap;      
     }
     .foo_right h4{
         font-size: 0.5rem;
+        flex-direction: column;
     }
     .foo_left{
     width: 100%;
@@ -166,7 +168,7 @@ width: 50%;
     }
     .foo_left h6{
         
-        font-size: .3rem;
+        font-size: .6rem;
     }
     .icons{
         width: 100%;
@@ -216,7 +218,12 @@ width: 50%;
       }
       #bitnob{
         height: 3rem;
+        width: 4rem;
     }  
+    #download{
+        height: 3rem;
+        width: 4rem;
+    }
           .sectionWrapper{
             padding-top: 0;
           }
@@ -246,7 +253,7 @@ width: 50%;
 }
     .foo_left h6{
         /* margin-bottom: -2rem; */
-        font-size: .3rem;
+        font-size: .4rem;
     }
     
 }

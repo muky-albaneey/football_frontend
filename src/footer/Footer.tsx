@@ -54,23 +54,19 @@ const Footer = () => {
     <hr style={{width:'95%',fontSize: '2rem', fontWeight: 'bold', margin: '0 auto', color: '#FFFFFF',marginBottom: '.5rem'}} />
       <div className="combineF">
       <div className="foo_right">
-      <h4><span>Copyright © 2024</span> Athletic Club Midlands</h4>
+      <h4><span>Copyright © 2024</span> <span>Athletic Club Midlands</span></h4>
       </div>
       
       <div className="foo_left">
         <div>
           <h6>Partners</h6>
-          <h6>Transfer windows</h6>
+          <h6>Transfer windows</h6>          
         </div>
         <div>
-          <h6>Contacts</h6>
+        <h6>Terms of Use</h6>
           <h6>Privacy</h6>
-        </div>
-        <div>
-
-          <h6>Terms of Use</h6>
-          <h6>Brand Protection</h6>
-        </div>
+          
+        </div>       
 
         <div>
           <h6>FAQ</h6>
