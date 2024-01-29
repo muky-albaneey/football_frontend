@@ -133,11 +133,15 @@ width: 50%;
 }
 
 .patners img{
-  width: 6.5rem;
+  width: 7.5rem;
   height: 4rem;  
 }
 #rida,#download{
-    height: 3.7rem;
+    /* height: 3.7rem; */
+}
+
+#bitnob{
+    height: 3.6rem;
 }
 .sectionWrapper h6{    
     font-weight: bold;
