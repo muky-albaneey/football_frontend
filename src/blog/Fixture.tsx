@@ -1,5 +1,4 @@
 import { AiOutlineArrowRight } from "react-icons/ai"; 
-import React from 'react'
 import './pagination.css';
 import willbro from '../assets/willbro.jpg';
 import Frame from '../assets/Frame.jpg';

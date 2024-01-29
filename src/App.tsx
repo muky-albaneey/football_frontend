@@ -4,7 +4,7 @@ import ErrorElement from './ErrorElement';
 import Layout from './Layout';
 import About from './about/About';
 import Fan from './fan/Fan';
-import Blog from './blog/Blog';
+
 import Contact from './contact/Contact';
 import Shop from './shop/Shop';
 import Blogging from './blog/Blogging';

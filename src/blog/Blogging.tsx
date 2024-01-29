@@ -1,4 +1,3 @@
-import React from 'react'
 import Paginations from './Pagination'
 import Card from 'react-bootstrap/Card';
 import './pagination.css';

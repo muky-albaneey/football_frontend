@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import Pagination from 'react-bootstrap/Pagination';
 import Frame_blog_fix_1 from '../assets/Frame_blog_fix_1.jpg';
@@ -53,7 +52,7 @@ const apiData : DataType[] = [
 
 const ITEMS_PER_PAGE = 2;
 
-function fetchDataFromApi(page) {
+function fetchDataFromApi(page :number) {
   // Assume a real API call here, fetching data based on the page number
   // You can replace this with your actual API call using axios, fetch, etc.
   const startIdx = (page - 1) * ITEMS_PER_PAGE;
@@ -63,7 +62,7 @@ function fetchDataFromApi(page) {
 
 function Paginations() {
   const [currentPage, setCurrentPage] = useState(1);
-  const [cardsData, setCardsData] = useState([]);
+  const [cardsData, setCardsData] = useState<DataType[]>([]);
 
   useEffect(() => {
     // Fetch data from API when the component mounts or when currentPage changes
