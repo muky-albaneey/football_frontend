@@ -15,10 +15,17 @@
 
 
 .cardPAgination{
-    width: 40rem;
+    width: 30rem;
+    border: none;
     
 }
-
+.cardPAgination_2{
+    width: 34rem;
+    
+}
+.cardPAgination_2 img{
+    height: 10rem;
+}
 .paginatioItem{
 display: flex;
 justify-content: center;
@@ -67,7 +74,67 @@ text-align: center;
     padding: 10px 15px; /* Adjust padding based on your preference */
   }
   
-  /* Add other styles as needed */
+  .bloggingOverallCon{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#topPagination{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    
+}
+
+.topPaginationLeft{
+    /* width: 37%; */
+}
+.topPaginationRight{
+width: 30%;
+}
+  .fixture{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    border: 1px solid gray;
+    border-radius: .5rem;
+  }
+  .fixtureHeader{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .fixtureHeader a{
+    border: 1px solid gray;
+    width: 49.8%;
+    padding: 1.2rem;
+    font-weight: bold;
+    border-radius: .5rem 0 .5rem 0 0 0;
+  }
+  .paginationItem h4{
+    font-weight: bold;
+    font-size: 0.9rem;
+  }
+  .allFixtures{
+    width: 25rem;
+    font-size: 1rem;
+    display: flex;
+    justify-content: space-around;
+  }
+  .paginationBtn{
+    width: 6rem;
+    padding: 1rem;
+    border: none;
+    font-weight: bold;
+    font-size: .9rem;
+  }
   
 
 @media (max-width: 908px) {
