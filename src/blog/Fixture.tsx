@@ -7,7 +7,7 @@ import { NavLink } from "react-router-dom";
 
 const Fixture = () => {
      const active = {
-        color: 'red',
+        color: '#7B0924',
         textDecoration: 'underline'
     }
   return (

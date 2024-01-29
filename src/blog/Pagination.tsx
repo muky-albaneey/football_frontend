@@ -90,8 +90,10 @@ function Paginations() {
           <Card.Body>
             <Card.Title>{card.name}</Card.Title>
             <Card.Text>
-              <h1> {card.price}</h1><br />
-              Men
+            <div className="pageText">
+            <h1> {card.price}</h1>
+              <h6>Men</h6>
+            </div>
             </Card.Text>
             
           </Card.Body>

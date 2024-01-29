@@ -12,19 +12,24 @@
     justify-content: center;
     gap: 2.5rem;
 }
-
+.pageText{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;    
+    gap: 0.3rem;
+}
 
 .cardPAgination{
-    width: 30rem;
+    width: 33.4rem;
     border: none;
     
 }
 .cardPAgination_2{
-    width: 34rem;
+    width: 40rem;
     
 }
 .cardPAgination_2 img{
-    height: 10rem;
+    height: 15rem;
 }
 .paginatioItem{
 display: flex;
@@ -95,7 +100,7 @@ text-align: center;
     /* width: 37%; */
 }
 .topPaginationRight{
-width: 30%;
+width: 24%;
 }
   .fixture{
     display: flex;
@@ -105,6 +110,8 @@ width: 30%;
     text-align: center;
     border: 1px solid gray;
     border-radius: .5rem;
+    height: 20rem;
+    gap: 1.2rem;
   }
   .fixtureHeader{
     width: 100%;
@@ -113,7 +120,7 @@ width: 30%;
   }
   .fixtureHeader a{
     border: 1px solid gray;
-    width: 49.8%;
+    width: 50%;
     padding: 1.2rem;
     font-weight: bold;
     border-radius: .5rem 0 .5rem 0 0 0;
@@ -136,7 +143,49 @@ width: 30%;
     font-size: .9rem;
   }
   
-
+.lines{
+    width: 65%;
+    display: flex;
+    justify-content: flex-start;
+    margin: 0 auto;
+    margin-bottom: -2rem;
+    margin-top: 2rem;
+    padding-top: 0.2rem;
+    border-top: 1px solid black;
+    font-weight: bold;
+}
+.nextFitures{
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-end;
+    color: #7B0924;
+    font-weight: bold;
+}
+.blogingNavigation{
+    width: 64%;
+    margin: 0 auto;
+    display: flex;
+    
+    flex-direction: column;
+    gap: 1.3rem;
+    color: #7B0924;
+    border-bottom: 1px solid black;
+}
+.blogingNavigation h1{
+    font-weight: bold;
+}
+.blogingNavigation nav{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    gap: 3rem;
+}
+.blogingNavigation nav a{
+    font-weight: bold;
+    color: black;
+    
+}
 @media (max-width: 908px) {
     .paginationWrapper,.fixture{
         /* align-items: flex-start; */
