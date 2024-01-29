@@ -5,12 +5,14 @@
     flex-direction: column;
     padding: 2rem;
 }
+.paginationWrapper{
+    flex-wrap: wrap;
+}
 .fixture{
-    
     border: .1rem solid silver;
 }
 .CardBlog{
-
+width: 50rem;
 }
 .cardPAgination{
     width: 40rem;
@@ -71,8 +73,7 @@ text-align: center;
 }
 
 .topPageHeader{
-    width: 100%;
-    
+    width: 100%;    
     display: flex;
     justify-content: space-around;
 }
@@ -87,7 +88,7 @@ text-align: center;
 .paginationRight{
     padding: 2rem;  
     height: 27rem;
-    /* background-color: red;  */
+    /* background-color: rgb(29, 159, 31);  */
 }
 #topPAgination{
     display: flex;
@@ -109,10 +110,153 @@ text-align: center;
 }
 
 .linkPagination{
-    width: 30rem;
+    /* width: 30rem; */
     background-color: silver;
     text-decoration: none;
     padding: 1rem 4rem;
     border: 1px solid gray;
     font-weight: bold;
+}
+
+@media (max-width: 908px) {
+    .paginationWrapper,.fixture{
+        /* align-items: flex-start; */
+        /* justify-content: flex-start; */
+        padding: 0;
+    }
+    .paginationCon{
+        flex-direction: column;  
+        justify-content: center;      
+        align-items: center;
+        /* gap: 1.5rem; */
+        
+    }
+    .paginationLeft{
+        
+    }
+    .CardBlog{
+        width: 20rem;
+        margin: 0 auto;
+        }
+        .paginationLeft h1{
+            font-size: 0.9rem;
+        }
+    .fixture{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        padding: 0.4rem;
+    }
+    .paginationLeft,.paginationRight{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    #topPAgination{
+        width: 100%;
+        
+        flex-direction: column;
+    }
+    .headerPagination{
+        gap: 1.2rem;
+        font-size: 0.7rem;
+    }
+    .centerPagination :where(h4,h6){
+        font-size: 0.5rem;
+    }
+    .bottomPagination{
+        gap: .8rem;
+    }
+    .paginationBtn{
+        width: 4rem;
+        height: 3rem;
+        border: none;
+        border-radius: .3rem;
+        font-size: 0.6rem;
+    }
+    .paginationCon{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 2.5rem;
+    }
+    .paginationNav{
+        width: 100%;        
+        gap: 1.2rem;
+    }
+ 
+    .paginationNav a{
+        font-size: .9rem;
+        
+        
+    }
+    .topPageHeader{
+       width: 20rem;
+       
+    }
+    .topPageHeader a{
+        font-size: 0.6rem;
+    }
+    .brandPAge{
+        font-size: 1rem;
+        
+    }
+    .linkPagination{
+        /* width: 3rem; */
+       
+    }
+    .linkPagination_one,.linkPagination{
+        font-size: 0.7rem;
+        width: 4rem;
+        padding: .4rem 3.3rem;
+    }
+.paginationRight{
+    
+    height: 16rem;
+}
+    .paginationRight a{
+        margin-left: 2rem;
+        
+    }
+
+    .cardPAgination{
+        width: 20rem;
+        
+    }
+    
+}
+
+@media all and (max-width: 390px){
+    .linkPagination_one,.linkPagination{
+        font-size: 0.7rem;
+        width: 4rem;
+
+        padding: .2rem 2.3rem;
+    }
+    .paginationLeft{
+        margin-bottom: -2rem;
+    }
+    .paginationLeft h1{
+        
+    }
+    .paginationRight{
+        height: 14rem;
+        
+    }
+    .paginationRight a{
+        margin-left: 1rem;
+        /* margin-top: 4rem; */
+        
+        
+    }
+    
+    .paginationNav a{
+        font-size: .7rem;
+        
+        
+    }
+
+    .fixture{
+        /* margin-top: -2rem; */
+    }
 }

@@ -17,9 +17,7 @@ const Blogging = () => {
         <NavLink to=''>Men’s News <span>|</span></NavLink>
         <NavLink to=''>Women’s News <span>|</span></NavLink>
         <NavLink to=''>Club News <span>|</span></NavLink>
-        {/* <NavLink to=''>NEWS <span>|</span></NavLink> */}
-        {/* <NavLink to=''>NEWS <span>|</span></NavLink> */}
-        {/* <NavLink to=''>NEWS <span>|</span></NavLink> */}
+       
         </div>
          <div className="topPageHeader">
         <h1 className='linkNews'><NavLink to=''>ALL NEWS</NavLink></h1>
