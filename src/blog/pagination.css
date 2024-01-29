@@ -144,7 +144,7 @@ width: 24%;
   }
   
 .lines{
-    width: 65%;
+    width: 75%;
     display: flex;
     justify-content: flex-start;
     margin: 0 auto;
@@ -163,7 +163,7 @@ width: 24%;
     font-weight: bold;
 }
 .blogingNavigation{
-    width: 64%;
+    width: 75%;
     margin: 0 auto;
     display: flex;
     
