@@ -221,12 +221,28 @@
     flex-direction: column;
     align-items: center;
     width: 15rem;
+    margin-top: 5rem;
  }
 
  .pagination_two{
   width: 8rem;
   font-size: .1rem;
  }
+ .controls{
+  width: 20rem;
+  position: absolute;
+  left: -2rem;
+  top: 145rem;
+}
+.sided{
+  width: 20rem;
+  position: absolute;
+  /* left: -2rem; */
+  left: -3rem;
+  z-index: 99;
+  top: 19rem;
+  /* top: 145rem; */
+}
 
  #navs{
   font-size: 0.5rem;

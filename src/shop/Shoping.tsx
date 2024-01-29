@@ -4,7 +4,10 @@ import React, { useState } from 'react';
 import { Card, Button, Pagination } from 'antd';
 import { TbCurrencyNaira } from 'react-icons/tb';
 import { GiJesterHat } from 'react-icons/gi';
-
+import OIP_shop_1 from '../assets/OIP_shop_1.jpg';
+import OIP_shop_2 from '../assets/OIP_shop_2.jpg';
+import OIP_shop_3 from '../assets/OIP_shop_3.jpg';
+import OIP_shop_4 from '../assets/OIP_shop_4.jpg';
 import home from '../assets/home.jpg';
 import away from '../assets/away.jpg';
 import './Shoping.css'; // Import a CSS file for styling
@@ -23,21 +26,42 @@ const data: DataType[] = [
     name: 'ACM AWAY KIT',
     price: '6,500.00',
     address: 'New Arrival',
-    imageUrl: away,
+    imageUrl: OIP_shop_3,
   },
   {
     key: 2,
     name: 'ACM HOME KIT',
     price: '6,500.00',
     address: 'New Arrival',
-    imageUrl: home,
+    imageUrl: OIP_shop_2,
   },
   {
     key: 3,
     name: 'ACM HOME KIT',
     price: '6,500.00',
     address: 'New Arrival',
+    imageUrl: OIP_shop_4,
+  },
+  {
+    key: 4,
+    name: 'ACM HOME KIT',
+    price: '6,500.00',
+    address: 'New Arrival',
+    imageUrl: home,
+  },
+  {
+    key: 5,
+    name: 'ACM HOME KIT',
+    price: '6,500.00',
+    address: 'New Arrival',
     imageUrl: away,
+  },
+  {
+    key: 6,
+    name: 'ACM HOME KIT',
+    price: '6,500.00',
+    address: 'New Arrival',
+    imageUrl: OIP_shop_1,
   },
 ];
 
