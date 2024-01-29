@@ -5,6 +5,13 @@
   justify-content: center;
   align-items: center;
 }
+.conShop {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
 #navs{
   max-width: 65%;
   padding: 1.1rem;
@@ -23,12 +30,6 @@
   color: #FFFFFF;
   font-weight: bold;
 }
-  .shoping-card-container {
-    display: flex;    
-    justify-content: space-around;
-    width: 42rem;
-    margin-top: -6rem;
- }
  #navHeader{
   width: 100%;
   display: flex;  
@@ -97,8 +98,8 @@
   display: flex;
   justify-content: center;
   position: absolute;
-  top: 22rem;
-  left: -4rem;
+  top: 24.9rem;
+  left: 15rem;
   transition: all 3s;
   z-index: 99;
  }
@@ -110,7 +111,7 @@
  }
 .save_more{
   width: 17rem;
-  height: 4rem;
+  height: 2.4rem;
   background-color: #7B0924;
   color: #FFFFFF;
   border: none;
@@ -119,7 +120,7 @@
 }
 .cart{
   background-color: #7B0924;
-  padding: 1.2rem;
+  padding: .7rem;
   border: none;
   border-radius: .2rem;
   color: #FFFFFF;
@@ -127,15 +128,44 @@
  
 }
 .cartItem{
-  font-size: 2rem;
+  font-size: 1.2rem;
 }
 
+/* CARDSSS */
+.shoping-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#shoping-card-container {
+  margin: 1px;
+}
+
+.custom-card {
+  width: 300px;
+  margin: 0 auto;
+  text-align: center;
+  border: 1px solid #e8e8e8;
+}
+
+.img_card {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
  @media (max-width: 908px) {
-    .shoping-card-container {
-       flex-direction: column;
-       align-items: center;
-       width: 22rem;
-    }
+  .custom-card {
+    width: 100%;
+  }
+
+  .shoping-cards {
+    padding: 0 10px;
+  }
+
+  .shoping-card-container {
+    width: 100%;
+    
+  }
     .drops{
       width: 7rem;
       display: flex;
@@ -148,7 +178,7 @@
     .dropDown{      
       position: absolute;
       top: 21.8rem;
-      left: 5.6rem;
+      left: 7.6rem;
       width: 30%;
      }
      .hideBtn,.normsBtn{
@@ -186,7 +216,7 @@
     }
 
     .FrameShop{
-      width: 5rem;
+      width: 6rem;
     }
  }
  
@@ -196,11 +226,11 @@
     top: 21.1rem;
    }
    .FrameShop{
-    width: 3.4rem;
+    width: 4.5rem;
   }
   
   .left_navHeader span{
-    font-size: .9rem;
+    font-size: .8rem;
   }
 
   .save_more{
@@ -222,6 +252,7 @@
     align-items: center;
     width: 15rem;
     margin-top: 5rem;
+    margin-bottom: 3rem;
  }
 
  .pagination_two{
@@ -232,7 +263,7 @@
   width: 20rem;
   position: absolute;
   left: -2rem;
-  top: 155rem;
+  top: 119rem;
 }
 .sided{
   width: 20rem;

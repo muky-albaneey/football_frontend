@@ -19,10 +19,10 @@ const Shop = () => {
       <main id="navHeader">
         <div className="left_navHeader">
         <NavLink  to='/'><img src={Frame} alt="" className='Frame FrameShop'/></NavLink>
-        <span style={{color:'#7B0924'}}>ACM SHOP</span>
+        <span >ACM SHOP</span>
         </div>
         <ButtonsExample /> 
-        <div className="right_navHeader"></div>
+        {/* <div className="right_navHeader"></div> */}
       </main>
       <main id="navs">
       <NavLink to=''>KITS</NavLink>

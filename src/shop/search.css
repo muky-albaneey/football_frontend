@@ -1,6 +1,6 @@
 .search_btn{
   width: 70%;
-  height: 4rem;
+  height: 1.5rem;
   
  
 }
@@ -8,6 +8,10 @@
 .mb-3{
   width: 100%;
   height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -1rem;
       /* margin: 4px auto; */
   /* align-items: center; */
 }
@@ -18,12 +22,12 @@
   font-weight: bold;
 }
 .searchBtn{
-  font-size: 2.4rem;
+  font-size: .9rem;
 }
 @media (max-width: 908px) {
   .search_btn{
     width: 60%;
-    height: 1.5rem;
+    height: .9rem;
     
    
   }
@@ -33,8 +37,8 @@
 @media all and (max-width: 390px) {
   .search_btn{
     width: 60%;
-    height: 1.8rem;
-    margin-top: -2rem;
+    height: .8rem;
+    /* margin-top: -2rem; */
    
   }
 }

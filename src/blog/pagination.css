@@ -1,50 +1,10 @@
-.paginationWrapper,.fixture{
+.paginationWrapper{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     padding: 2rem;
-}
-.paginationWrapper{
     flex-wrap: wrap;
-}
-.fixture{
-    border: .1rem solid silver;
-}
-.CardBlog{
-width: 50rem;
-}
-.cardPAgination{
-    width: 40rem;
-    
-}
-.lineBlog{
-    width: 100%;
-    padding: 0.1rem;
-    background-color: silver;
-}
-.paginatioItem{
-display: flex;
-justify-content: center;
-align-items: center;
-text-align: center;
-}
-
-.centerPagination{
-    flex-direction: column;
-}
-.headerPagination{
-    gap: 5rem;
-}
-.bottomPagination{
-    gap: 2rem;
-}
-.paginationBtn{
-    width: 8rem;
-    height: 5rem;
-    border: none;
-    border-radius: .5rem;
-    font-weight: bold;
 }
 .paginationCon{
     width: 100%;
@@ -52,71 +12,63 @@ text-align: center;
     justify-content: center;
     gap: 2.5rem;
 }
-.paginationNav{
-    width: 100%;
-    display: flex;
-    justify-content: flex-start;
-    gap: 2rem;
-}
-.brandPAge{
-    display: flex;
-    width: 100%;
-    justify-content: flex-start;
-    color: #7B0924;
-    font-weight: bold;
-    font-size: 3.2rem;
-}
-.paginationNav a{
-    font-size: 1.6rem;
-    color: black;
-    font-weight: 500;
-}
 
-.topPageHeader{
-    width: 100%;    
-    display: flex;
-    justify-content: space-around;
-}
-.topPageHeader a{
-    color: #7B0924;
-    font-weight: bold;
-}
-#pageFN{
-    color: #7B0924;
-    text-decoration: underline;
-}
-.paginationRight{
-    padding: 2rem;  
-    height: 27rem;
-    /* background-color: rgb(29, 159, 31);  */
-}
-#topPAgination{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-}
-.paginationRight a{
-    margin-left: 3rem;
-}
-.linkPagination_one{
-    /* color: #7B0924; */
+
+.cardPAgination{
+    width: 40rem;
     
-    background-color: #FFFFFF;
-    text-decoration: none;
-    padding: 1rem 4rem;
-    border: 1px solid gray;
-    font-weight: bold;
 }
 
-.linkPagination{
-    /* width: 30rem; */
-    background-color: silver;
-    text-decoration: none;
-    padding: 1rem 4rem;
-    border: 1px solid gray;
-    font-weight: bold;
+.paginatioItem{
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
 }
+
+
+/* pagination.css or your custom CSS file */
+
+.paginationWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .paginationCon {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .cardPagination {
+    width: 300px;
+    margin: 10px;
+    border-radius: 15px; /* Adjust the border-radius based on your preference */
+  }
+  
+  /* Custom styles for circular pagination buttons */
+  .pagination {
+    display: flex;
+    list-style: none;
+    border-radius: 50px; /* Make the entire pagination circular */
+    overflow: hidden;
+  }
+  
+  .pagination > li {
+    display: inline-block;
+    margin: 0 2px;
+    border-radius: 50%;
+  }
+  
+  .pagination > li > a,
+  .pagination > li > span {
+    border-radius: 50%;
+    padding: 10px 15px; /* Adjust padding based on your preference */
+  }
+  
+  /* Add other styles as needed */
+  
 
 @media (max-width: 908px) {
     .paginationWrapper,.fixture{
