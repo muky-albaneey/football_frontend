@@ -10,7 +10,7 @@ const Standing = () => {
   const stand =  [
         {
             id : 1,
-            name: 'acm ',
+            name: 'AC MIDLANDS ',
             pts :12,
             p: 12,
             g: 18,
@@ -18,7 +18,7 @@ const Standing = () => {
         },
         {
             id : 2,
-            name: 'fc club ',
+            name: 'WILLBROS FC ',
             pts :22,
             p: 12,
             g: 18,
@@ -26,7 +26,7 @@ const Standing = () => {
         },
         {
             id : 3,
-            name: 'fc club ',
+            name: 'OTTA S FC ',
             pts :22,
             p: 12,
             g: 18,
@@ -34,7 +34,7 @@ const Standing = () => {
         },
         {
             id : 4,
-            name: 'fc club ',
+            name: 'BEYOND FA ',
             pts :22,
             p: 12,
             g: 18,
