@@ -10,7 +10,8 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    gap: 2.5rem;
+    gap:
+     2.5rem;
 }
 .pageText{
     display: flex;
@@ -92,6 +93,7 @@ text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     gap: 2rem;
     
 }
@@ -101,8 +103,10 @@ text-align: center;
 }
 .topPaginationRight{
 width: 24%;
+
 }
   .fixture{
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -112,6 +116,8 @@ width: 24%;
     border-radius: .5rem;
     height: 19.5rem;
     gap: 1rem;
+    
+    
   }
   .fixtureHeader{
     width: 100%;
@@ -125,12 +131,15 @@ width: 24%;
     font-weight: bold;
     border-radius: .5rem;
   }
+  .paginationItem{
+    width: 100%;
+  }
   .paginationItem h4{
     font-weight: bold;
     font-size: 0.9rem;
   }
   .allFixtures{
-    width: 25rem;
+    width: 90%;
     font-size: 1rem;
     display: flex;
     justify-content: space-around;
@@ -141,6 +150,12 @@ width: 24%;
     border: none;
     font-weight: bold;
     font-size: .9rem;
+  }
+  .bottomPagination{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
   }
   
 .lines{
@@ -187,11 +202,12 @@ width: 24%;
     
 }
 @media (max-width: 908px) {
-    .paginationWrapper,.fixture{
+    .paginationWrapper{
         /* align-items: flex-start; */
         /* justify-content: flex-start; */
         padding: 0;
     }
+    
     .paginationCon{
         flex-direction: column;  
         justify-content: center;      
@@ -209,21 +225,41 @@ width: 24%;
         .paginationLeft h1{
             font-size: 0.9rem;
         }
-    .fixture{
-        width: 100%;
-        justify-content: center;
-        align-items: center;
-        padding: 0.4rem;
-    }
+  
     .paginationLeft,.paginationRight{
         width: 100%;
         justify-content: center;
         align-items: center;
     }
     #topPAgination{
-        width: 100%;
-        
+        width: 100%;        
         flex-direction: column;
+    }
+   
+    
+    .topPaginationLeft,.topPaginationRight{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .fixture{
+        width: 80%;
+        
+        height: 15rem;
+        
+        margin: 0 auto;
+      }
+    .fixtureHeader{
+      
+        align-items: center;
+      }
+      .fixtureHeader a{        
+        width: 50%;
+        padding: .8rem;                
+      }
+    .bottomPagination{
+        width: 100%;
+        align-items: center;
     }
     .headerPagination{
         gap: 1.2rem;
@@ -232,21 +268,39 @@ width: 24%;
     .centerPagination :where(h4,h6){
         font-size: 0.5rem;
     }
-    .bottomPagination{
-        gap: .8rem;
+    .cardPAgination_2{
+        margin: 0 auto;
     }
     .paginationBtn{
         width: 4rem;
-        height: 3rem;
-        border: none;
+        height: 3rem;        
         border-radius: .3rem;
         font-size: 0.6rem;
+        text-align: center;
     }
-    .paginationCon{
+    .blogingNavigation{
+        width: 100%;                      
+        gap: .5rem;
+        color: #7B0924;
+        border-bottom: 1px solid black;
+    }
+    .blogingNavigation h1{
+        font-weight: bold;
+    }
+    .blogingNavigation nav{
         width: 100%;
         display: flex;
-        justify-content: center;
-        gap: 2.5rem;
+        justify-content: flex-start;
+        gap: .9rem;
+    }
+    .blogingNavigation nav a{
+      font-size: 0.9rem;
+        
+    }
+    .nextFitures{
+        width: 100%;
+        margin: 0 auto;
+        padding-right: 5rem;
     }
     .paginationNav{
         width: 100%;        
@@ -269,10 +323,7 @@ width: 24%;
         font-size: 1rem;
         
     }
-    .linkPagination{
-        /* width: 3rem; */
-       
-    }
+ 
     .linkPagination_one,.linkPagination{
         font-size: 0.7rem;
         width: 4rem;
@@ -289,7 +340,8 @@ width: 24%;
 
     .cardPAgination{
         width: 20rem;
-        
+        margin-top: .3rem;
+        margin-bottom: -.3rem;
     }
     
 }
@@ -312,19 +364,11 @@ width: 24%;
         
     }
     .paginationRight a{
-        margin-left: 1rem;
-        /* margin-top: 4rem; */
-        
-        
+        margin-left: 1rem;             
     }
     
-    .paginationNav a{
-        font-size: .7rem;
-        
-        
+    .paginationNav nav a{
+        font-size: .7rem;                
     }
 
-    .fixture{
-        /* margin-top: -2rem; */
-    }
 }
