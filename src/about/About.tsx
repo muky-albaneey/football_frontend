@@ -10,7 +10,9 @@ const About = () => {
         <main className="topImage">
             <div className="textCenter">
                 <h1>About Us</h1>
-                <span>Lorem ipsum</span><br />
+                <span>Athletic Club Midlands [AC Midlands] is a Jos based football club founded in 2024 with
+a vision of discovering and showcasing the numerous football talent in Jos and
+surrounding towns.</span><br />
                 <button className="aboutBtn">See More</button>
             </div>
         </main>

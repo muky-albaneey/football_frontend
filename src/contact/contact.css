@@ -50,6 +50,9 @@
     /* background-color: green;     */
     gap: 2rem;
 }
+.conTopNote{
+    margin-bottom: -.7rem;
+}
 .phone,.mail,.address{
     width: 60%;
     display: flex;
@@ -114,22 +117,24 @@ display: flex;
 
 form .inputText input{
     width: 100%;
-    padding: .6rem;
+    padding: .3rem;
     border: none;
     outline: none;
     border-bottom: 1px solid black;
     padding: 2rem;
     background-color: #FFFFFF;
+    margin-top: -3rem;
 }
 
 form .inputs input{
     width: 48%;
-    padding: .6rem;
+    padding: .3rem;
     border: none;
     outline: none;
     border-bottom: 1px solid black;
     padding: 2rem;
     background-color: #FFFFFF;
+    margin-top: -3rem;
 }
 
 .selects{
@@ -139,7 +144,12 @@ form .inputs input{
 }
 .selects h2{
     font-weight: bold;
+
     
+}
+.conTopNote_2{
+    font-size: 1.7rem;
+    margin-bottom: -0.5rem;
 }
 .radioCon{
     display: flex;
@@ -149,6 +159,13 @@ form .inputs input{
 @media all and (max-width: 900px) {
     .contactConRight,.contactConLeft{
         width: 90%;
+    }
+    .conTopNote{
+        margin-bottom: -.5rem;
+    }
+    .conTopNote_2{
+        font-size: 1rem;
+        margin-bottom: -0.3rem;
     }
     .contactConRight{
         height: 25rem;

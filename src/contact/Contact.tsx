@@ -9,7 +9,7 @@ import './contact.css'
 const Contact = () => {
   return (
     <section className='contactWrapper'>
-      <h1>
+      <h1 className='conTopNote'>
       Contact Us
       </h1>
       <h6>Any question or remarks? Just write us a message!</h6>
@@ -42,14 +42,14 @@ const Contact = () => {
             <form action="">
                 <div className="inputs">
                     <input type="text" name="" id=""  placeholder="First Name"/>
-                    <input type="text" name="" id=""  placeholder="last name"/>
+                    <input type="text" name="" id=""  placeholder="Last Name"/>
                 </div>
                 <div className="inputs">
                     <input type="mail" name="" id=""  placeholder="Email"/>
                     <input type="number" name="" id=""  placeholder="Phone Number"/>
                 </div>
                 <div className="selects">
-                    <h2>Select Subject?</h2>
+                    <h2 className="conTopNote_2">Select Subject?</h2>
                     <div className="radioCon">
                         <div className="itemRad">
                         <input type="radio" name="" id="" /> <span>General Inquiry</span>
