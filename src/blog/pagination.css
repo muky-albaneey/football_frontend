@@ -126,7 +126,7 @@ width: 24%;
   }
   .fixtureHeader a{
     border: 1px solid gray;
-    width: 42%;
+    width: 50%;
     padding: 1.2rem;
     font-weight: bold;
     border-radius: .5rem;
@@ -176,10 +176,7 @@ width: 24%;
     justify-content: flex-end;
     color: #7B0924;
     font-weight: bold;
-    position: relative;
-    top: 23.5rem;
-    left: -8rem;
-    z-index: 99;
+    
 }
 .blogingNavigation{
     width: 75%;
@@ -304,6 +301,10 @@ width: 24%;
     .nextFitures{
         width: 100%;
         margin: 0 auto;
+        position: relative;
+    top: 23.5rem;
+    left: -8rem;
+    z-index: 99;
         padding-right: 5rem;
     }
     .paginationNav{
