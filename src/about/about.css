@@ -48,6 +48,11 @@ gap: 0.5rem;
     color: #FFFFFF;
     font-weight: bold;
 }
+.textCenter span{
+  width: 50%;
+  text-align: center;
+  text-wrap: wrap;
+}
 
 .mainaboutCenter{
     width: 100%;

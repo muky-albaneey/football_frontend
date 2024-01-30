@@ -1,7 +1,8 @@
 import './about.css';
 import Group from '../assets/Group.jpg'
 import Frame_about from '../assets/Frame_about.jpg'
-import Group_1 from '../assets/Group_1.jpg'
+import test_about from '../assets/test_about.jpg'
+// import Group_1 from '../assets/Group_1.jpg'
 import Group_2 from '../assets/Group_2.jpg'
 
 const About = () => {
@@ -31,7 +32,7 @@ surrounding towns.</span><br />
                     <button className="button"><span>View More</span></button>
             </div>
             <div className="centerAboutRight center_inner imgInnerCon">
-            <img src={Group_1} alt="" className='inner_img' />
+            <img src={test_about} alt="" className='inner_img' />
             </div>
         </div>
         <div className="centerAbout center_2">
