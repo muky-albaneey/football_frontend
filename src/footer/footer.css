@@ -141,7 +141,7 @@ width: 50%;
 }
 
 #bitnob{
-    height: 3.6rem;
+    height: 3rem;
 }
 .sectionWrapper h6{    
     font-weight: bold;
@@ -240,6 +240,9 @@ width: 50%;
             
             
         }
+        #bitnob{
+            height: 2rem;
+        }
 }
 
 
@@ -259,6 +262,8 @@ width: 50%;
         /* margin-bottom: -2rem; */
         font-size: .4rem;
     }
-   
+    #bitnob{
+        height: 2rem;
+    }
     
 }
