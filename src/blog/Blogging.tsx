@@ -7,7 +7,6 @@ import Frame_blog_fix from '../assets/Frame_blog_fix.jpg'
 import { NavLink } from 'react-router-dom';
 
 const Blogging = () => {
- 
   return (
     <section className='bloggingOverallCon'>
       <div className="blogingNavigation">
