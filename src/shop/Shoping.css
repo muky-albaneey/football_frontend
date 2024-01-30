@@ -169,7 +169,7 @@
 }
 #kitImg{
 width: 20rem;
-height: 20rem;
+height: 12rem;
 }
 .kitCon :where(.kitLeft,.kitRight){
   width: 28%;
