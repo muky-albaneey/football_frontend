@@ -1,6 +1,6 @@
-import { FaDiscord } from "react-icons/fa"; 
-import { AiOutlineInstagram } from "react-icons/ai"; 
-import { BiX } from "react-icons/bi"; 
+// import { FaDiscord } from "react-icons/fa"; 
+// import { AiOutlineInstagram } from "react-icons/ai"; 
+// import { BiX } from "react-icons/bi"; 
 import { ImLocation } from "react-icons/im"; 
 import { AiOutlineMail } from "react-icons/ai"; 
 import { BsFillTelephoneXFill } from "react-icons/bs"; 
@@ -34,9 +34,9 @@ const Contact = () => {
                 <span><ImLocation /></span><span>Lorem ipsum ipsum lorem</span>
             </div>
            </div>
-           <div className="bottomCon">
+           {/* <div className="bottomCon">
             <BiX style={{color : 'whitesmoke'}}/> <AiOutlineInstagram /><FaDiscord />
-           </div>
+           </div> */}
         </div>
         <div className="contactConLeft">
             <form action="">

@@ -150,8 +150,23 @@ form .inputs input{
     .contactConRight,.contactConLeft{
         width: 90%;
     }
+    .contactConRight{
+        height: 25rem;
+        z-index: 99;
+        margin-top: 3rem;
+    }
+    .centerCon span{
+        font-size: 0.5rem;
+    }
     .bottomCon{
         margin-left: -10rem;
+    }
+    .contactConLeft{
+        margin-top: -7rem;
+    }
+    .radioCon span{
+        font-size: 0.6rem;
+        font-weight: bold;
     }
     form .inputs input{
         width: 40%;
