@@ -176,6 +176,10 @@ width: 24%;
     justify-content: flex-end;
     color: #7B0924;
     font-weight: bold;
+    position: relative;
+    top: 23.5rem;
+    left: -8rem;
+    z-index: 99;
 }
 .blogingNavigation{
     width: 75%;

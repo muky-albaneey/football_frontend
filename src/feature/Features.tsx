@@ -1,10 +1,9 @@
 import Carousel from 'react-bootstrap/Carousel';
 import './feature.css';
 import { Link } from 'react-router-dom';
-import fcb from '../assets/fcb.png';
-import Real_madrid from '../assets/Real_madrid.png';
+import OTTASOLO_FC from '../assets/OTTASOLO_FC.jpg';
+import BEYOND_LIMIT_FA_1 from '../assets/BEYOND-LIMIT-FA-1.jpg';
 import Frame from '../assets/Frame.jpg';
-import bayern from '../assets/bayern.png';
 import willbro from '../assets/willbro.jpg'
 function Features() {
   
@@ -65,7 +64,7 @@ function Features() {
                 </button>
             </div>
             <div className="rightFeatureMatchDetails fetureDetails">
-            <img src={Real_madrid} alt="" className="featuresImg imgAway"/>    
+            <img src={BEYOND_LIMIT_FA_1} alt="" className="featuresImg imgAway"/>    
             </div>
           </main>
           <div className="leftFeatureMatcFooter">
@@ -82,7 +81,7 @@ function Features() {
           </div>
           <main id="featureItemContent">
             <div className="leftFeatureMatchDetails fetureDetails">
-            <img src={bayern} alt="" className="featuresImg imgAway"/>     
+            <img src={OTTASOLO_FC} alt="" className="featuresImg"/>     
 
             </div>
             <div className="centerFeatureMatchDetails fetureDetails">
@@ -109,7 +108,7 @@ function Features() {
           </div>
           <main id="featureItemContent">
             <div className="leftFeatureMatchDetails fetureDetails">
-            <img src={fcb} alt="" className="featuresImg imgAway"/>     
+            <img src={BEYOND_LIMIT_FA_1} alt="" className="featuresImg "/>     
 
             </div>
             <div className="centerFeatureMatchDetails fetureDetails">

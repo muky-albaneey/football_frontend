@@ -3,7 +3,6 @@ import Group from '../assets/Group.jpg'
 import Frame_about from '../assets/Frame_about.jpg'
 import Group_1 from '../assets/Group_1.jpg'
 import Group_2 from '../assets/Group_2.jpg'
-import Frame_7 from '../assets/Frame_7.jpg'
 
 const About = () => {
   return (
@@ -68,9 +67,9 @@ const About = () => {
         <main className="aboutTeam">
         <img src={Frame_about} alt="" />
         </main>
-        <main className="aboutWhy">
+        {/* <main className="aboutWhy">
         <img src={Frame_7} alt="" />
-        </main>
+        </main> */}
     </section>
   )
 }

@@ -41,11 +41,11 @@ margin: 0 auto;
     margin: 1rem auto;
 }
 #imgCard_2{
-    height: 8rem;
+    height: 13rem;
 }
 
 #columns .thirdCard{
-     /* color: red; */
+     
      line-height: 1.5rem;
 }
 
@@ -71,9 +71,7 @@ margin-left: 3rem;
     font-family: Arial, Helvetica, sans-serif;
     text-align: justify;
 }
-.show{
-    display: none;
-}
+
 .latest_shown{
     display: block;
    
@@ -93,7 +91,10 @@ margin-left: 3rem;
         width: 22rem;
         margin: 0 auto;
         }
-
+.thirdCard{
+    width: 22rem;
+    margin: 0 auto;
+}
     .hide{
         display: none;
     }  
@@ -108,7 +109,7 @@ margin-left: 3rem;
         cursor: pointer;
     }
     #cardTitle{
-        /* font-size: 0.75rem; */
+        
     }  
     #btnNews{
         width: 55%;
@@ -141,8 +142,7 @@ margin-left: 3rem;
 
     #btnNews{
         width: 55%;
-        height: 1.5rem;            
-        /* margin-left: 3.6rem;      */
+        height: 1.5rem;                    
        font-size: 0.5rem;
        
        }

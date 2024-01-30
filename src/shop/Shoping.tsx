@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import { Card, Pagination } from 'antd';
 import { TbCurrencyNaira } from 'react-icons/tb';
-import { GiJesterHat } from 'react-icons/gi';
+import game_icons_comet_spark from '../assets/game_icons_comet_spark.jpg';
 import OIP_shop_1 from '../assets/OIP_shop_1.jpg';
 import OIP_shop_2 from '../assets/OIP_shop_2.jpg';
 import OIP_shop_3 from '../assets/OIP_shop_3.jpg';
@@ -84,11 +84,14 @@ const CardComponent: React.FC<{ data: DataType; image: string }> = ({ data, imag
     // ]}
   >
     <Card.Meta
-      title={data.name}
+      title={
+        <span><TbCurrencyNaira /> {data.price}</span>
+        
+      }
       description={
         <span>
-          <TbCurrencyNaira /> {data.price},<br />
-          <GiJesterHat /> {data.address}
+          {data.name},<br />
+          <img src={game_icons_comet_spark} alt=""  id='shop_icon'/> {data.address}
         </span>
       }
     />

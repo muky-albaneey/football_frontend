@@ -153,6 +153,10 @@
   height: 200px;
   object-fit: cover;
 }
+
+#shop_icon{
+  width: 1rem;
+}
  @media (max-width: 908px) {
   .custom-card {
     width: 100%;

@@ -1,10 +1,10 @@
 import Table from 'react-bootstrap/Table';
 import './standing.css'
 import { Link } from 'react-router-dom';
-import Frame from '../assets/Frame.jpg'
+import OTTASOLO_FC from '../assets/OTTASOLO_FC.jpg';
+import BEYOND_LIMIT_FA_1 from '../assets/BEYOND-LIMIT-FA-1.jpg';
+import Frame from '../assets/Frame.jpg';
 import willbro from '../assets/willbro.jpg'
-import fcb from '../assets/fcb.png'
-import bayern from '../assets/bayern.png'
 const Standing = () => {
 
   const stand =  [
@@ -30,7 +30,7 @@ const Standing = () => {
             pts :22,
             p: 12,
             g: 18,
-              logo : fcb
+              logo : OTTASOLO_FC
         },
         {
             id : 4,
@@ -38,24 +38,9 @@ const Standing = () => {
             pts :22,
             p: 12,
             g: 18,
-              logo : bayern
+              logo : BEYOND_LIMIT_FA_1
         },
-        {
-            id : 5,
-            name: 'fc club ',
-            pts :22,
-            p: 12,
-            g: 18,
-              logo : Frame
-        },
-        {
-            id : 6,
-            name: 'fc club ',
-            pts :22,
-            p: 12,
-            g: 18,
-            logo : fcb
-        }
+      
     ]
     
   return (

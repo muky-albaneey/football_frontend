@@ -20,7 +20,7 @@ const Fixture = () => {
           Men
         </NavLink>
         
-            <NavLink to={`woman`} style={({isActive}) => isActive ? active :  {color:'black'}}>Women </NavLink>
+            <NavLink to={`#`} style={({isActive}) => isActive ? active :  {color:'black'}}>Women </NavLink>
           </header>
        <div className="allFixtures">
         <span>NEXT FIXTURES</span>
