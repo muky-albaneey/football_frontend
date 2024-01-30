@@ -8,6 +8,7 @@ import Features from '../feature/Features';
 import Standing from '../feature/Standing';
 import home from '../assets/home.jpg';
 import away from '../assets/away.jpg';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
   return (
@@ -32,13 +33,13 @@ const Home = () => {
           <div>
           <ShapeExample img={home}/>   
           </div>             
-          <button className="jerseyBtn">shop now</button>            
+          <button className="jerseyBtn"><Link to='kit'>shop now</Link></button>            
          </div>
          <div className="moment_img_con moment_img_con_2">         
           <div>
           <ShapeExample img={away}/>   
           </div>             
-          <button className="jerseyBtn">shop now</button>            
+          <button className="jerseyBtn"><Link to='kit'>shop now</Link></button>            
          </div>         
         <h3>
            OUR NEW  JERSEY<br />  

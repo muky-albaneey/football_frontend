@@ -9,7 +9,7 @@ import OIP_shop_3 from '../assets/OIP_shop_3.jpg';
 import OIP_shop_4 from '../assets/OIP_shop_4.jpg';
 import home from '../assets/home.jpg';
 import away from '../assets/away.jpg';
-import './Shoping.css'; // Import a CSS file for styling
+import './Shoping.css'; 
 
 // Define the data structure
 interface DataType {

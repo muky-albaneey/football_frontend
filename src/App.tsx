@@ -9,6 +9,7 @@ import Contact from './contact/Contact';
 import Shop from './shop/Shop';
 import Blogging from './blog/Blogging';
 import Fixture from './blog/Fixture';
+import Kit from './shop/Kit';
 
 function App() {
     
@@ -29,6 +30,7 @@ function App() {
           <Route index errorElement={<ErrorElement />} element={<Fixture />} />
         </Route>
         <Route path='contact' errorElement={<ErrorElement />} element={<Contact />} />
+        <Route path='kit' errorElement={<ErrorElement />} element={<Kit />} />
         <Route path='shop' errorElement={<ErrorElement />} element={<Shop />} />
         {/* <Route path='pagination' errorElement={<ErrorElement />} element={<Blogging />} /> */}
       </Route>
