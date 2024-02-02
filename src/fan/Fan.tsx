@@ -7,7 +7,7 @@ const Fan = () => {
       <section className="topFanImage">
         <div className="top">
             <h1>
-            “FOOTBALL IS NOTHING WITHOUT <br />
+            “FOOTBALL IS NOTHING WITHOUT 
             FANS. <br />
             <span className='bayo'>-BAYO YINKA</span>
             </h1>
@@ -32,10 +32,10 @@ const Fan = () => {
             </div>
       </section>
       <section className="topFanImage center">
-      <div className="tops top">
+      <div className="top tops">
             <h1>
-            JOIN YOUR LOCAL <span style={{color: '#7B0924'}}>SUPPORTERS </span><br />
-            CLUB
+             JOIN YOUR LOCAL <span style={{color: '#7B0924'}}>SUPPORTERS </span><br />
+             CLUB
             </h1>
         </div>
         <div className="bottom">

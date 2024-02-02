@@ -181,12 +181,20 @@ margin-top: -1rem;
 
 }
 @media all and (max-width: 900px) {
-    .top{
-        
+    .contentInner{
+        justify-content: center;
+        gap: 2rem;
+    }
+    .topFanImage{
+        flex-direction: row;
+        align-items: center;
+        height: 18rem;
     }
     .top h1{
-            margin-left: -1rem;
+        width: 100%;
+            margin-left: 0;
         font-size: 1.2rem;
+        
     }
     .bayo{
         font-size: 0.7rem;
@@ -195,11 +203,19 @@ margin-top: -1rem;
         height: 95rem;
     }
     .bottom{
-        margin-top: -15rem;
+        /* margin-top: -15rem; */
         
+        
+    }
+    .content{
+        flex-direction: column;
     }
     .btnBottom{
         font-size: 0.7rem;
+        width: 10rem;
+    }
+    .topFanText{
+        height: 20rem;
     }
     .topFanText h1{
         font-size: 1rem;
@@ -215,8 +231,15 @@ margin-top: -1rem;
     .newsRed{
         width: 50%;
     }
+    .contentInner{
+        /* justify-content: center; */
+    }
     .contentRight{
-        width: 30%;
+        width: 70%;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        
     }
     .contentInner h2{
         font-weight: bold;
@@ -229,9 +252,9 @@ margin-top: -1rem;
         font-size: 0.8rem;
     }
     .topFanBtn{
-        padding: 0.6rem;
+        padding: 0.9rem;
         font-size: .5rem;
-        width: 10rem;
+        width: 17rem;
         margin-left: .3rem;
     }
     .innerNews{
@@ -242,10 +265,16 @@ margin-top: -1rem;
     }
     .reds{
         margin-top: 9rem;
-        }
-        .tops h1{
-            /* color: red; */
-            
-        }
-       
+     }
+     .contentLeft{
+          width: 100%;        
+        }      
+      
+       .center{
+        flex-direction: column;
+        align-items: flex-start;
+       }
+       .tops{
+        width: 60%;
+       }
 }
