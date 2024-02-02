@@ -130,6 +130,9 @@ margin-left: 3rem;
     #desc_2{
         font-size: 0.8rem;
     }
+    #specialCard{
+        width: 18.3rem;
+    }
 }
 
 @media all and (max-width: 390px) {
@@ -141,6 +144,9 @@ margin-left: 3rem;
     }
     #cardTextDesc{
         font-size: 0.6rem;
+    }
+    #specialCard{
+        width: 18.3rem;
     }
 
     #btnNews{
