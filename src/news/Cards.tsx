@@ -6,17 +6,16 @@ import React from 'react';
 import './news.css';
 function GridExample() {
   
-  const [cardStates, setCardStates] = React.useState(data.map(() => true));
-
+const [cardStates, setCardStates] = React.useState(data.map(() => true));
   
-  const toggleCard = (index : number) => {
+const toggleCard = (index : number) => {
     setCardStates((prevStates) => {
       const newStates = [...prevStates];
       newStates[index] = !newStates[index];
       return newStates;
     });
   };
-
+  
   return (
     <Row xs={1} md={2} className="g-4">
       {data.map((items, index) => (
@@ -28,7 +27,7 @@ function GridExample() {
                 {items.title}
                 <Card.Subtitle
                   className='show'
-                  style={{ color: "rgb(149, 4, 4)", fontWeight: 'bold' }}
+                  style={{ color: "#7B0924", fontWeight: 'bold' }}
                   onClick={() => toggleCard(index)}
                 >
                   {cardStates[index] ? 'see more' : 'hide text'}

@@ -58,8 +58,6 @@ border: none;
 font-weight: bold;
 font-family: monospace;
 margin-left: 3rem;
-
-
 }
 #cardTextDesc{
     font-family: Arial, Helvetica, sans-serif;
@@ -74,39 +72,40 @@ margin-left: 3rem;
 
 .latest_shown{
     display: block;
-   
 }
   
 #columns:hover{
     cursor: pointer;
 }
+
+
 @media all and (max-width: 900px) {
 #card_2{
     height: 18rem;
 }
-    #newsCon{       
-        margin-top: -1rem;
-    }
-    .leftCon,.rightCon{
-        width: 100%;        
-    }
-    #card{
-        width: 22rem;
-        margin: 0 auto;
-        }
-.thirdCard{
-    width: 18rem;
-    margin: 0 auto;
+#newsCon{       
+   margin-top: -1rem;
 }
-    .hide{
-        display: none;
-    }  
-    .show{
-        display: block;
-        text-decoration: underline;
-        text-align: center;
-        color: #7B0924;
-        font-weight: bold;
+.leftCon,.rightCon{
+    width: 100%;        
+}
+#card{
+   width: 22rem;
+   margin: 0 auto;
+}
+.thirdCard{
+  width: 18rem;
+  margin: 0 auto;
+}
+ .hide{
+    display: none;
+  }  
+ .show{
+  display: block;
+  text-decoration: underline;
+  text-align: center;
+   color: #7B0924;
+   font-weight: bold;
     }
     .show:hover{
         cursor: pointer;
