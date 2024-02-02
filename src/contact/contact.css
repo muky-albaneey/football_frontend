@@ -38,12 +38,13 @@ Form input:placeholder-shown{
 .textArea:placeholder-shown{
     font-weight: bold;
 }
+
 .privacy{
-    width: 100%;
+    width: 98%;
     /* padding-left: 2rem; */
 }
 .agreement{
-    width: 66%;
+    width: 85%;
     word-wrap: break-word;
     font-weight: 550;
     

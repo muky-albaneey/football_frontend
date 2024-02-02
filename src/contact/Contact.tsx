@@ -24,7 +24,7 @@ function Contact() {
         <Form.Control type="text" placeholder="Telephone" />
       </Form.Group>
       <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">        
-      <Form.Select aria-label="Default select example">
+      <Form.Select aria-label="Default select example" className="select">
       <option>Interested In</option>
       <option value="1">One</option>
       <option value="2">Two</option>
