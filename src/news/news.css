@@ -146,7 +146,8 @@ margin-left: 3rem;
         font-size: 0.6rem;
     }
     #specialCard{
-        width: 18.3rem;
+        width: 19rem;
+        margin: 0 auto;
     }
 
     #btnNews{
