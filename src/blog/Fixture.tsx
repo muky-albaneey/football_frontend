@@ -16,11 +16,11 @@ const Fixture = () => {
       <div className="headerPagination  paginationItem">
           <header className="fixtureHeader">
              
-          <NavLink to={`.`} end style={({ isActive }) => isActive ? active : {color:'black'}}>
+          <NavLink to={`.`} end style={({ isActive }) => isActive ? active : {color:'black'}} className='link_1'>
           Men
         </NavLink>
         
-            <NavLink to={`#`} style={({isActive}) => isActive ? active :  {color:'black'}}>Women </NavLink>
+            <NavLink to={`#`} style={({isActive}) => isActive ? active :  {color:'black'}} className='link_2'>Women </NavLink>
           </header>
        <div className="allFixtures">
         <span>NEXT FIXTURES</span>
@@ -33,12 +33,12 @@ const Fixture = () => {
         <h6>2 February 2024</h6>
       </div>
       <div className="bottomPagination  paginationItem">
-        <img src={Frame} alt="" className="featuresImg imgAway"/>
+        <img src={Frame} alt="" className="featuresImgBlog "/>
         <button className="paginationBtn">
         4:30 <br />
         WAT
         </button>
-        <img src={willbro} alt="" className="featuresImg imgAway" />
+        <img src={willbro} alt="" className="featuresImgBlog " />
       </div>
     </section>
   )

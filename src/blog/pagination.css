@@ -114,9 +114,9 @@ width: 24%;
     text-align: center;
     border: 1px solid gray;
     border-radius: .5rem;
-    height: 19.5rem;
+    /* height: 19.5rem; */
     gap: 1rem;
-    
+    padding-bottom: 0.4rem;
     
   }
   .fixtureHeader{
@@ -129,7 +129,14 @@ width: 24%;
     width: 50%;
     padding: 1.2rem;
     font-weight: bold;
-    border-radius: .5rem;
+    
+  }
+  .link_1{
+    border-radius: .5rem 0 0 0;
+  }
+
+  .link_2{
+    border-radius: 0 .5rem 0 0;
   }
   .paginationItem{
     width: 100%;
@@ -146,10 +153,13 @@ width: 24%;
   }
   .paginationBtn{
     width: 6rem;
-    padding: 1rem;
+    height: 4rem;
     border: none;
     font-weight: bold;
     font-size: .9rem;
+  }
+  .featuresImgBlog{
+    width: 5rem;
   }
   .bottomPagination{
     width: 100%;
