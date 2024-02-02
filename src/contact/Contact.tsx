@@ -1,75 +1,56 @@
-// import { FaDiscord } from "react-icons/fa"; 
-// import { AiOutlineInstagram } from "react-icons/ai"; 
-// import { BiX } from "react-icons/bi"; 
-import { ImLocation } from "react-icons/im"; 
+import { CiLocationOn } from "react-icons/ci"; 
 import { AiOutlineMail } from "react-icons/ai"; 
-import { BsFillTelephoneXFill } from "react-icons/bs"; 
+import { GiRotaryPhone } from "react-icons/gi"; 
+import Form from 'react-bootstrap/Form';
 import './contact.css'
+import Button from 'react-bootstrap/esm/Button';
 
-const Contact = () => {
+function Contact() {
   return (
-    <section className='contactWrapper'>
-      <h1 className='conTopNote'>
-      Contact Us
-      </h1>
-      <h6>Any question or remarks? Just write us a message!</h6>
-      <main className="contactCon">
-        <div className="contactConRight">
-           <article className="conRightText">
-           <h1>
-                Contact Information
-            </h1>
-            <h6>
-                Say something to start a live chat!
-            </h6> 
-           </article>
-           <div className="centerCon">
-            <div className="phone">
-                <span><BsFillTelephoneXFill /></span><span>+234 *** *******</span>
-            </div>
-            <div className="mail">
-                <span><AiOutlineMail /></span><span>Lorem ipsum</span>
-            </div>
-            <div className="address">
-                <span><ImLocation /></span><span>Lorem ipsum ipsum lorem</span>
-            </div>
-           </div>
-           {/* <div className="bottomCon">
-            <BiX style={{color : 'whitesmoke'}}/> <AiOutlineInstagram /><FaDiscord />
-           </div> */}
+    <section id="formWrapper">
+        <h3>Contact Form</h3>
+        <div id="formCon">
+        <Form>
+        <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">        
+        <Form.Control type="text" placeholder="Name" />
+      </Form.Group>
+      <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">        
+        <Form.Control type="text" placeholder="Surname" />
+      </Form.Group>
+      <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">        
+        <Form.Control type="email" placeholder="name@example.com" />
+      </Form.Group>
+      <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">        
+        <Form.Control type="text" placeholder="Telephone" />
+      </Form.Group>
+      <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">        
+      <Form.Select aria-label="Default select example">
+      <option>Open this select menu</option>
+      <option value="1">One</option>
+      <option value="2">Two</option>
+      <option value="3">Three</option>
+    </Form.Select>
+      </Form.Group>
+      <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">        
+        <Form.Control as="textarea" rows={3} />
+      </Form.Group>
+
+        <div className="privacy">
+        <div className="agreement">
+      The undersigned acknowledges that personal data  will be processed for the purposes of <span>privacy policy</span>, as well as for statistical purposes on anonymized data.
+      </div>
         </div>
-        <div className="contactConLeft">
-            <form action="">
-                <div className="inputs">
-                    <input type="text" name="" id=""  placeholder="First Name"/>
-                    <input type="text" name="" id=""  placeholder="Last Name"/>
-                </div>
-                <div className="inputs">
-                    <input type="mail" name="" id=""  placeholder="Email"/>
-                    <input type="number" name="" id=""  placeholder="Phone Number"/>
-                </div>
-                <div className="selects">
-                    <h2 className="conTopNote_2">Select Subject?</h2>
-                    <div className="radioCon">
-                        <div className="itemRad">
-                        <input type="radio" name="" id="" /> <span>General Inquiry</span>
-                        </div>
-                        <div className="itemRad">
-                        <input type="radio" name="" id="" /> <span>General Inquiry</span>
-                        </div>
-                        <div className="itemRad">
-                        <input type="radio" name="" id="" /> <span>General Inquiry</span>
-                        </div>
-                    </div>
-                </div>
-                <div className="inputText">
-                    <input type="text" name="" id=""  placeholder="Write your message.."/>                    
-                </div>
-            </form>
-        </div>
-      </main>
+      <Button type="submit" id="contactUsBtn">SEND</Button>
+      
+    </Form>
+    </div>
+    <div className="infoContactUs">
+        <div className="contactFoot"><span><GiRotaryPhone /></span> <span>+234-**********</span></div>
+        <div className="contactFoot"><span><AiOutlineMail /></span><span>Mail@mail.com</span></div>
+        <div className="contactFoot"><span></span><CiLocationOn /><span>Lorem ipsum</span></div>
+    </div>
     </section>
-  )
+  );
 }
 
-export default Contact
+export default Contact;
