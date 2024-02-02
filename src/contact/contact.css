@@ -35,6 +35,9 @@ Form input:placeholder-shown{
     padding: .3rem;
     
 }
+.textArea:placeholder-shown{
+    font-weight: bold;
+}
 .privacy{
     width: 100%;
     /* padding-left: 2rem; */
@@ -46,7 +49,7 @@ Form input:placeholder-shown{
     
 }
 #contactUsBtn{
-    width: 97%;
+    width: 100%;
     background-color: #7B0924;
     color: #FFFFFF;
     text-align: center;

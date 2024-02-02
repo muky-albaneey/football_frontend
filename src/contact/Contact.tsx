@@ -18,21 +18,21 @@ function Contact() {
         <Form.Control type="text" placeholder="Surname" />
       </Form.Group>
       <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">        
-        <Form.Control type="email" placeholder="name@example.com" />
+        <Form.Control type="email" placeholder="Email" />
       </Form.Group>
       <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">        
         <Form.Control type="text" placeholder="Telephone" />
       </Form.Group>
       <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">        
       <Form.Select aria-label="Default select example">
-      <option>Open this select menu</option>
+      <option>Interested In</option>
       <option value="1">One</option>
       <option value="2">Two</option>
       <option value="3">Three</option>
     </Form.Select>
       </Form.Group>
       <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">        
-        <Form.Control as="textarea" rows={3} />
+        <Form.Control as="textarea" placeholder="Message (optional)" rows={3} className="textArea" />
       </Form.Group>
 
         <div className="privacy">
