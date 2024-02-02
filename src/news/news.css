@@ -82,7 +82,7 @@ margin-left: 3rem;
 }
 @media all and (max-width: 900px) {
 #card_2{
-    height: 20rem;
+    height: 18rem;
 }
     #newsCon{       
         margin-top: -1rem;
@@ -114,8 +114,8 @@ margin-left: 3rem;
 
     #btnNews{
         width: 55%;
-        height: 2.5rem;        
-        margin-left: 4rem;     
+        height: 2.9rem;        
+        margin-left: 5.4rem;     
        font-size: 0.5rem;
        
        }
