@@ -24,7 +24,7 @@ function Features() {
           <main id="featureItemContent">
           
           <div className="leftFeatureMatchDetails fetureDetails">
-          <img src={willbro} alt='' className="featuresImg imgAway"/>     
+          <img src={willbro} alt='' className="featuresImg"/>     
 
           </div>
           <div className="centerFeatureMatchDetails fetureDetails">
@@ -64,7 +64,7 @@ function Features() {
                 </button>
             </div>
             <div className="rightFeatureMatchDetails fetureDetails">
-            <img src={BEYOND_LIMIT_FA_1} alt="" className="featuresImg imgAway"/>    
+            <img src={BEYOND_LIMIT_FA_1} alt="" className="featuresImg"/>    
             </div>
           </main>
           <div className="leftFeatureMatcFooter">

@@ -86,7 +86,7 @@
 
 .featuresImg{
     width: 7rem;
-    height: 7rem;
+    /* height: 7rem; */
     
 }
 
@@ -115,13 +115,13 @@ color: #7B0924;
 }
 @media all and (max-width: 900px) {
     #carouselFeature{  
-        top: -25rem;      
+        top: -21rem;      
     }
     #featureItemContent{        
     }
     .featuresImg{
-        width: 6.7rem;
-        height: 5rem;
+        width: 7.7rem;
+        /* height: 5rem; */
         
     }
     .leftFeatureMatchDetails :where(.featuresImg){
@@ -162,14 +162,11 @@ color: #7B0924;
         margin-left: -1rem;
     } */
     .featuresImg{
-        width: 2.5rem;
-        height: 5rem;
+        width: 5.5rem;
+        /* height: 5rem; */
         
         
     }
-    .imgAway{
-        width: 2.5rem;
-        height: 4.5rem;
-    }
+
     
 }

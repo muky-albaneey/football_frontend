@@ -53,14 +53,15 @@ td,th{
 }
 
 .standingLogo{
-    width: 3rem;
+    width: 1.3rem;
     border-radius: 100%;
     margin-right: 0.6rem;
 }
 
 @media all and (max-width: 900px) {
     #standingWrapper{
-        margin-top: -90rem;
+        margin-top: -130rem;
+        margin-bottom: -40rem;
     }
     
 }
@@ -72,13 +73,13 @@ td,th{
     }
     .featuresImg{
         width: 4.5rem;
-        height: 5rem;
+        /* height: 5rem; */
         
         
     }
     .imgAway{
         width: 2.5rem;
-        height: 4.5rem;
+        /* height: 4.5rem; */
     }
     
 }
