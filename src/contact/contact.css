@@ -73,3 +73,16 @@ Form input:placeholder-shown{
     gap: 0.3rem;
     font-weight: bold;
 }
+
+@media all and (max-width: 900px) {
+    #formCon{
+        width: 85%;
+    }
+    .agreement{
+        width: 90%;
+        text-align: justify;
+    }
+    .contactFoot{
+        font-size: .7rem;
+    }
+}
