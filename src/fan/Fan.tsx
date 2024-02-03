@@ -34,8 +34,9 @@ const Fan = () => {
       <section className="topFanImage center">
       <div className="top tops">
             <h1>
-             JOIN YOUR LOCAL <span style={{color: '#7B0924'}}>SUPPORTERS </span><br />
-             CLUB
+            JOIN YOUR LOCAL
+             <span style={{color: '#7B0924'}}>SUPPORTERS </span><br />
+             CLUB 
             </h1>
         </div>
         <div className="bottom">

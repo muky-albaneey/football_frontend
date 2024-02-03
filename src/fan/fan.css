@@ -275,7 +275,7 @@ margin-top: -1rem;
         flex-direction: column;
         align-items: flex-start;
        }
-       .tops{
-        width: 60%;
+       .tops h1{
+        width: 40%;
        }
 }
