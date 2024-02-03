@@ -20,7 +20,7 @@
 }
 
 #card{
-width: 20.3rem;
+width: 19.3rem;
 margin: 0 auto;
 
 }
@@ -44,10 +44,7 @@ margin: 0 auto;
     height: 13rem;
 }
 
-#columns .thirdCard{
-     
-     line-height: 1.5rem;
-}
+
 
 #btnNews{
  width: 75%;
@@ -60,13 +57,13 @@ font-family: monospace;
 margin-left: 3rem;
 }
 #cardTextDesc{
-    font-family: Arial, Helvetica, sans-serif;
+    /* font-family: Arial, Helvetica, sans-serif; */
     text-align: justify;
     font-size: .9rem;
 }
 #desc_2{
     font-size: .8rem;        
-    font-family: Arial, Helvetica, sans-serif;
+    /* font-family: Arial, Helvetica, sans-serif; */
     text-align: justify;
 }
 
