@@ -10,6 +10,7 @@ import Shop from './shop/Shop';
 import Blogging from './blog/Blogging';
 import Fixture from './blog/Fixture';
 import Kit from './shop/Kit';
+import Login from './auth/Login';
 
 function App() {
     
@@ -32,6 +33,7 @@ function App() {
         <Route path='contact' errorElement={<ErrorElement />} element={<Contact />} />
         <Route path='kit' errorElement={<ErrorElement />} element={<Kit />} />
         <Route path='shop' errorElement={<ErrorElement />} element={<Shop />} />
+        <Route path='login' errorElement={<ErrorElement />} element={<Login />} />
         {/* <Route path='pagination' errorElement={<ErrorElement />} element={<Blogging />} /> */}
       </Route>
     ))

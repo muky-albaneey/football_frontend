@@ -1,0 +1,68 @@
+.loginWrapper{
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;    
+    margin: 0 auto;
+    gap: 2rem;
+}
+.logHeader{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+    font-weight: bold;
+}
+.loginWrapper input{
+    width: 100%;
+    border: none;
+    border-bottom: .1rem solid gray;
+    padding: 0.8rem;
+}
+
+.logBtn{
+    width: 100%;
+    background-color: #7B0924;
+    padding: .8rem;
+    border: none;
+    border-radius: .5rem;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+.googleBtn{
+    width: 100%;
+    display: flex;    
+    justify-content: flex-start;
+    padding: .6rem;
+    border: .1rem solid gray;
+    border-radius: .5rem;
+    background-color: #FFFFFF;
+}
+.innerGoogle{
+    width: 60%;
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;    
+    font-weight: bold;
+}
+.redC{
+    color: #7B0924;
+    font-weight: bold;
+}
+.gSize{
+    font-size: 1.4rem;
+}
+
+@media all and (max-width: 900px) {
+    .loginWrapper{
+        width: 85%;
+    }
+.logHeader{
+    justify-content: center;
+}
+    .FrameLog{
+        width: 3.4rem;
+    }
+}
