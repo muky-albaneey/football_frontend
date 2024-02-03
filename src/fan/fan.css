@@ -48,6 +48,7 @@ color: whitesmoke;
     height: 100%;
     display: flex;
     justify-content: space-around;
+    
 }
 .contentLeft{
     width: 60%;
@@ -89,6 +90,7 @@ color: whitesmoke;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    
 }
 
 .fanStory{
@@ -97,6 +99,7 @@ color: whitesmoke;
     padding: 2rem;
     display: flex;
     flex-direction: column;
+    
 }
 .fanStory h1{
     font-weight: bold;
@@ -200,13 +203,8 @@ margin-top: -1rem;
         font-size: 0.7rem;
     }
     .fanStory{
-        height: 95rem;
-    }
-    .bottom{
-        /* margin-top: -15rem; */
-        
-        
-    }
+        height: 60rem;
+    }  
     .content{
         flex-direction: column;
     }
@@ -222,12 +220,12 @@ margin-top: -1rem;
         font-size: 1rem;
         
     }
-    .topNews{
-        /* height: 105rem; */
-        height: 60rem;
+    .topNews{        
+        height: 60rem;        
     }
     .topItems{
         width: 100%;
+        height: 30%;
     }
     .newsRed{
         width: 50%;
@@ -259,7 +257,10 @@ margin-top: -1rem;
         margin-left: .3rem;
     }
     .innerNews{
-        font-size: 0.6rem;
+        font-size: 0.4rem;
+    }
+    .innerNews :where(h2,h3){
+        font-size: 0.9rem;
     }
     .innerNews_2{
         margin-top: 0;
