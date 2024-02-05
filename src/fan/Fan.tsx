@@ -35,7 +35,7 @@ const Fan = () => {
       <div className="top tops">
             <h1>
             JOIN YOUR LOCAL
-             <span style={{color: '#7B0924'}}>SUPPORTERS </span><br />
+             <span style={{color: '#7B0924', marginLeft : '2rem'}}>SUPPORTERS </span><br />
              CLUB 
             </h1>
         </div>
