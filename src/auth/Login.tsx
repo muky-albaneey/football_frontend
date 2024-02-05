@@ -1,5 +1,5 @@
 import { FcGoogle } from "react-icons/fc"; 
-import { Link } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 import Frame from '../assets/Frame.jpg'
 import './auth.css'
 const Login = () => {
@@ -7,7 +7,8 @@ const Login = () => {
     <section className='loginWrapper'>
       <div className="logHeader">
         <div className="logLeft">
-            <img src={Frame} alt="" className='Frame FrameLog'/>
+        <NavLink  to='/'><img src={Frame} alt="" className='Frame FrameLog'/></NavLink >
+            
         </div>
         <div className="logRight">AC MIDLANDS</div>
       </div>

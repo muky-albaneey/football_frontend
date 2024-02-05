@@ -13,30 +13,96 @@ import Kit from './shop/Kit';
 import Login from './auth/Login';
 
 function App() {
-    
   const router = createBrowserRouter(
     createRoutesFromElements(
-      <Route path='/'  errorElement={<ErrorElement />} 
-      loader={async ()=>{
-        return null
-      }} element={<Layout />}>
-         <Route index  errorElement={<ErrorElement />}  
-        loader={async ()=>{
-          return null
-        }}element={<Home />} />
-
-        <Route path='about' errorElement={<ErrorElement />} element={<About />} />
-        <Route path='fan' errorElement={<ErrorElement />} element={<Fan />} />
-        <Route path='blog' errorElement={<ErrorElement />} element={<Blogging />} >
-          <Route index errorElement={<ErrorElement />} element={<Fixture />} />
+      <>
+        <Route
+          path='/'
+          errorElement={<ErrorElement />}
+          loader={async () => {
+            return null;
+          }}
+          element={<Layout />}
+        >
+          <Route
+            index
+            errorElement={<ErrorElement />}
+            loader={async () => {
+              return null;
+            }}
+            element={<Home />}
+          />
+  
+          <Route
+            path='about'
+            errorElement={<ErrorElement />}
+            element={<About />}
+          />
+          <Route
+            path='fan'
+            errorElement={<ErrorElement />}
+            element={<Fan />}
+          />
+          <Route
+            path='blog'
+            errorElement={<ErrorElement />}
+            element={<Blogging />}
+          >
+            <Route
+              index
+              errorElement={<ErrorElement />}
+              element={<Fixture />}
+            />
+          </Route>
+          <Route
+            path='contact'
+            errorElement={<ErrorElement />}
+            element={<Contact />}
+          />
+          <Route
+            path='kit'
+            errorElement={<ErrorElement />}
+            element={<Kit />}
+          />
+          <Route
+            path='shop'
+            errorElement={<ErrorElement />}
+            element={<Shop />}
+          />
         </Route>
-        <Route path='contact' errorElement={<ErrorElement />} element={<Contact />} />
-        <Route path='kit' errorElement={<ErrorElement />} element={<Kit />} />
-        <Route path='shop' errorElement={<ErrorElement />} element={<Shop />} />
-        <Route path='login' errorElement={<ErrorElement />} element={<Login />} />
-        {/* <Route path='pagination' errorElement={<ErrorElement />} element={<Blogging />} /> */}
-      </Route>
-    ))
+  
+        {/* Separate route for the login page without the layout */}
+        <Route
+          path='login'
+          errorElement={<ErrorElement />}
+          element={<Login />}
+        />
+      </>
+    )
+  );
+  
+  // const router = createBrowserRouter(
+  //   createRoutesFromElements(
+  //     <Route path='/'  errorElement={<ErrorElement />} 
+  //     loader={async ()=>{
+  //       return null
+  //     }} element={<Layout />}>
+  //        <Route index  errorElement={<ErrorElement />}  
+  //       loader={async ()=>{
+  //         return null
+  //       }}element={<Home />} />
+
+  //       <Route path='about' errorElement={<ErrorElement />} element={<About />} />
+  //       <Route path='fan' errorElement={<ErrorElement />} element={<Fan />} />
+  //       <Route path='blog' errorElement={<ErrorElement />} element={<Blogging />} >
+  //         <Route index errorElement={<ErrorElement />} element={<Fixture />} />
+  //       </Route>
+  //       <Route path='contact' errorElement={<ErrorElement />} element={<Contact />} />
+  //       <Route path='kit' errorElement={<ErrorElement />} element={<Kit />} />
+  //       <Route path='shop' errorElement={<ErrorElement />} element={<Shop />} />
+  //       <Route path='login' errorElement={<ErrorElement />} element={<Login />} />        
+  //     </Route>
+  //   ))
 
   return (
     <>

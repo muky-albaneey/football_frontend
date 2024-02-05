@@ -6,8 +6,16 @@ import Offcanvas from 'react-bootstrap/Offcanvas';
 import { Link, NavLink } from 'react-router-dom';
 import './header.css'
 import Frame from '../assets/Frame.jpg'
+import { useState } from "react";
 
 function Header() {
+
+  const [showOffcanvas, setShowOffcanvas] = useState(false);
+
+  const closeOffcanvas = () => {
+    setShowOffcanvas(showOffcanvas);
+  };
+
   return (
     <>
       {['md'].map((expand) => (
@@ -20,6 +28,7 @@ function Header() {
               id={`offcanvasNavbar-expand-${expand}`}
               aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`}
               placement="end"
+              onHide={true}
               style={{ maxWidth: '60%', textDecoration : 'none' }} 
             >
               <Offcanvas.Header closeButton>

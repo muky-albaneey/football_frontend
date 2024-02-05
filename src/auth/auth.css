@@ -4,15 +4,17 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;    
-    margin: 0 auto;
+    margin: 7rem auto;
     gap: 2rem;
+    
+
 }
 .logHeader{
     width: 100%;
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    gap: 1rem;
+    gap: 8rem;
     font-weight: bold;
 }
 .loginWrapper input{
@@ -61,6 +63,7 @@
     }
 .logHeader{
     justify-content: center;
+    gap: 3rem;
 }
     .FrameLog{
         width: 3.4rem;
