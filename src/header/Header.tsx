@@ -6,15 +6,15 @@ import Offcanvas from 'react-bootstrap/Offcanvas';
 import { Link, NavLink } from 'react-router-dom';
 import './header.css'
 import Frame from '../assets/Frame.jpg'
-import { useState } from "react";
+// import { useState } from "react";
 
 function Header() {
 
-  const [showOffcanvas, setShowOffcanvas] = useState(false);
+  // const [showOffcanvas, setShowOffcanvas] = useState(false);
 
-  const closeOffcanvas = () => {
-    setShowOffcanvas(showOffcanvas);
-  };
+  // const closeOffcanvas = () => {
+  //   setShowOffcanvas(showOffcanvas);
+  // };
 
   return (
     <>
