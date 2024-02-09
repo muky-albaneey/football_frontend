@@ -618,6 +618,7 @@ font-weight: bold;
       width: 8rem;
       height: 8rem;
       background-color: #8820204d;  
+      margin-left: -1rem;
     }
     .checkOutTop :where(h1){
      text-align: center;
