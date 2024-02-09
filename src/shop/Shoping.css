@@ -478,6 +478,9 @@ font-weight: bold;
   color: #7B0924;
   transition: all .9s;
 }
+.logCheckOut a{
+  color: #7B0924;
+}
  @media (max-width: 908px) {
   .kitCon{
     flex-direction: column;

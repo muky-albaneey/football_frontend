@@ -1,6 +1,6 @@
 import { BiPlus } from "react-icons/bi"; 
 import { Link, NavLink } from "react-router-dom";
-import Frame from '../assets/Frame.jpg';
+// import Frame from '../assets/Frame.jpg';
 import { BiCart } from 'react-icons/bi';
 import ButtonsExample from './Searching';
 import Kit_img from "./Kit_img";
@@ -38,7 +38,7 @@ const Kit = () => {
       </main>
       <main id="navHeader">
         <div className="left_navHeader">
-        <NavLink  to='/'><img src={Frame} alt="" className='Frame FrameShop'/></NavLink>
+        {/* <NavLink  to='/'><img src={Frame} alt="" className='Frame FrameShop'/></NavLink> */}
         <span >ACM SHOP</span>
         </div>
         <ButtonsExample /> 

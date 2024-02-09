@@ -19,7 +19,7 @@ const Checkout = () => {
         </main>
         <main className="logCheckOut">
             <h1 className="Already">Already have an account?</h1>
-            <h1>LOGIN <span style={{color:'#000000'}}>or</span> REGISTER</h1>
+            <h1><Link to='/login'>LOGIN </Link> <span style={{color:'#000000'}}> or </span><Link to=''> REGISTER</Link> </h1>
         </main>
        <main className="addressCheckoutInputCon">
         <form action="">

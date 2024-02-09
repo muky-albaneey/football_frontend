@@ -4,7 +4,7 @@ import Shoping from './Shoping'
 // import Searching from "./Searching";
 import { NavLink } from "react-router-dom";
 import Shoping_two from "./Shoping_two";
-import Frame from '../assets/Frame.jpg';
+// import Frame from '../assets/Frame.jpg';
 import { BiCart } from 'react-icons/bi';
 import ButtonsExample from './Searching';
 
@@ -18,7 +18,7 @@ const Shop = () => {
       </main>
       <main id="navHeader">
         <div className="left_navHeader">
-        <NavLink  to='/'><img src={Frame} alt="" className='Frame FrameShop'/></NavLink>
+        {/* <NavLink  to='/'><img src={Frame} alt="" className='Frame FrameShop'/></NavLink> */}
         <span >ACM SHOP</span>
         </div>
         <ButtonsExample /> 
