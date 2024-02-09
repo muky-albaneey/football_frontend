@@ -56,10 +56,11 @@
     width: 90%;   
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-direction: column;    
     padding: .5rem;
     border: none;
-    margin: 4rem auto;
+    margin: 0 auto;
     font-weight: bold;
     gap: 1.2rem;
 }
@@ -68,20 +69,93 @@
     width: 100%;   
     display: flex;
     justify-content: center;
-    flex-direction: column; 
-    background-color: red;
+    align-items: center;
+    flex-direction: column;     
     gap: 2.3rem;
+    
 }
 
 form :where(#addressCheckoutInput){
     width: 100%;       
+    display: flex;
     justify-content: center;
-    flex-direction: column; 
-    background-color: red;
+    align-items: center;
+    /* flex-direction: column;  */
+        gap: 1.3rem;
 }
 form :where(input){
-    width: 45%;       
+    width: 47%;       
+    padding: .6rem;
     justify-content: center;
-    flex-direction: column; 
-    background-color: red;
+    flex-direction: column;  
+    outline: none; 
+    border: .1rem solid silver;
+    border-radius: .1rem;  
+}
+.addressCheckoutInputAddress{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.7rem;
+}
+.addressCheckoutInputAddress :where(#addressCheckoutInput){
+    width: 100%;       
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    /* flex-direction: column;  */
+        
+}
+#addressCheckoutInput :where(input){
+    width: 100%;       
+   
+        
+}
+
+.addressCheckoutBtn{
+    width: 25%;
+    background-color: #000000;
+    color: #FFFFFF;
+    padding: 1.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+#addressCheckoutWrapper :where(h3){
+color: #7B0924;
+}
+.addressCheckoutBtn :where(a){
+    color: #FFFFFF;
+}
+
+@media (max-width: 908px) {
+    .addressCheckoutHeaderCon :where(img){
+        width: 16%;
+    }
+    #addressCheckoutWrapper :where(h3){
+        font-size: 1rem;
+        }
+        .logCheckOut :where(h1){    
+            font-size: 1rem;
+            
+        }
+        .addressCheckoutBtn{
+            width: 65%;
+            padding: 0.8rem;
+            font-size: 0.9rem;
+        }
+        #addressCheckoutWrapper :where(.logCheckOut){
+            height: 7rem;
+            margin-top: -1.7rem;
+            margin: 1 auto;
+        }
+        #addressCheckoutWrapper :where(.addressCheckoutInputCon){
+            margin-top: -3rem;
+            
+        }
 }

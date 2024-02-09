@@ -1,8 +1,9 @@
 import { TbCurrencyNaira } from "react-icons/tb"; 
-import React from 'react'
 import Frame from '../assets/Frame.jpg';
 import './checkout.css'
 import { IoBagCheckOutline } from "react-icons/io5";
+import { Link } from "react-router-dom";
+
 
 const Checkout = () => {
   return (
@@ -17,7 +18,7 @@ const Checkout = () => {
             </header>
         </main>
         <main className="logCheckOut">
-            <h1 className="">Already have an account?</h1>
+            <h1 className="Already">Already have an account?</h1>
             <h1>LOGIN <span style={{color:'#000000'}}>or</span> REGISTER</h1>
         </main>
        <main className="addressCheckoutInputCon">
@@ -43,7 +44,7 @@ const Checkout = () => {
 
         <button className="addressCheckoutBtn">
         <span><IoBagCheckOutline /></span>
-          <span>Continue Checkout</span>
+          <Link to=''>Continue Checkout</Link>
         </button>
         </form>
         

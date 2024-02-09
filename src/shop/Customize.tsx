@@ -115,7 +115,7 @@ const Customize = () => {
           <span>Checkout</span>
           </button>
         </div>
-        <Link to=''>CONTINUE SHOPPING</Link>
+        <Link to='/checkout'>CONTINUE SHOPPING</Link>
         <button className="x"><BiX /></button>
      </main>
     </section>  
