@@ -1,7 +1,5 @@
 import { TbCurrencyNaira } from "react-icons/tb"; 
-
 import { Link, NavLink } from "react-router-dom";
-import Frame from '../assets/Frame.jpg';
 import { BiCart, BiX } from 'react-icons/bi';
 import ButtonsExample from './Searching';
 import { IoBagCheckOutline } from "react-icons/io5";
@@ -12,12 +10,10 @@ import Row from 'react-bootstrap/Row';
 import Dropdown from 'react-bootstrap/Dropdown';
 import { useCartStore } from "../store/cart";
 import home from '../assets/home.jpg';
-const Customize = () => {
-    const styles ={
-        fontWeight : 'bold'
-    }
-    const {  setCartSize, setCartQ, quantity, size, isOrder} = useCartStore();
 
+
+const Customize = () => { 
+    const {  setCartSize, setCartQ, quantity, size} = useCartStore();
     const handleSizeButtonClick = (newSize : string) => {
       setCartSize(newSize);
       console.log(size)

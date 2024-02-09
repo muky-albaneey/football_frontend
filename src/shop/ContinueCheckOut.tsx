@@ -1,9 +1,6 @@
 import { BiX } from "react-icons/bi"; 
-
 import { TbCurrencyNaira } from "react-icons/tb"; 
-
 import { Link, NavLink } from "react-router-dom";
-import Frame from '../assets/Frame.jpg';
 import { BiCart } from 'react-icons/bi';
 import ButtonsExample from './Searching';
 import { IoBagCheckOutline } from "react-icons/io5";
@@ -16,10 +13,8 @@ import { useCartStore } from "../store/cart";
 import home from '../assets/home.jpg';
 
 const ContinueCheckOut = () => {
-    const styles ={
-        fontWeight : 'bold'
-    }
-    const {  setCartSize, setCartQ, quantity, size, isOrder} = useCartStore();
+ 
+    const {  setCartSize, setCartQ, quantity, size} = useCartStore();
 
     const handleSizeButtonClick = (newSize : string) => {
       setCartSize(newSize);

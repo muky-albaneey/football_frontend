@@ -18,7 +18,7 @@ const Kit = () => {
         fontWeight : 'bold'
     }
 
-    const {  setCartSize, setCartQ, quantity, size, isOrder} = useCartStore();
+    const {  setCartSize, setCartQ, quantity, size,} = useCartStore();
     
     const handleSizeButtonClick = (newSize : string) => {
       setCartSize(newSize);
