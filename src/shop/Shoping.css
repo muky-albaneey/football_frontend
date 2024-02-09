@@ -360,7 +360,7 @@ border-radius: .2rem;
 }
 .checkOutTop :where(h1){
  text-align: center;
- font-size: 2rem;
+ font-size: 1.6rem;
 }
 .checkOutTopRight :where(.checkOutTopRightInfo){
   width: 100%;
@@ -688,6 +688,10 @@ font-weight: bold;
   padding: 0.5rem;
 
 }
+.checkOutTopRightLeftInfoInputs :where(input::placeholder){
+  font-size: 0.6rem;
+  
+ }
  }
  
 
