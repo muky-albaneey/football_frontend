@@ -14,6 +14,7 @@ import Login from './auth/Login';
 import Partners from './footer/Partners';
 import Customize from './shop/Customize';
 import ContinueCheckOut from './shop/ContinueCheckOut';
+import Checkout from './shop/Checkout';
 
 function App() {
   const router = createBrowserRouter(
@@ -86,6 +87,11 @@ function App() {
             path='shop'
             errorElement={<ErrorElement />}
             element={<Shop />}
+          />
+               <Route
+            path='checkout'
+            errorElement={<ErrorElement />}
+            element={<Checkout />}
           />
         </Route>
   
