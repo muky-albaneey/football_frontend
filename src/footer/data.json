@@ -1,0 +1,30 @@
+[
+    {
+        "id": "1",
+        "img": "./bitnob-logo.png",
+        "text": "Bitnob",
+        "link" : "https://bitnob.com/"
+        
+    },
+    {
+        "id": "2",
+        "img": "./RIDA-logo-1.jpg",
+        "text": "Rida Bitters",
+        "link" : "https://rida.app/"
+            
+    },
+    {
+        "id": "3",
+        "img": "./download.jpg",        
+        "text": "Noones" ,
+        "link" : "https://noones.com/about"    
+    },
+    {
+        "id": "4",
+        
+        
+        "img": "./Linear.svg",
+        "text": "Brails" ,
+        "link" : "https://onbrails.com/"
+    }
+]

@@ -11,6 +11,9 @@ import Blogging from './blog/Blogging';
 import Fixture from './blog/Fixture';
 import Kit from './shop/Kit';
 import Login from './auth/Login';
+import Partners from './footer/Partners';
+import Customize from './shop/Customize';
+import ContinueCheckOut from './shop/ContinueCheckOut';
 
 function App() {
   const router = createBrowserRouter(
@@ -63,6 +66,21 @@ function App() {
             path='kit'
             errorElement={<ErrorElement />}
             element={<Kit />}
+          />
+            <Route
+            path='customize'
+            errorElement={<ErrorElement />}
+            element={<Customize />}
+          />
+             <Route
+            path='continueCheckOut'
+            errorElement={<ErrorElement />}
+            element={<ContinueCheckOut />}
+          />
+            <Route
+            path='partners'
+            errorElement={<ErrorElement />}
+            element={<Partners />}
           />
           <Route
             path='shop'

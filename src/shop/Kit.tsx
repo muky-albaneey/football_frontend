@@ -1,5 +1,5 @@
 import { BiPlus } from "react-icons/bi"; 
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import Frame from '../assets/Frame.jpg';
 import { BiCart } from 'react-icons/bi';
 import ButtonsExample from './Searching';
@@ -10,10 +10,25 @@ import Dropdown from 'react-bootstrap/Dropdown';
 import { Card } from 'antd';
 import OIP_shop_1 from '../assets/OIP_shop_1.jpg';
 import game_icons_comet_spark from '../assets/game_icons_comet_spark.jpg';
+import { useCartStore } from "../store/cart";
+
+
 const Kit = () => {
     const styles ={
         fontWeight : 'bold'
     }
+
+    const {  setCartSize, setCartQ, quantity, size, isOrder} = useCartStore();
+    
+    const handleSizeButtonClick = (newSize : string) => {
+      setCartSize(newSize);
+      console.log(size)
+    };
+  
+    const handleQuantitySelect = (newQuantity : number) => {
+      setCartQ(newQuantity);
+      console.log(quantity)
+    };
   return (  
       <section className="shopWrapperMother">
       
@@ -50,31 +65,31 @@ const Kit = () => {
         <h5><span style={styles}>Regular : </span> <span><TbCurrencyNaira />  23,000.00</span></h5>
         <div className="kitBox">
             <div className="kitBoxLeft">
-                <button className="kitBoxLeftBtn s">S</button>
-                <button className="kitBoxLeftBtn">2XL</button>
+            <button className="kitBoxLeftBtn s" onClick={() => handleSizeButtonClick('S')}>S</button>
+              <button className="kitBoxLeftBtn" onClick={() => handleSizeButtonClick('2XL')}>2XL</button>
                 <div>
                 <span className="quality">Quantity</span>
-                <Dropdown  className="kitBoxLeftBtn kitBoxLeftBtnDrop">
-                 <Dropdown.Toggle variant="" id="dropdown-basic">
-                     1
-                  </Dropdown.Toggle>
-
-      <Dropdown.Menu>
-        <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-        <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
-        <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
-      </Dropdown.Menu>
-    </Dropdown></div> 
+                <Dropdown className="kitBoxLeftBtn kitBoxLeftBtnDrop">
+        <Dropdown.Toggle variant="" id="dropdown-basic">
+          0
+        </Dropdown.Toggle>
+        <Dropdown.Menu>
+          <Dropdown.Item onClick={() => handleQuantitySelect(1)}>1</Dropdown.Item>
+          <Dropdown.Item onClick={() => handleQuantitySelect(2)}>2</Dropdown.Item>
+          <Dropdown.Item onClick={() => handleQuantitySelect(3)}>3</Dropdown.Item>
+          <Dropdown.Item onClick={() => handleQuantitySelect(4)}>4</Dropdown.Item>
+        </Dropdown.Menu>
+      </Dropdown></div> 
             </div>
             <div className="kitBoxRight">
-                <div className="kitBoxRightTop">
-                <button className="kitBoxBtnRightTop">M</button>
-                <button className="kitBoxBtnRightTop">XL</button>
-                <button className="kitBoxBtnRightTop">L</button>
+                <div className="kitBoxRightTop">  
+                <button className="kitBoxBtnRightTop" onClick={() => handleSizeButtonClick('M')}>M</button>
+                <button className="kitBoxBtnRightTop"  onClick={() => handleSizeButtonClick('XL')}>XL</button>
+                <button className="kitBoxBtnRightTop"  onClick={() => handleSizeButtonClick('L')}>L</button>
                 </div>
                 <div className="kitBoxRightBottom">
-                <button className="kitBoxBtnRightBottom">Customise</button>
-                <button className="kitBoxBtnRightBottom ac">Add to Cart</button>
+                <button className="kitBoxBtnRightBottom"><Link to='/customize'>Customise</Link></button>
+                <button className="kitBoxBtnRightBottom ac"><Link to='/continueCheckOut'>Add to Cart</Link> </button>
             </div>                
             </div>
           

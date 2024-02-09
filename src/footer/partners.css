@@ -1,0 +1,102 @@
+#partnerWrapper{
+  background-color: #D5D5D5;
+  width: 100%;   
+  display: flex; 
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  /* gap: 3rem; */
+  
+}
+
+
+#partnerWrapper :where(.topPartner){
+   width: 70%;     
+   display: flex; 
+  justify-content: center;     
+  margin-top: 3rem;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.topPartner :where(.partnerInfo){
+    width: 35%;
+    height: 30rem; 
+    background: #FFFFFF;
+    margin: 2rem;
+    display: flex; 
+    justify-content: center;     
+    flex-direction: column;        
+    gap: .5rem;
+}
+
+.partnerInfo :where(.partnerInfoStart,.partnerInfoCenter,.partnerInfoEnd){
+    width: 100%;
+    height: 25%; 
+    /* background: #c62828; */
+ 
+    
+}
+
+.partnerInfoStart{
+    height: 40%;
+    display: flex; 
+    justify-content: center;   
+    align-items: center;
+}
+
+
+.partnerInfoStart :where(.partnerInfoStartImg){
+width: 14rem;
+height: 8rem;
+}
+.partnerInfoCenter{
+    display: flex; 
+    justify-content: center;   
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 0.4rem;
+    padding-left: 1rem;
+}
+.partnerInfoCenter :where(.partnerInfoCenterLine){
+    width: 10%;
+    height: .5rem; 
+    background-color: #7B0924;
+}
+
+.partnerInfoEnd{
+    display: flex; 
+    justify-content: center;   
+    align-items: center;
+
+}
+.partnerInfoEnd :where(.partnerInfoEndBtn){
+    width: 35%;
+    height: 2.4rem;
+    border: none;
+    border-radius: .2rem;
+    background-color: #7B0924;
+}
+
+.partnerInfoEndBtn :where(a){
+   color: #FFFFFF;
+}
+
+@media (max-width: 908px) {
+
+    #partnerWrapper :where(.topPartner){
+        width: 100%;     
+       
+     }
+
+    .topPartner :where(.partnerInfo){
+        width: 100%;
+        height: 20rem; 
+       
+    }
+
+    .partnerInfoStart :where(.partnerInfoStartImg){
+        width: 9rem;
+        height: 6rem;
+        }
+}

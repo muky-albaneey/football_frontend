@@ -35,6 +35,7 @@
   display: flex;  
   justify-content: space-between;
   align-items: center;
+  margin: .6rem;
  }
  .left_navHeader{
   width: 25%;
@@ -172,18 +173,19 @@ width: 20rem;
 height: 12rem;
 }
 .kitCon :where(.kitLeft,.kitRight){
-  width: 28%;
-  /* background-color: #FFFFFF; */
+  width: 28%;  
   height: 30rem;
   display: flex;
   justify-content: center;
   align-items: flex-start;
   flex-direction: column;  
+  /* background-color: red; */
 }
 
 .kitCon :where(.kitRight){
   width: 38%;  
   padding-left: 3rem;
+  /* background-color: #7B0924; */
 }
 .kitRight :where(.kitBox){
   width: 95%;
@@ -218,16 +220,18 @@ gap: 2.3rem;
 }
 .kitBox :where(.kitBoxRight){
   width: 80%;
-height: 100%;
-
-display: flex;
+  height: 100%;
+  display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  /* background-color: aqua; */
+  gap: 2.1rem;
 }
 .kitBoxRight :where(.kitBoxRightTop,.kitBoxRightBottom){
   width: 100%;
   height: 34%;
+  /* background-color: green; */
 }
 .kitBoxRight :where(.kitBoxRightBottom){
 
@@ -265,6 +269,9 @@ border-radius: .2rem;
 .ac{
   background-color: #7B0924;
 }
+.kitBoxBtnRightBottom a{
+  color: #FFFFFF;
+}
 .kitBoxLeftBtnDrop{
   padding: 0.3rem;
 }
@@ -290,14 +297,186 @@ border-radius: .2rem;
     justify-content: space-between;
     border-bottom: .1rem solid silver;
 }
-.lastView{
-  /* background-color: red; */
+.lastView{  
   width: 90%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: baseline;
+}
+
+/* CHECKOUT */
+
+#checkOutCon{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8rem;
+  position: relative;
+}
+#checkOutCon :where(.checkOutTop){
+  width: 90%;
+  height: 20rem;  
+  background-color: #D5D5D54D;
+  border: .1rem solid silver;
+  margin-top: 1.3rem;
+  display: flex;  
+  justify-content: center;
+  align-items: center;
+}
+
+.checkOutTop :where(.checkOutTopLeft){
+  width: 20%;
+  height: 100%;  
+  /* background-color: #8820204d;  */
+  display: flex;  
+  justify-content: center;
+  align-items: center; 
+}
+.checkOutTopLeft :where(img){
+  width: 27rem;
+  background-color: #8820204d;  
+}
+
+.checkOutTopLeft :where(.checkOutTopLeft){
+  width: 30%;
+  height: 100%;  
+  background-color: #8820204d; 
+  display: flex;  
+  justify-content: center;
+  align-items: center; 
+}
+.checkOutTop :where(.checkOutTopRight){
+  width: 60%;
+  height: 96%;  
+  /* background-color: #ad0c0c4d;   */
+  display: flex;  
+  justify-content: center;
+  align-items: center; 
+  flex-direction: column;
+}
+.checkOutTop :where(h1){
+ text-align: center;
+ font-size: 2rem;
+}
+.checkOutTopRight :where(.checkOutTopRightInfo){
+  width: 100%;
+  height: 100%;
+  display: flex;  
+  justify-content: center;
+  align-items: center; 
+  
+}
+.checkOutTopRightInfo :where(.checkOutTopRightLeftInfo){
+  width: 65%;
+  display: flex;  
+  justify-content: center;
+  align-items: center; 
+  flex-direction: column;
+  gap: 2rem;
+
+}
+.checkOutTopRightInfo :where(.checkOutTopRightRightInfo){
+  width: 30%;
+  display: flex;  
+  justify-content: center;
+  align-items: center; 
+  flex-direction: column;
+  
+  
+}
+.checkOutTopRightLeftInfo :where(.checkOutTopRightLeftInfoInputs){
+  width: 90%;
+  display: flex;  
+  justify-content: center;
+  align-items: center;   
+gap: 10rem;
+}
+.checkOutTopRightLeftInfoInputs :where(.checkInputLeft, .checkInputRight){
+  
+  display: flex;  
+  justify-content: center;
+  align-items: center;   
+flex-direction: column;
+font-weight: bold;
+}
+.checkOutTopRightLeftInfoInputs :where(input){
+ padding: .7rem;
+ width: 30%;
+}
+.checkOutTopRightLeftInfo :where(.checkOutTopRightLeftInfoSelect){
+  width: 90%;
+  display: flex;  
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;   
+
+}.checkOutTopRightLeftInfoSelect :where(.checkOutTopRightLeftInfoSelectOne){
+  width: 30%;
+  display: flex;  
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+}
+.quality{
+  margin: 0 auto;  
+  text-align: center;  
+}
+#checkOutCon :where(.checkOutBottom){
+  width: 30%;
+  height: 20rem;    
+  border: .1rem solid silver;
+  margin-top: -4rem;
+  display: flex;  
+  align-items: center;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.checkOutBottom :where(.checkOutBottomBtn){
+  width: 40%;
+ background-color: black;
+ color: #FFFFFF;
+ padding: 1rem;
+ display: flex;  
+ justify-content: center;
+ align-items: center;
+ gap: .5rem;
+ border: none;
+ border-radius: .2rem;
+}
+
+.checkOutBottom :where(.checkOutBottomHeader){
+  width: 100%;
+  height: 30%;
+  background-color: #D5D5D54D;
+  margin-top: 2rem;
+  display: flex;  
+  justify-content: center;
+  align-items: center;
+  gap: 6rem;
+  font-weight: bold;
+}
+#checkOutCon :where(a){
+  color: #7B0924;
+  font-weight: bold;
+}
+
+.x{
+  position: absolute;
+  top: 3.5rem;
+  right: 5.9rem;
+  width: 4%;
+  border: none;
+  font-size: 3rem;
+}
+.x:hover{
+  color: #7B0924;
+  transition: all .9s;
 }
  @media (max-width: 908px) {
   .kitCon{
@@ -332,7 +511,8 @@ border-radius: .2rem;
     gap: 1rem;
   }
   .downNav :where(h1){
-    font-size: 0.2rem;
+    font-size: 0.6rem;
+    margin-top: .2rem;
     text-align: center;
   }
   .kitBoxRightTop{
@@ -345,10 +525,20 @@ border-radius: .2rem;
     width: 15rem;
     height: 5rem;
     }
+    .kitBox :where(.kitBoxRight){     
+      gap: 1.9rem;
+    }
+    .kitBoxRight :where(.kitBoxRightTop,.kitBoxRightBottom){
+      
+      height: 34%;
+      
+    }
   .custom-card {
     width: 100%;
   }
-
+#navHeader{
+  width: 100%;
+}
   .shoping-cards {
     padding: 0 10px;
   }
@@ -409,6 +599,83 @@ border-radius: .2rem;
     .FrameShop{
       width: 6rem;
     }
+
+
+    /* CHECK-OUT */
+    #checkOutCon :where(.checkOutTop){
+      width: 96%;
+      height: 13rem;   
+      justify-content: space-between;              
+      gap: 0;  
+    }
+    .checkOutTop :where(.checkOutTopLeft){
+      flex-direction: column;
+      justify-content: center;      
+      
+      
+     }
+    .checkOutTopLeft :where(img){
+      width: 8rem;
+      height: 8rem;
+      background-color: #8820204d;  
+    }
+    .checkOutTop :where(h1){
+     text-align: center;
+     font-size: .5rem;
+     font-weight: bold;
+    }
+    .checkOutTopRightLeftInfo :where(.checkOutTopRightLeftInfoInputs){               
+    gap: 1rem;
+    }
+    .checkOutTopRightLeftInfoInputs :where(span){               
+      font-size: 0.8rem;
+      font-weight: bold;
+      }
+      .checkOutTop :where(.checkOutTopRight){       
+        display: flex; 
+        height: 85%;
+        width: 75%; 
+        justify-content: space-between;
+        /* background-color: #7B0924; */
+                
+      }
+      #dropdown-basic{
+        font-size: 0.8rem;
+        font-weight: bold;
+      }
+
+      .checkOutTopRightLeftInfo :where(.checkOutTopRightLeftInfoSelect){
+        width: 100%;
+        display: flex;  
+        justify-content: center;
+        align-items: center;
+        gap: .3rem;   
+      
+      }.checkOutTopRightLeftInfoSelect :where(.checkOutTopRightLeftInfoSelectOne){
+        width: 6rem;
+        display: flex;  
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+      
+      }
+      .checkOutTopRightRightInfoItems :where(span){
+       font-size: 0.6rem;
+       font-weight: bold;
+      
+      }
+      .checkOutTopRightLeftInfoInputs :where(input){
+        padding: .7rem;
+        width:9.5rem;
+        margin-right: -4rem;
+        margin-left: 2rem;
+       }
+
+      .x{        
+        top: 1.4rem;
+        right: 1.1rem;  
+        font-size: 1.3rem;    
+      }
  }
  
 
@@ -470,5 +737,56 @@ border-radius: .2rem;
   font-size: 0.5rem;
   
 }
+.checkOutTopLeft :where(img){
+  width: 6rem;
+  height: 6rem;
+  background-color: #8820204d;  
+}
+.checkOutTopRightRightInfoItems :where(span){
+  font-size: 0.4rem;
+  font-weight: bold;
+ 
  }
-
+ .x{        
+   top: 1.1rem;
+   right: .9rem;  
+   font-size: 1rem;  
+   height: 0.2rem;
+ }
+ .checkOutTopRightLeftInfoInputs :where(span){               
+  font-size: 0.6rem;
+  font-weight: bold;
+  }
+#dropdown-basic{
+    font-size: 0.6rem;
+    font-weight: bold;
+  }
+  .quality{
+    font-size: 0.6rem;
+    
+  }
+  .checkOutTopRightLeftInfo :where(.checkOutTopRightLeftInfoSelect){
+    width: 100%;
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;   
+  
+  }
+  .checkOutTopRightLeftInfoSelect :where(.checkOutTopRightLeftInfoSelectOne){
+    width: 4.5rem;
+  height: 2.3rem;
+  
+  }
+  .checkOutTop :where(h1){
+    
+    font-size: .5rem;
+    
+   }
+   .checkOutTopRightLeftInfoInputs :where(input){
+    padding: .3rem;
+    width:6.5rem;
+    margin-right: -3rem;
+    margin-left: 2rem;
+   }
+ }
