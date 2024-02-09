@@ -688,8 +688,9 @@ font-weight: bold;
   padding: 0.5rem;
 
 }
-.checkOutTopRightLeftInfoInputs :where(input::placeholder){
+input::placeholder{
   font-size: 0.6rem;
+  font-weight: bold;
   
  }
  }
