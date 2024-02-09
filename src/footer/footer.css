@@ -150,6 +150,12 @@ width: 50%;
     font-family: monospace; 
    
 }
+.p_l{
+    color: #FFFFFF;
+}
+.p_l_t{
+    color: black;
+}
 
 @media all and (max-width: 900px) {
   

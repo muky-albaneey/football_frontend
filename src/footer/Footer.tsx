@@ -5,13 +5,15 @@ import { BsFacebook } from "react-icons/bs";
 import { BiX } from "react-icons/bi"; 
 import Frame from '../assets/Frame.jpg'
 import './footer.css'
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
    <div className="fooWrapper">
     <div className="sectionWrapper">
      <h6 >
-    Our Sponsors
+     <Link to='partners' className='p_l_t'> Our Sponsors</Link>
+   
     </h6>
       <section className="patners">
          <div className="p_sec_1">
@@ -59,7 +61,7 @@ const Footer = () => {
       
       <div className="foo_left">
         <div>
-          <h6>Partners</h6>
+          <h6><Link to='partners' className='p_l'>Partners</Link> </h6>
           <h6>Transfer windows</h6>          
         </div>
         <div>
