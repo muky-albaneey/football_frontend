@@ -279,7 +279,9 @@ color: #7B0924;
  #featureAllStandingWrapper :where(h1){
     font-size: .8rem;
  }
-    
+    .p_l_t{
+        font-size: 0.8rem;
+    }
 }
 
 @media all and (max-width: 390px) {
