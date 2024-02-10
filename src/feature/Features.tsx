@@ -41,7 +41,7 @@ function Features() {
                 } */}
        
           <div className="leftFeatureMatcFooter">
-          <Link to=''>See all matches</Link>
+          <Link to='club_fixtures'>See all matches</Link>
           </div>
         </Carousel.Item>
         <Carousel.Item id='featureItem'>
@@ -68,7 +68,7 @@ function Features() {
             </div>
           </main>
           <div className="leftFeatureMatcFooter">
-          <Link to=''>See all matches</Link>
+          <Link to='club_fixtures'>See all matches</Link>
           </div>
         </Carousel.Item>
         <Carousel.Item id='featureItem'>
@@ -95,7 +95,7 @@ function Features() {
             </div>
           </main>
           <div className="leftFeatureMatcFooter">
-          <Link to=''>See all matches</Link>
+          <Link to='club_fixtures'>See all matches</Link>
           </div>
         </Carousel.Item>
         <Carousel.Item id='featureItem'>
@@ -122,7 +122,7 @@ function Features() {
             </div>
           </main>
           <div className="leftFeatureMatcFooter">
-          <Link to=''>See all matches</Link>
+          <Link to='club_fixtures'>See all matches</Link>
           </div>
         </Carousel.Item>
       </Carousel>

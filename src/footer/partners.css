@@ -9,7 +9,16 @@
   
 }
 
-
+.partnerWrapperHeader{
+    width: 100%;
+    padding: 1rem;
+    color: #FFFFFF;
+    background-color: #7B0924;
+    display: flex; 
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
 #partnerWrapper :where(.topPartner){
    width: 70%;     
    display: flex; 
@@ -98,5 +107,9 @@ height: 8rem;
     .partnerInfoStart :where(.partnerInfoStartImg){
         width: 9rem;
         height: 6rem;
+        }
+        .partnerWrapperHeader{
+            padding: 0.4rem;
+            font-size: 0.8rem;
         }
 }

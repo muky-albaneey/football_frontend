@@ -15,6 +15,9 @@ import Partners from './footer/Partners';
 import Customize from './shop/Customize';
 import ContinueCheckOut from './shop/ContinueCheckOut';
 import Checkout from './shop/Checkout';
+import Standing_page from './feature/Standing_page';
+import Features_page from './feature/Features_page';
+import Club_fixtures from './feature/Club_fixtures';
 
 function App() {
   const router = createBrowserRouter(
@@ -93,6 +96,26 @@ function App() {
             errorElement={<ErrorElement />}
             element={<Checkout />}
           />
+           <Route
+            path='club_fixtures'
+            errorElement={<ErrorElement />}
+            element={<Club_fixtures />}>
+
+            <Route
+                index
+                errorElement={<ErrorElement />}
+                element={<Features_page />}
+              />
+
+              <Route
+                path='standing_page'
+                errorElement={<ErrorElement />}
+                element={<Standing_page />}
+              />
+               
+
+          </Route>
+             
         </Route>
   
         {/* Separate route for the login page without the layout */}

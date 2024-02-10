@@ -12,7 +12,7 @@ const Footer = () => {
    <div className="fooWrapper">
     <div className="sectionWrapper">
      <h6 >
-     <Link to='partners' className='p_l_t'> Our Sponsors</Link>
+     <Link to='partners' className='p_l_t'> OUR PARTNERS</Link>
    
     </h6>
       <section className="patners">

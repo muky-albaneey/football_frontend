@@ -5,7 +5,9 @@ import { Link } from 'react-router-dom';
 const Partners = () => {
   return (
     <section id='partnerWrapper'>
-
+      <div className="partnerWrapperHeader">
+        <h2>OUR PARTNERS</h2>
+      </div>
       <main className="topPartner">
         {
           data.map((item)=>(

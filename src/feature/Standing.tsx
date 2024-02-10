@@ -56,22 +56,22 @@ const Standing = () => {
     <Table striped bordered hover>
       <thead>
         <tr>
-          <th></th>
+          <th className='align'>Pos</th>
           <th style={{textTransform: 'uppercase'}}>Nlo League</th>
-          <th>Pts</th>
-          <th>P</th>
-          <th>G</th>
+          <th className='align'>Pts</th>
+          <th className='align'>P</th>
+          <th className='align'>G</th>
         </tr>
       </thead>
       <tbody>
        {
         stand.map((item)=>(
             <tr>
-            <td>{item.id++}</td>
+            <td className='align'>{item.id++}</td>
             <td><img src={(item.logo && item.logo)} alt=""  className='standingLogo'/> {item.name}</td>
-            <td>{item.pts}</td>
-            <td>{item.p}</td>
-            <td>{item.g}</td>
+            <td className='align'>{item.pts}</td>
+            <td className='align'>{item.p}</td>
+            <td className='align'>{item.g}</td>
           
             
           </tr>
@@ -81,7 +81,7 @@ const Standing = () => {
     </Table>
       </div>
       <div className="standingFooter">
-        <Link to=''>See all standing</Link>
+        <Link to='club_fixtures/standing_page'>See all standing</Link>
       </div>
      
     </section>
