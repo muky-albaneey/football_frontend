@@ -1,5 +1,5 @@
 import OTTASOLO_FC from '../assets/OTTASOLO_FC.jpg';
-import BEYOND_LIMIT_FA_1 from '../assets/BEYOND-LIMIT-FA-1.jpg';
+// import BEYOND_LIMIT_FA_1 from '../assets/BEYOND-LIMIT-FA-1.jpg';
 import Frame from '../assets/Frame.jpg';
 import willbro from '../assets/willbro.jpg'
 import nlo_logo_small from '../assets/nlo_logo_small.png'
@@ -17,7 +17,7 @@ const Features_page = () => {
             {
                 id: 1,
                 imgHome: Frame,
-                imgAway: BEYOND_LIMIT_FA_1,
+                imgAway: GOMBE_WARRIORS_FC,
                 nameHome: 'AC MIDLANDS',
                 nameAway: 'BEYOND LIMIT FA',
                 time: '17:30',

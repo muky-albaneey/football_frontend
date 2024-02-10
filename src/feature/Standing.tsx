@@ -1,6 +1,6 @@
 import Table from 'react-bootstrap/Table';
 import './standing.css'
-import { Link } from 'react-router-dom';
+import {  NavLink } from 'react-router-dom';
 import OTTASOLO_FC from '../assets/OTTASOLO_FC.jpg';
 import BEYOND_LIMIT_FA_1 from '../assets/BEYOND-LIMIT-FA-1.jpg';
 import Frame from '../assets/Frame.jpg';
@@ -79,10 +79,11 @@ const Standing = () => {
        }        
       </tbody>
     </Table>
+    <div className="standingFooter">
+        <NavLink to='club_fixtures/standing_page'>See all standing</NavLink>
       </div>
-      <div className="standingFooter">
-        <Link to='club_fixtures/standing_page'>See all standing</Link>
       </div>
+     
      
     </section>
   )

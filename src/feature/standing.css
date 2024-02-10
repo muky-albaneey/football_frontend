@@ -135,6 +135,11 @@ tr td,tr th{
 }
 
 @media all and (max-width: 900px) {
+    .standingFooter {
+        position: relative;
+        z-index: 100;
+        touch-action: manipulation; /* or touch-action: auto; */
+    }
     #standingWrapper{
         margin-top: -130rem;
         margin-bottom: -40rem;
@@ -164,10 +169,7 @@ tr td,tr th{
         font-weight: bold;
         
     }
-    td{
-        
-    }
-    
+   
 #last_games{
     width: 20%;
     display: flex;
