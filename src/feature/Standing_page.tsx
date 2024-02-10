@@ -339,14 +339,14 @@ const Standing_page = () => {
             <tr>
             <td className='align'>{item.id++}</td>
             <td className='allTName'><img src={(item.logo && item.logo)} alt=""  className='standingLogo allTLogo'/> {item.name}</td>            
-            <td className='align'>{item.p}</td>
-            <td className='align'>{item.W}</td>
-            <td className='align'>{item.D}</td>
-            <td className='align'>{item.L}</td>
-            <td className='align'>{item.F}</td>
-            <td className='align'>{item.A}</td>
-            <td className='align'>{item.GD}</td>
-            <td className='align'>{item.pts}</td>
+            <td className='align aligns'>{item.p}</td>
+            <td className='align aligns'>{item.W}</td>
+            <td className='align aligns'>{item.D}</td>
+            <td className='align aligns'>{item.L}</td>
+            <td className='align aligns'>{item.F}</td>
+            <td className='align aligns'>{item.A}</td>
+            <td className='align aligns'>{item.GD}</td>
+            <td className='align aligns'>{item.pts}</td>
        
             <td id='last_games'>
               <div>

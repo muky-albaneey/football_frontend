@@ -221,6 +221,13 @@ tr td,tr th{
         gap: 0.4rem;
         font-size: 0.3rem;
 }
+.aligns{
+    font-size: 0.3rem;
+    margin: -0.4rem;
+}
+.allTLogo{
+    margin-left: 1.3em;
+}
 }
 
 @media all and (max-width: 390px) {
@@ -228,11 +235,15 @@ tr td,tr th{
     .rightFeatureMatchDetails :where(.featuresImg){
         margin-left: 4.5rem;
     }
+   
     .featuresImg{
         width: 4.5rem;
         /* height: 5rem; */
         
         
+    }
+    .allTLogo{
+        margin-left: 1.3em;
     }
     .imgAway{
         width: 2.5rem;
