@@ -10,8 +10,8 @@ const Club_fixtures = () => {
   return (
     <div id='club_fixtures'>
       <main className="club_fixtures_header">
-        <NavLink style={({isActive}) => isActive ? active :  {color: 'nothing'}} className='f_link' to='.' end >Fixtures</NavLink>
-        <NavLink style={({isActive}) => isActive ? active : {color: 'nothing'}} className='t_link' to='standing_page'>Table</NavLink>        
+        <NavLink style={({isActive}) => isActive ? active :  {color: '#FFFFFF'}} className='f_link' to='.' end >Fixtures</NavLink>
+        <NavLink style={({isActive}) => isActive ? active : {color: '#FFFFFF'}} className='t_link' to='standing_page'>Table</NavLink>        
       </main>
       <Outlet />
     </div>

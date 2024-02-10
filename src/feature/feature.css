@@ -203,11 +203,13 @@ color: #7B0924;
     align-items: center;
     padding: 1rem;
     gap: 2rem;
+    color: #FFFFFF;
 }
 .club_fixtures_header :where(a){
-   color: #FFFFFF;
+   
    font-weight: bold;
    background-color: #26050d;
+   color: #FFFFFF;
    padding: 1rem;
 }
 .f_link{
