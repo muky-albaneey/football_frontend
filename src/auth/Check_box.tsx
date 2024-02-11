@@ -1,4 +1,3 @@
-import Form from 'react-bootstrap/Form';
 import './auth.css';
 
 function CheckApiExample() {
