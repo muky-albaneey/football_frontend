@@ -18,6 +18,7 @@ import Checkout from './shop/Checkout';
 import Standing_page from './feature/Standing_page';
 import Features_page from './feature/Features_page';
 import Club_fixtures from './feature/Club_fixtures';
+import Sign from './auth/Sign';
 
 function App() {
   const router = createBrowserRouter(
@@ -123,6 +124,11 @@ function App() {
           path='login'
           errorElement={<ErrorElement />}
           element={<Login />}
+        />
+          <Route
+          path='sign'
+          errorElement={<ErrorElement />}
+          element={<Sign />}
         />
       </>
     )
