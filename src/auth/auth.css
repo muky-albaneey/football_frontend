@@ -68,12 +68,13 @@
     flex-direction: column;    
     margin: 7rem auto;
     gap: 2rem;
+    margin-top: 3rem;
     
 }
 .signHeader_two{
     background : #D5D5D5;
-    padding: 1.2rem;
-    width: 90%;
+    padding: .2rem;
+    width: 95%;
     text-align: center;
     font-weight: bold;
 }
@@ -81,7 +82,7 @@
     font-weight: bold;
 }
 .signInput :where(input){
-    width: 48%;
+    width: 47%;
     border: none;
     border-bottom: .1rem solid gray;
     padding: 0.8rem;
@@ -102,7 +103,7 @@ display: flex;
 justify-content: center;
 align-items: center;
 flex-wrap: wrap;
-gap: 1rem;
+gap: 2rem;
 }
 .read{
     display: flex;
