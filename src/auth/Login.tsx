@@ -18,7 +18,7 @@ const Login = () => {
       {/* </div> */}
       <span>Forgot your password? <Link to='#'>Click here</Link></span>
       <button className="logBtn">LOGIN</button>
-      <span className="redC">Not registered? <Link to='#'>Join us</Link></span>
+      <span className="redC">Not registered? <Link to='/sign'>Join us</Link></span>
       <span>0r continue with</span>
       <button className="googleBtn">
         <div className="innerGoogle">
