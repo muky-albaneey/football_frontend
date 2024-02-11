@@ -28,7 +28,7 @@
 .logBtn{
     width: 100%;
     background-color: #7B0924;
-    padding: 1rem;
+    padding: .7rem;
     border: none;
     border-radius: .5rem;
     color: #FFFFFF;
@@ -38,7 +38,7 @@
     width: 100%;
     display: flex;    
     justify-content: flex-start;
-    padding: .6rem;
+    padding: .4rem;
     border: .1rem solid gray;
     border-radius: .5rem;
     background-color: #FFFFFF;
@@ -198,7 +198,9 @@ gap: 2rem;
     border: none;
     border-radius: .3rem;
 }
-
+.container :where(span){
+    font-size: 1rem;
+}
 @media all and (max-width: 900px) {
     .loginWrapper{
         width: 90%;
