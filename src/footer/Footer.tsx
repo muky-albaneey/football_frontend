@@ -5,16 +5,18 @@ import { BsFacebook } from "react-icons/bs";
 import { BiX } from "react-icons/bi"; 
 import Frame from '../assets/Frame.jpg'
 import './footer.css'
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Footer = () => {
   return (
    <div className="fooWrapper">
-    <div className="sectionWrapper">
-     <h6 >
+    <div className="sectionWrapper">    
+      <NavLink to='partners'>
+      <h6 >
      <Link to='partners' className='p_l_t'> OUR PARTNERS</Link>
    
     </h6>
+    
       <section className="patners">
          <div className="p_sec_1">
          <img src="./RIDA-logo-1.jpg" id="rida" alt="prologis" />
@@ -27,6 +29,7 @@ const Footer = () => {
          </div>
           
       </section>
+      </NavLink>
      </div>
      <div className='foot_container'>
       <div className="teamLogo">
