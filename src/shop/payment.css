@@ -1,0 +1,14 @@
+.secureHeader{
+    width: 90%;
+    padding: 2rem;
+    border-bottom: .1rem solid silver;
+    margin: 0 auto;
+
+}
+
+.paymentWrapper :where(#shippingAddress){
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}

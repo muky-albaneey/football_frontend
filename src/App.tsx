@@ -19,6 +19,7 @@ import Standing_page from './feature/Standing_page';
 import Features_page from './feature/Features_page';
 import Club_fixtures from './feature/Club_fixtures';
 import Sign from './auth/Sign';
+import Payment from './shop/Payment';
 
 function App() {
   const router = createBrowserRouter(
@@ -114,9 +115,13 @@ function App() {
                 element={<Standing_page />}
               />
                
-
+              
           </Route>
-             
+          <Route
+                path='payment'
+                errorElement={<ErrorElement />}
+                element={<Payment />}
+              />
         </Route>
   
         {/* Separate route for the login page without the layout */}
