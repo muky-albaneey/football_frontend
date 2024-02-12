@@ -113,9 +113,7 @@ function App() {
                 path='standing_page'
                 errorElement={<ErrorElement />}
                 element={<Standing_page />}
-              />
-               
-              
+              />              
           </Route>
           <Route
                 path='payment'

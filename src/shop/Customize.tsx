@@ -112,10 +112,10 @@ const Customize = () => {
         </div>
         <button className="checkOutBottomBtn">
           <span><IoBagCheckOutline /></span>
-          <span>Checkout</span>
+          <span><Link to='/checkout' style={{color:'#FFFFFF'}}>Checkout </Link></span>
           </button>
         </div>
-        <Link to='/checkout'>CONTINUE SHOPPING</Link>
+        <Link to='/shop'>CONTINUE SHOPPING</Link>
         <button className="x"><BiX /></button>
      </main>
     </section>  
