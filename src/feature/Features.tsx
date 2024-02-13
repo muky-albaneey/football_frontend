@@ -37,8 +37,7 @@ function Features() {
           <img src={Frame} alt='' className="featuresImg "/>    
           </div>         
     </main>
-            {/* ))
-                } */}
+           
        
           <div className="leftFeatureMatcFooter">
           <Link to='club_fixtures'>See all matches</Link>
