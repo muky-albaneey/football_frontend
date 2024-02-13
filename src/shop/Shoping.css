@@ -337,7 +337,7 @@ border-radius: .2rem;
   align-items: center; 
 }
 .checkOutTopLeft :where(img){
-  width: 19rem;
+  width: 18rem;
   background-color: #8820204d;  
 }
 

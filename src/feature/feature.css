@@ -229,6 +229,9 @@ color: #7B0924;
         /* height: 5rem; */
         
     }
+    .featureAllStandingConHeader span{
+        font-size: 0.5rem;
+    }
     .leftFeatureMatchDetails :where(.featuresImg){
         margin-right: 2rem;
     }
@@ -259,9 +262,10 @@ color: #7B0924;
         width: 100%;
         font-size: .7rem;
     }
-   .featureAllStandingConBody{
-    font-size: 0.3rem;
-   }
+ 
+    .featureAllStandingConBody span{
+        font-size: 0.5rem;
+    }
    .featureAllStandingConBodyCenterBtn{
     font-size: 0.6rem;
     padding: 0.3rem;
@@ -303,7 +307,6 @@ color: #7B0924;
         /* height: 5rem; */
         
         
-    }
-
-    
+   
+   
 }
