@@ -69,7 +69,7 @@ const Customize = () => {
                   <span className="quality">Size</span>
                 <Dropdown className="kitBoxLeftBtn kitBoxLeftBtnDrop">
                   <Dropdown.Toggle variant="" id="dropdown-basic">
-                  {size ? size : 'choose size'}
+                  {size ? size : 'size'}
                     
                   </Dropdown.Toggle>
                   <Dropdown.Menu>
@@ -86,7 +86,7 @@ const Customize = () => {
                   <span className="quality">Quantity</span>
                 <Dropdown className="kitBoxLeftBtn kitBoxLeftBtnDrop">
                 <Dropdown.Toggle variant="" id="dropdown-basic">
-                {quantity ? quantity : 'choose qty'}
+                {quantity ? quantity : 'qty'}
                 </Dropdown.Toggle>
                 <Dropdown.Menu>
                   <Dropdown.Item onClick={() => handleQuantitySelect(1)}>1</Dropdown.Item>

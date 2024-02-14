@@ -75,7 +75,7 @@ const ContinueCheckOut = () => {
                   <span className="quality" >Size</span>
                 <Dropdown className="kitBoxLeftBtn kitBoxLeftBtnDrop">
                   <Dropdown.Toggle variant="" id="dropdown-basic">
-                  {size ? size : 'choose size'}
+                  {size ? size : 'size'}
                     
                   </Dropdown.Toggle>
                   <Dropdown.Menu>
@@ -89,10 +89,10 @@ const ContinueCheckOut = () => {
                 </Dropdown>
                   </div>
                   <div className="checkOutTopRightLeftInfoSelectOne">
-                  <span className="quality" >Qty</span>
+                  <span className="quality" >Quantity</span>
                 <Dropdown className="kitBoxLeftBtn kitBoxLeftBtnDrop">
                 <Dropdown.Toggle variant="" id="dropdown-basic">
-                {quantity ? quantity : 'choose qty'}
+                {quantity ? quantity : 'qty'}
                 </Dropdown.Toggle>
                 <Dropdown.Menu>
                     
