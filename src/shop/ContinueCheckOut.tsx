@@ -18,12 +18,12 @@ const ContinueCheckOut = () => {
 
     const handleSizeButtonClick = (newSize : string) => {
       setCartSize(newSize);
-      console.log(size)
+      
     };
 
     const handleQuantitySelect = (newQuantity : number) => {
       setCartQ(newQuantity);
-      console.log(quantity)
+
     };
   return (  
       <section className="shopWrapperMother">
