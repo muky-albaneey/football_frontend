@@ -89,7 +89,7 @@ const ContinueCheckOut = () => {
                 </Dropdown>
                   </div>
                   <div className="checkOutTopRightLeftInfoSelectOne">
-                  <span className="quality" >Quantity</span>
+                  <span className="quality" >Qty</span>
                 <Dropdown className="kitBoxLeftBtn kitBoxLeftBtnDrop">
                 <Dropdown.Toggle variant="" id="dropdown-basic">
                 {quantity ? quantity : 'choose qty'}
