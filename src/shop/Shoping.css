@@ -618,10 +618,10 @@ font-weight: bold;
       
      }
     .checkOutTopLeft :where(img){
-      width: 8rem;
-      height: 8rem;
+      width: 5rem;
+      /* height: 5rem; */
       background-color: #8820204d;  
-      margin-left: -1rem;
+      /* margin-left: -2rem; */
     }
     .checkOutTop :where(h1){
      text-align: center;
@@ -656,7 +656,8 @@ font-weight: bold;
         gap: .3rem;   
       
       }.checkOutTopRightLeftInfoSelect :where(.checkOutTopRightLeftInfoSelectOne){
-        width: 6rem;
+        width: 4rem;
+        padding: 0;        
         display: flex;  
         justify-content: center;
         align-items: flex-start;
@@ -758,8 +759,8 @@ input::placeholder{
   
 }
 .checkOutTopLeft :where(img){
-  width: 6rem;
-  height: 6rem;
+  /* width: 6rem; */
+  /* height: 6rem; */
   background-color: #8820204d;  
 }
 .checkOutTopRightRightInfoItems :where(span){
@@ -793,11 +794,7 @@ input::placeholder{
     gap: 1rem;   
   
   }
-  .checkOutTopRightLeftInfoSelect :where(.checkOutTopRightLeftInfoSelectOne){
-    width: 4.5rem;
-  height: 2.3rem;
   
-  }
   .checkOutTop :where(h1){
     
     font-size: .5rem;

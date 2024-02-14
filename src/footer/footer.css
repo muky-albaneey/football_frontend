@@ -167,9 +167,10 @@ width: 50%;
         justify-content: center;  
         flex-wrap: wrap;      
     }
-    .foo_right h4{
+    .foo_right h4 span{
         font-size: 0.5rem;
         flex-direction: column;
+        
     }
     .foo_left{
     width: 100%;
