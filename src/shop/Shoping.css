@@ -339,7 +339,7 @@ border-radius: .2rem;
   align-items: center; 
 }
 .checkOutTopLeft :where(img){
-  width: 18rem;
+  width: 15rem;
   background-color: #8820204d;  
 }
 
@@ -664,9 +664,9 @@ select{
     .checkOutTop :where(.checkOutTopLeft){
       flex-direction: column;
       justify-content: center;      
-      
-      
+    
      }
+
     .checkOutTopLeft :where(img){
       width: 5rem;
       /* height: 5rem; */
