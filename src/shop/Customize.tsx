@@ -160,7 +160,7 @@ const actualTotalAmount = numberWithCommas(totalAmount);
           </button>
         </div>
         <Link to='/shop'>CONTINUE SHOPPING</Link>
-        <button className="x"><BiX /></button>
+        {/* <button className="x"><BiX /></button> */}
      </main>
     </section>  
   )
