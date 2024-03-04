@@ -1,6 +1,6 @@
 import { TbCurrencyNaira } from "react-icons/tb"; 
 import { Link, NavLink } from "react-router-dom";
-import { BiCart, BiX } from 'react-icons/bi';
+import { BiCart } from 'react-icons/bi';
 import ButtonsExample from './Searching';
 import { IoBagCheckOutline } from "react-icons/io5";
 import Col from 'react-bootstrap/Col';

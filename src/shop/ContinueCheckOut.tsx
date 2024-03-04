@@ -1,4 +1,4 @@
-import { BiX } from "react-icons/bi"; 
+// import {  } from "react-icons/bi"; 
 import { TbCurrencyNaira } from "react-icons/tb"; 
 import { Link, NavLink } from "react-router-dom";
 import { BiCart } from 'react-icons/bi';
