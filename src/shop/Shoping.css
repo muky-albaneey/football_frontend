@@ -513,14 +513,18 @@ select{
   font-weight: bold;
   position: relative;
   z-index: 19;
- right: -51.2rem;
+ right: -49.2rem;
  font-weight: bold;
- top: 2rem;
+ top: 3rem;
  padding: .5rem;
  background-color: #FFFFFF;
  border-radius: 100%;
 }
-
+#c_details a{
+  color: #7B0924;
+  font-weight: bold;
+  text-align: center;
+}
 .exit{
   position: relative;
   top: -9rem;

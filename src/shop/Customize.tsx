@@ -52,7 +52,7 @@ const actualTotalAmount = numberWithCommas(totalAmount);
   };
   return (  
       <section className="shopWrapperMother">
-       {itemsLength == 0 ?'' :<div id="c_details" >{itemsLength}</div>}
+       {itemsLength == 0 ?'' :<div id="c_details" ><Link to='/AllCart' >{itemsLength} </Link></div>}
       <main id="trade">
         <button className='save_more'>SIGN UP  & SAVE 10%</button>
         <span className='cart'><BiCart className='cartItem' /></span>
