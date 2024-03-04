@@ -11,6 +11,7 @@ import { Card } from 'antd';
 import OIP_shop_1 from '../assets/OIP_shop_1.jpg';
 import game_icons_comet_spark from '../assets/game_icons_comet_spark.jpg';
 import { useCartStore } from "../store/cart";
+import React from "react";
 
 
 const Kit = () => {
@@ -18,20 +19,33 @@ const Kit = () => {
         fontWeight : 'bold'
     }
 
-    const {  setCartSize, setCartQ, quantity, size,} = useCartStore();
     
-    const handleSizeButtonClick = (newSize : string) => {
-      setCartSize(newSize);
-      console.log(size)
-    };
+  const [sizeValue, setSize] = React.useState<string>('');
+  // const [idValue, setId] = React.useState<string>('home');
+  const [qtyValue, setQty] = React .useState<number>(0);
+
+  // State variables and functions from the cart store
+  const {items, addToCart } = useCartStore();
+
+  // Event handler for adding item to cart
+  const handleAddToCart = () => {
+    // Add item to cart with selected size and quantity
+    addToCart('home', sizeValue, qtyValue);
+  };
+ 
+    
+    // const handleSizeButtonClick = (newSize : string) => {
+    //   setCartSize(newSize);
+    //   console.log(size)
+    // };
   
-    const handleQuantitySelect = (newQuantity : number) => {
-      setCartQ(newQuantity);
-      console.log(quantity)
-    };
+    // const handleQuantitySelect = (newQuantity : number) => {
+    //   setCartQ(newQuantity);
+    //   console.log(quantity)
+    // };
   return (  
       <section className="shopWrapperMother">
-      
+      {items.length == 0 ?'' :<div id="c_details" >{items.length}</div>}
       <main id="trade">
         <button className='save_more'>SIGN UP  & SAVE 10%</button>
         <span className='cart'><BiCart className='cartItem' /></span>
@@ -65,31 +79,31 @@ const Kit = () => {
         <h5><span style={styles}>Regular : </span> <span><TbCurrencyNaira />  23,000.00</span></h5>
         <div className="kitBox">
             <div className="kitBoxLeft">
-            <button className="kitBoxLeftBtn s" onClick={() => handleSizeButtonClick('S')}>S</button>
-              <button className="kitBoxLeftBtn" onClick={() => handleSizeButtonClick('2XL')}>2XL</button>
+            <button className="kitBoxLeftBtn s" onClick={() => setSize('S')}>S</button>
+              <button className="kitBoxLeftBtn" onClick={() => setSize('2XL')}>2XL</button>
                 <div>
                 <span className="quality">Quantity</span>
                 <Dropdown className="kitBoxLeftBtn kitBoxLeftBtnDrop">
         <Dropdown.Toggle variant="" id="dropdown-basic">
-          0
+          {qtyValue ? qtyValue : 0}
         </Dropdown.Toggle>
         <Dropdown.Menu>
-          <Dropdown.Item onClick={() => handleQuantitySelect(1)}>1</Dropdown.Item>
-          <Dropdown.Item onClick={() => handleQuantitySelect(2)}>2</Dropdown.Item>
-          <Dropdown.Item onClick={() => handleQuantitySelect(3)}>3</Dropdown.Item>
-          <Dropdown.Item onClick={() => handleQuantitySelect(4)}>4</Dropdown.Item>
+          <Dropdown.Item onClick={() => setQty(1)}>1</Dropdown.Item>
+          <Dropdown.Item onClick={() => setQty(2)}>2</Dropdown.Item>
+          <Dropdown.Item onClick={() => setQty(3)}>3</Dropdown.Item>
+          <Dropdown.Item onClick={() => setQty(4)}>4</Dropdown.Item>
         </Dropdown.Menu>
       </Dropdown></div> 
             </div>
             <div className="kitBoxRight">
                 <div className="kitBoxRightTop">  
-                <button className="kitBoxBtnRightTop" onClick={() => handleSizeButtonClick('M')}>M</button>
-                <button className="kitBoxBtnRightTop"  onClick={() => handleSizeButtonClick('XL')}>XL</button>
-                <button className="kitBoxBtnRightTop"  onClick={() => handleSizeButtonClick('L')}>L</button>
+                <button className="kitBoxBtnRightTop" onClick={() => setSize('M')}>M</button>
+                <button className="kitBoxBtnRightTop"  onClick={() => setSize('XL')}>XL</button>
+                <button className="kitBoxBtnRightTop"  onClick={() => setSize('L')}>L</button>
                 </div>
                 <div className="kitBoxRightBottom">
-                <button className="kitBoxBtnRightBottom"><Link to='/customize'>Customise</Link></button>
-                <button className="kitBoxBtnRightBottom ac"><Link to='/continueCheckOut'>Add to Cart</Link> </button>
+                <button className="kitBoxBtnRightBottom"><Link to='/customize' onClick={handleAddToCart}>Customise</Link></button>
+                <button className="kitBoxBtnRightBottom ac"><Link to='/continueCheckOut'  onClick={handleAddToCart}>Add to Cart</Link> </button>
             </div>                
             </div>
           

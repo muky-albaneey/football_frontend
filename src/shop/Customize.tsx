@@ -10,22 +10,49 @@ import Row from 'react-bootstrap/Row';
 import Dropdown from 'react-bootstrap/Dropdown';
 import { useCartStore } from "../store/cart";
 import home from '../assets/home.jpg';
-
+import React from "react";
 
 const Customize = () => { 
-    const {  setCartSize, setCartQ, quantity, size} = useCartStore();
-    const handleSizeButtonClick = (newSize : string) => {
-      setCartSize(newSize);
-      console.log(size)
-    };
 
-    const handleQuantitySelect = (newQuantity : number) => {
-      setCartQ(newQuantity);
-      console.log(quantity)
-    };
+
+  
+  const [sizeValue, setSize] = React.useState<string>('M');
+  const [id, setId] = React.useState<string>('Home');
+  const [qtyValue, setQty] = React.useState<number>(1);
+
+
+  // State variables and functions from the cart store
+  const { items, addToCart, calculateTotalQuantity } = useCartStore();
+
+  // const totalQuantity = calculateTotalQuantity(items.q);
+
+  const itemsLength = items.length;
+  
+
+  // Get the current state
+  const currentState = useCartStore.getState();
+
+  // Call calculateTotalQuantity with the currentState
+  const totalQuantity = calculateTotalQuantity(currentState);
+
+
+  const totalAmount = totalQuantity * 23000
+
+  function numberWithCommas(amount:number) {
+
+    return amount.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+}
+
+const actualTotalAmount = numberWithCommas(totalAmount);
+
+  // Event handler for adding item to cart
+  const handleAddToCart = () => {
+    // Add item to cart with selected size and quantity
+    addToCart(id, sizeValue, qtyValue);
+  };
   return (  
       <section className="shopWrapperMother">
-      
+       {itemsLength == 0 ?'' :<div id="c_details" >{itemsLength}</div>}
       <main id="trade">
         <button className='save_more'>SIGN UP  & SAVE 10%</button>
         <span className='cart'><BiCart className='cartItem' /></span>
@@ -69,16 +96,17 @@ const Customize = () => {
                   <span className="quality">Size</span>
                 <Dropdown className="kitBoxLeftBtn kitBoxLeftBtnDrop">
                   <Dropdown.Toggle variant="" id="dropdown-basic">
-                  {size ? size : 'size'}
+                  {sizeValue ? sizeValue : 'Size'}
                     
                   </Dropdown.Toggle>
                   <Dropdown.Menu>
-                    <Dropdown.Item onClick={() => handleSizeButtonClick("M")}>M</Dropdown.Item>
-                    <Dropdown.Item onClick={() => handleSizeButtonClick("S")}>S</Dropdown.Item>
-                    <Dropdown.Item onClick={() => handleSizeButtonClick("2XL")}>2XL</Dropdown.Item>
-                    <Dropdown.Item onClick={() => handleSizeButtonClick("XL")}>XL</Dropdown.Item>
-                    <Dropdown.Item onClick={() => handleSizeButtonClick("L")}>L</Dropdown.Item>
+                  <Dropdown.Item onClick={() => setSize("M")} style={{color:'black'}}>M</Dropdown.Item>
+                    <Dropdown.Item onClick={() => setSize("S")} style={{color:'black'}}>S</Dropdown.Item>
+                    <Dropdown.Item onClick={() => setSize("2XL")} style={{color:'black'}}>2XL</Dropdown.Item>
+                    <Dropdown.Item onClick={() => setSize("XL")} style={{color:'black'}}>XL</Dropdown.Item>
+                    <Dropdown.Item onClick={() => setSize("L")} style={{color:'black'}}>L</Dropdown.Item>
                     
+
                   </Dropdown.Menu>
                 </Dropdown>
                   </div>
@@ -86,17 +114,32 @@ const Customize = () => {
                   <span className="quality">Quantity</span>
                 <Dropdown className="kitBoxLeftBtn kitBoxLeftBtnDrop">
                 <Dropdown.Toggle variant="" id="dropdown-basic">
-                {quantity ? quantity : 'qty'}
+                {qtyValue ? qtyValue : 'Qty'}
                 </Dropdown.Toggle>
                 <Dropdown.Menu>
-                  <Dropdown.Item onClick={() => handleQuantitySelect(1)}>1</Dropdown.Item>
-                  <Dropdown.Item onClick={() => handleQuantitySelect(2)}>2</Dropdown.Item>
-                  <Dropdown.Item onClick={() => handleQuantitySelect(3)}>3</Dropdown.Item>
-                  <Dropdown.Item onClick={() => handleQuantitySelect(4)}>4</Dropdown.Item>
+                <Dropdown.Item onClick={() => setQty(1)} style={{color:'black'}}>1</Dropdown.Item>
+                  <Dropdown.Item onClick={() => setQty(2)} style={{color:'black'}}>2</Dropdown.Item>
+                  <Dropdown.Item onClick={() => setQty(3)} style={{color:'black'}}>3</Dropdown.Item>
+                  <Dropdown.Item onClick={() => setQty(4)} style={{color:'black'}}>4</Dropdown.Item>
                 </Dropdown.Menu>
               </Dropdown>
                   </div>
+                  
                 </div>
+                <div className="checkOutTopRightLeftInfoSelectOne">
+                  <span className="quality">Jersey Type</span>
+                <Dropdown className="kitBoxLeftBtn kitBoxLeftBtnDrop">
+                  <Dropdown.Toggle variant="" id="dropdown-basic">
+                  {id ? id : 'Type'}
+                    
+                  </Dropdown.Toggle>
+                  <Dropdown.Menu>
+                  <Dropdown.Item onClick={() => setId("away")}>Away</Dropdown.Item>
+                    <Dropdown.Item onClick={() => setId("home")}>Home</Dropdown.Item>      
+                    
+                  </Dropdown.Menu>
+                </Dropdown>
+                  </div>
               </div>
               <div className="checkOutTopRightRightInfo">
                 <div className="checkOutTopRightRightInfoItems">
@@ -104,15 +147,16 @@ const Customize = () => {
                 </div>
               </div>
             </main>           
+         
           </div>
         </div>
-        <div className="checkOutBottom">
+        <div className="checkOutBottom" id="cartCheckOutBottom">
         <div className="checkOutBottomHeader">
-          <span>Cart Total</span><span><TbCurrencyNaira /> 23,000.00</span>
+          <span>Cart Total</span><span><TbCurrencyNaira /> {actualTotalAmount}.00</span>
         </div>
-        <button className="checkOutBottomBtn">
+        <button className="checkOutBottomBtn" onClick={handleAddToCart}>
           <span><IoBagCheckOutline /></span>
-          <span><Link to='/checkout' style={{color:'#FFFFFF'}}>Checkout </Link></span>
+          <span><Link to='/AllCart' style={{color:'#FFFFFF'}}>Checkout </Link></span>
           </button>
         </div>
         <Link to='/shop'>CONTINUE SHOPPING</Link>

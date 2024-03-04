@@ -3,18 +3,45 @@ import Frame from '../assets/Frame.jpg';
 import './checkout.css'
 import { IoBagCheckOutline } from "react-icons/io5";
 import { Link } from "react-router-dom";
+import { useCartStore } from "../store/cart";
+
 
 
 const Checkout = () => {
+    
+  // State variables and functions from the cart store
+  const { items, calculateTotalQuantity } = useCartStore();
+
+  // const totalQuantity = calculateTotalQuantity(items.q);
+
+  const itemsLength = items.length;
+  
+
+  // Get the current state
+  const currentState = useCartStore.getState();
+
+  // Call calculateTotalQuantity with the currentState
+  const totalQuantity = calculateTotalQuantity(currentState);
+
+
+  const totalAmount = totalQuantity * 23000
+
+  function numberWithCommas(amount:number) {
+
+    return amount.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+}
+
+const actualTotalAmount = numberWithCommas(totalAmount);
   return (
     <>
+     {itemsLength == 0 ?'' :<div id="c_details" >{itemsLength}</div>}
         <section id="addressCheckoutWrapper">
         <main className="addressCheckoutHeaderCon">
             <header className="addressCheckoutHeader addressCheckoutHeaderOne">
                 <img src={Frame} alt="" /> <h1>ACM SHOP</h1>
             </header>
             <header className="addressCheckoutHeader addressCheckoutHeaderTwo">
-                <span>Secure Checkout</span> <span> <span><TbCurrencyNaira /></span> 23,000.00</span>
+                <span>Secure Checkout</span> <span> <span><TbCurrencyNaira /></span> {actualTotalAmount}.00</span>
             </header>
         </main>
         <main className="logCheckOut">

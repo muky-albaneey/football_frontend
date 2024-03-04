@@ -1,47 +1,26 @@
-// import { create } from 'zustand'
-// import { persist, createJSONStorage } from 'zustand/middleware'
-// import { produce } from 'immer';
 
-// type State = {
-//     quantity: string | null;
-//   size: string | null;  
-//   isOrder: boolean;  
-//   setToken: (newToken: string | null, newRefreshToken?: string | null, newRoleToken?: string | null) => void;
-// };
-
-// export const useAuthenticateStore = create<State>()(
-//   persist(
-//     (set) => ({      
-//       quantity: null,
-//       size: null,      
-//       isOrder: false,            
-//       setToken: (newQuantity, newSize) => {
-//         set(
-//           produce((state) => {
-//             state.quantity = newQuantity;
-//             state.size = newSize;            
-//             state.isOrder = !!newQuantity;            
-//           })
-//         );
-//       },
-//     }),
-    
-//     {
-//       name: 'auth-storage', 
-//       storage: createJSONStorage(() => sessionStorage), 
-//     }
-//   )
-// );
 import { create } from 'zustand';
 import { persist, createJSONStorage } from 'zustand/middleware';
 import { produce } from 'immer';
 
+type Item = {
+
+  id: string;
+  quantity: number;
+  size: string;
+
+};
+
 type State = {
-  quantity: number | null;
-  size: string | null;
+  id: string;
+  items: Item[];
+  size: string;
+  quantity: number; // Add quantity property to the State type
   isOrder: boolean;
-  setCartSize: (newSize?: string| null,  ) => void;
-  setCartQ: (newQuantity?: number  ) => void;
+  addToCart: (itemId: string, newSize: string, newQuantity: number) => void;
+  removeFromCart: (itemId: string) => void;
+  updateItemQuantity: (itemId: string, newQuantity: number) => void;
+  calculateTotalQuantity: (currentState: State) => number;
 };
 
 const localStorageMiddleware = createJSONStorage(() => localStorage);
@@ -49,28 +28,56 @@ const localStorageMiddleware = createJSONStorage(() => localStorage);
 export const useCartStore = create<State>()(
   persist(
     (set) => ({
-      quantity: null,
-      size: null,
+      id: '',
+      items: [],
+      size: '',
+      quantity: 0,      
       isOrder: false,
-      setCartSize: (newSize) => {
-        set(
-          produce((state) => {            
-            state.size = newSize;
-            state.isOrder = !!newSize;
-          })
-        );
-      },
-      setCartQ: (newQuantity) => {
+      addToCart: (itemId, newSize, newQuantity) => {
         set(
           produce((state) => {
-            state.quantity = newQuantity;         
+            const existingItemIndex = state.items.findIndex((item : Item) => item.id === itemId);
+            if (existingItemIndex !== -1) {
+              // Update existing item
+              state.items[existingItemIndex].quantity = newQuantity;
+              state.items[existingItemIndex].size = newSize;
+            } else {
+              // Add new item
+              state.items.push({ id: itemId, quantity: newQuantity, size: newSize });
+            }
+            state.quantity = newQuantity; // Update quantity in state
+            state.size = newSize;
+            state.isOrder = true; // Assuming adding an item always means there's an order
           })
         );
       },
+      removeFromCart: (itemId) => {
+        set(
+          produce((state) => {
+            state.items = state.items.filter((item : Item) => item.id !== itemId);
+            state.isOrder = state.items.length > 0; // Check if there are remaining items
+          })
+        );
+      },
+      updateItemQuantity: (itemId, newQuantity) => {
+        set(
+          produce((state) => {
+            const itemToUpdate = state.items.find((item : Item) => item.id === itemId);
+            if (itemToUpdate) {
+              itemToUpdate.quantity = newQuantity;
+            }
+          })
+        );
+      },
+      calculateTotalQuantity: (currentState) => {
+        // Function to calculate total quantity
+        return currentState.items.reduce((total, item) => total + item.quantity, 0);
+      },
+      
     }),
     {
-      name: 'cart-storage', 
+      name: 'cart-storage',
       storage: localStorageMiddleware,
     }
-  )
+  ),
 );

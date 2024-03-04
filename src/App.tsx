@@ -20,6 +20,7 @@ import Features_page from './feature/Features_page';
 import Club_fixtures from './feature/Club_fixtures';
 import Sign from './auth/Sign';
 import Payment from './shop/Payment';
+import AllCart from './shop/AllCart';
 
 function App() {
   const router = createBrowserRouter(
@@ -97,6 +98,11 @@ function App() {
             path='checkout'
             errorElement={<ErrorElement />}
             element={<Checkout />}
+          />
+           <Route
+            path='AllCart'
+            errorElement={<ErrorElement />}
+            element={<AllCart />}
           />
            <Route
             path='club_fixtures'
