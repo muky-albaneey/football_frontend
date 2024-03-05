@@ -104,7 +104,7 @@ const actualTotalAmount = numberWithCommas(totalAmount);
                         <option value="L">L</option>
                       </select>
                     </div>
-                    <div className="checkOutTopRightLeftInfoSelectOne">
+                    {/* <div className="checkOutTopRightLeftInfoSelectOne">
                       <span className="quality">Quantity</span>
                       <select
                         value={item.quantity}
@@ -115,7 +115,7 @@ const actualTotalAmount = numberWithCommas(totalAmount);
                         <option value="3">3</option>
                         <option value="4">4</option>
                       </select>
-                    </div>
+                    </div> */}
                    
                   </div>
                 </div>
