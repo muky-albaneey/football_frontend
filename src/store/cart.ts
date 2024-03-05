@@ -6,7 +6,7 @@ import { produce } from 'immer';
 type Item = {
 
   id: string;
-  quantity: number | null;
+  quantity: number;
   size: string;
 
 };
@@ -15,7 +15,7 @@ type State = {
   id: string;
   items: Item[];
   size: string;
-  quantity: number | null; // Add quantity property to the State type
+  quantity: number; // Add quantity property to the State type
   isOrder: boolean;
   addToCart: (itemId: string, newSize: string, newQuantity: number) => void;
   removeFromCart: (itemId: string) => void;
@@ -31,33 +31,17 @@ export const useCartStore = create<State>()(
       id: '',
       items: [],
       size: '',
-      quantity : null,      
+      quantity : 0,      
       isOrder: false,
 
-      // addToCart: (itemId, newSize, newQuantity) => {
-      //   set(
-      //     produce((state) => {
-      //       const existingItem = state.items.find((item) => item.id === itemId && item.size === newSize);
-      //       if (existingItem) {
-      //         // If the item with the same id and size exists, update its quantity
-      //         existingItem.quantity += newQuantity;
-      //       } else {
-      //         // Add new item
-      //         state.items.push({ id: itemId, size: newSize, quantity: newQuantity });
-      //       }
-      //       // Update isOrder flag
-      //       state.isOrder = true;
-      //     })
-      //   );
-      
-      // },
+     
       addToCart: (itemId, newSize, newQuantity) => {
         set(
           produce((state) => {
-            const existingItemIndex = state.items.findIndex((item) => item.id === itemId && item.size === newSize);
+            const existingItemIndex = state.items.findIndex((item : Item) => item.id === itemId && item.size === newSize);
             if (existingItemIndex !== -1) {
               // If the item with the same id and size exists, update its quantity
-              state.items = state.items.map((item, index) => {
+              state.items = state.items.map((item : Item, index : number) => {
                 if (index === existingItemIndex) {
                   return {
                     ...item,

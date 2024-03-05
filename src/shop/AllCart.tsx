@@ -70,13 +70,13 @@ const actualTotalAmount = numberWithCommas(totalAmount);
       </main>
      <main id="checkOutCon">
      {
-            items.map((item)=>(
-        <div className="checkOutTop " id="cartCheckOutTop">
+            items.map((item, index)=>(
+        <div className="checkOutTop " id="cartCheckOutTop" key={index}>
           <div className="checkOutTopLeft">
           <Container>
             <Row>      
               <Col xs={6} md={4}>
-                <Image src={item.id == 'home' ? home : away} alt={item.id} />
+                <Image src={item.id == 'home' ? home : away} alt={item.id} key={index}/>
               </Col>
             </Row>
           </Container>
