@@ -62,7 +62,7 @@ const actualTotalAmount = numberWithCommas(totalAmount);
         {/* <div className="right_navHeader"></div> */}
       </main>
       <main id="navs">
-      <NavLink to=''>KITS</NavLink>
+      <NavLink to='/kit'>KITS</NavLink>
         <NavLink to=''>TRAINING</NavLink>
         <NavLink to=''>MEN</NavLink>
         <NavLink to=''>WOMEN</NavLink>

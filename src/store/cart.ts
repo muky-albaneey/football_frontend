@@ -35,21 +35,13 @@ export const useCartStore = create<State>()(
       isOrder: false,
 
      
-      addToCart: (itemId, newSize, newQuantity) => {
+      addToCart:  (itemId, newSize, newQuantity) => {
         set(
           produce((state) => {
-            const existingItemIndex = state.items.findIndex((item : Item) => item.id === itemId && item.size === newSize);
-            if (existingItemIndex !== -1) {
+            const existingItem = state.items.find((item) => item.id === itemId && item.size === newSize);
+            if (existingItem) {
               // If the item with the same id and size exists, update its quantity
-              state.items = state.items.map((item : Item, index : number) => {
-                if (index === existingItemIndex) {
-                  return {
-                    ...item,
-                    quantity: item.quantity + newQuantity
-                  };
-                }
-                return item;
-              });
+              existingItem.quantity += newQuantity;
             } else {
               // Add new item
               state.items.push({ id: itemId, size: newSize, quantity: newQuantity });
@@ -59,6 +51,30 @@ export const useCartStore = create<State>()(
           })
         );
       },
+      // (itemId, newSize, newQuantity) => {
+      //   set(
+      //     produce((state) => {
+      //       const existingItemIndex = state.items.findIndex((item : Item) => item.id === itemId && item.size === newSize);
+      //       if (existingItemIndex !== -1) {
+      //         // If the item with the same id and size exists, update its quantity
+      //         state.items = state.items.map((item : Item, index : number) => {
+      //           if (index === existingItemIndex) {
+      //             return {
+      //               ...item,
+      //               quantity: item.quantity + newQuantity
+      //             };
+      //           }
+      //           return item;
+      //         });
+      //       } else {
+      //         // Add new item
+      //         state.items.push({ id: itemId, size: newSize, quantity: newQuantity });
+      //       }
+      //       // Update isOrder flag
+      //       state.isOrder = true;
+      //     })
+      //   );
+      // },
       
       
       removeFromCart: (itemId) => {

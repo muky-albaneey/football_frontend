@@ -169,7 +169,7 @@ const handleAddToCart = () => {
         <div className="checkOutBottomHeader">
           <span>Cart Total</span><span><TbCurrencyNaira />{actualTotalAmount}.00</span>
         </div>
-      {itemsLength != 0  ? <button className="checkOutBottomBtn" onClick={handleAddToCart}>
+      {id && sizeValue && qtyValue > 0  ? <button className="checkOutBottomBtn" onClick={handleAddToCart}>
           <span><IoBagCheckOutline /></span>
           <span><Link to='/AllCart' style={{color:'#FFFFFF'}}>Checkout </Link></span>
           </button> : <button className="checkOutBottomBtn" onClick={scrollToTop}>

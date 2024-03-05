@@ -1,5 +1,5 @@
 import { BiPlus } from "react-icons/bi"; 
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, useNavigate } from "react-router-dom";
 import { BiCart } from 'react-icons/bi';
 import ButtonsExample from './Searching';
 import Kit_img from "./Kit_img";
@@ -24,8 +24,8 @@ const Kit = () => {
 
   // State variables and functions from the cart store
   const {items, addToCart } = useCartStore();
-  
-  // const navigate = useNavigate();
+
+  const navigate = useNavigate();
   // const currentState = useCartStore.getState();
 
   const itemsLength = items.length;
@@ -35,6 +35,7 @@ const Kit = () => {
     if (sizeValue && qtyValue > 0) {
       // Add item to cart with selected size and quantity
       addToCart('home',sizeValue, qtyValue);
+      navigate("/continueCheckOut");
     } else {
    
       console.log("Please fill in all required fields");
@@ -43,7 +44,19 @@ const Kit = () => {
   
     // navigate("/customize");
   };
- 
+  const handleCustomize  = () => {
+    if (sizeValue && qtyValue > 0) {
+      // Add item to cart with selected size and quantity
+      addToCart("home",sizeValue, qtyValue);
+      navigate("/customize");
+    } else {
+   
+      console.log("Please fill in all required fields");
+    }
+    
+  
+    
+  };
 
   return (  
       <section className="shopWrapperMother">
@@ -104,7 +117,7 @@ const Kit = () => {
                 <button className="kitBoxBtnRightTop"  onClick={() => setSize('L')}>L</button>
                 </div>
                 <div className="kitBoxRightBottom">
-                <button className="kitBoxBtnRightBottom"><Link to='/customize' onClick={handleAddToCart}>Customise</Link></button>
+                <button className="kitBoxBtnRightBottom"><Link to='/customize' onClick={handleCustomize }>Customise</Link></button>
                 <button className="kitBoxBtnRightBottom ac"><Link to='/continueCheckOut'  onClick={handleAddToCart}>Add to Cart</Link> </button>
             </div>                
             </div>
