@@ -33,24 +33,7 @@ export const useCartStore = create<State>()(
       size: '',
       quantity : 0,      
       isOrder: false,
-
-     
-      // addToCart:  (itemId, newSize, newQuantity) => {
-      //   set(
-      //     produce((state) => {
-      //       const existingItem = state.items.find((item) => item.id === itemId && item.size === newSize);
-      //       if (existingItem) {
-      //         // If the item with the same id and size exists, update its quantity
-      //         existingItem.quantity += newQuantity;
-      //       } else {
-      //         // Add new item
-      //         state.items.push({ id: itemId, size: newSize, quantity: newQuantity });
-      //       }
-      //       // Update isOrder flag
-      //       state.isOrder = true;
-      //     })
-      //   );
-      // },
+      
       addToCart: (itemId, newSize, newQuantity) => {
         set(
           produce((state) => {
