@@ -140,7 +140,7 @@ const actualTotalAmount = numberWithCommas(totalAmount);
           <span><IoBagCheckOutline /></span>
           <span><Link to='/AllCart' style={{color:'#FFFFFF'}}>Checkout </Link></span>
           </button> : <button className="checkOutBottomBtn" >
-          <Link to='/kit'> Choose jersey <BiArrowBack /></Link></button>}
+          <Link to='/kit' style={{color:'#FFFFFF'}}> Choose jersey <BiArrowBack /></Link></button>}
         </div>
         <Link to='/shop'>CONTINUE SHOPPING</Link>
         
