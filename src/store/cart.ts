@@ -6,7 +6,7 @@ import { produce } from 'immer';
 type Item = {
 
   id: string;
-  quantity: number;
+  quantity: number | null;
   size: string;
 
 };
@@ -15,7 +15,7 @@ type State = {
   id: string;
   items: Item[];
   size: string;
-  quantity: number; // Add quantity property to the State type
+  quantity: number | null; // Add quantity property to the State type
   isOrder: boolean;
   addToCart: (itemId: string, newSize: string, newQuantity: number) => void;
   removeFromCart: (itemId: string) => void;
@@ -31,26 +31,52 @@ export const useCartStore = create<State>()(
       id: '',
       items: [],
       size: '',
-      quantity: 0,      
+      quantity : null,      
       isOrder: false,
+
+      // addToCart: (itemId, newSize, newQuantity) => {
+      //   set(
+      //     produce((state) => {
+      //       const existingItem = state.items.find((item) => item.id === itemId && item.size === newSize);
+      //       if (existingItem) {
+      //         // If the item with the same id and size exists, update its quantity
+      //         existingItem.quantity += newQuantity;
+      //       } else {
+      //         // Add new item
+      //         state.items.push({ id: itemId, size: newSize, quantity: newQuantity });
+      //       }
+      //       // Update isOrder flag
+      //       state.isOrder = true;
+      //     })
+      //   );
+      
+      // },
       addToCart: (itemId, newSize, newQuantity) => {
         set(
           produce((state) => {
-            const existingItemIndex = state.items.findIndex((item : Item) => item.id === itemId);
+            const existingItemIndex = state.items.findIndex((item) => item.id === itemId && item.size === newSize);
             if (existingItemIndex !== -1) {
-              // Update existing item
-              state.items[existingItemIndex].quantity = newQuantity;
-              state.items[existingItemIndex].size = newSize;
+              // If the item with the same id and size exists, update its quantity
+              state.items = state.items.map((item, index) => {
+                if (index === existingItemIndex) {
+                  return {
+                    ...item,
+                    quantity: item.quantity + newQuantity
+                  };
+                }
+                return item;
+              });
             } else {
               // Add new item
-              state.items.push({ id: itemId, quantity: newQuantity, size: newSize });
+              state.items.push({ id: itemId, size: newSize, quantity: newQuantity });
             }
-            state.quantity = newQuantity; // Update quantity in state
-            state.size = newSize;
-            state.isOrder = true; // Assuming adding an item always means there's an order
+            // Update isOrder flag
+            state.isOrder = true;
           })
         );
       },
+      
+      
       removeFromCart: (itemId) => {
         set(
           produce((state) => {

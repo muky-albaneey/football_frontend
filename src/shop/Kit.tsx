@@ -1,11 +1,9 @@
 import { BiPlus } from "react-icons/bi"; 
 import { Link, NavLink } from "react-router-dom";
-// import Frame from '../assets/Frame.jpg';
 import { BiCart } from 'react-icons/bi';
 import ButtonsExample from './Searching';
 import Kit_img from "./Kit_img";
 import { TbCurrencyNaira } from 'react-icons/tb';
-// import './shopping.css';
 import Dropdown from 'react-bootstrap/Dropdown';
 import { Card } from 'antd';
 import OIP_shop_1 from '../assets/OIP_shop_1.jpg';
@@ -26,29 +24,33 @@ const Kit = () => {
 
   // State variables and functions from the cart store
   const {items, addToCart } = useCartStore();
+  
+  // const navigate = useNavigate();
+  // const currentState = useCartStore.getState();
+
+  const itemsLength = items.length;
 
   // Event handler for adding item to cart
   const handleAddToCart = () => {
-    // Add item to cart with selected size and quantity
-    addToCart('home', sizeValue, qtyValue);
+    if (sizeValue && qtyValue > 0) {
+      // Add item to cart with selected size and quantity
+      addToCart('home',sizeValue, qtyValue);
+    } else {
+   
+      console.log("Please fill in all required fields");
+    }
+    
+  
+    // navigate("/customize");
   };
  
-    
-    // const handleSizeButtonClick = (newSize : string) => {
-    //   setCartSize(newSize);
-    //   console.log(size)
-    // };
-  
-    // const handleQuantitySelect = (newQuantity : number) => {
-    //   setCartQ(newQuantity);
-    //   console.log(quantity)
-    // };
+
   return (  
       <section className="shopWrapperMother">
-      {items.length == 0 ?'' :<div id="c_details" >{items.length}</div>}
+      {itemsLength == 0 ?'' :<div id="c_details" ><Link to='/AllCart' >{itemsLength} </Link></div>}
       <main id="trade">
         <button className='save_more'>SIGN UP  & SAVE 10%</button>
-        <span className='cart'><BiCart className='cartItem' /></span>
+        <NavLink to='/AllCart'><span className='cart'><BiCart className='cartItem' /></span></NavLink>
       </main>
       <main id="navHeader">
         <div className="left_navHeader">
@@ -59,7 +61,7 @@ const Kit = () => {
         {/* <div className="right_navHeader"></div> */}
       </main>
       <main id="navs">
-      <NavLink to=''>KITS</NavLink>
+      <NavLink to='/kit'>KITS</NavLink>
         <NavLink to=''>TRAINING</NavLink>
         <NavLink to=''>MEN</NavLink>
         <NavLink to=''>WOMEN</NavLink>

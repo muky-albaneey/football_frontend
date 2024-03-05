@@ -1,4 +1,4 @@
-// import {  } from "react-icons/bi"; 
+import { BiArrowToTop } from "react-icons/bi"; 
 import { TbCurrencyNaira } from "react-icons/tb"; 
 import { Link, NavLink } from "react-router-dom";
 import { BiCart } from 'react-icons/bi';
@@ -15,9 +15,9 @@ import React from "react";
 
 const ContinueCheckOut = () => {
 
-  const [sizeValue, setSize] = React.useState<string>('M');
-  const [idValue, setId] = React.useState<string>('Home');
-  const [qtyValue, setQty] = React.useState<number>(1);
+  const [sizeValue, setSize] = React.useState<string>('');
+  const [idValue, setId] = React.useState<string>('');
+  const [qtyValue, setQty] = React.useState<number>(0);
 
   // State variables and functions from the cart store
   
@@ -51,7 +51,14 @@ const actualTotalAmount = numberWithCommas(totalAmount);
     addToCart(idValue, sizeValue, qtyValue);
   };
  
-   
+  function scrollToTop() {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth' // Optional: adds smooth scrolling effect
+    });
+  }
+  
+  
 
   return (  
       <section className="shopWrapperMother">
@@ -60,7 +67,7 @@ const actualTotalAmount = numberWithCommas(totalAmount);
       <main id="trade">
         <button className='save_more'>SIGN UP  & SAVE 10%</button>
       <div style={{position: 'relative'}}>
-      <span className='cart'><BiCart className='cartItem' /></span>
+      <NavLink to='/AllCart'><span className='cart'><BiCart className='cartItem' /></span></NavLink>
         
       </div>
         
@@ -74,7 +81,7 @@ const actualTotalAmount = numberWithCommas(totalAmount);
         {/* <div className="right_navHeader"></div> */}
       </main>
       <main id="navs">
-      <NavLink to=''>KITS</NavLink>
+      <NavLink to='/kit'>KITS</NavLink>
         <NavLink to=''>TRAINING</NavLink>
         <NavLink to=''>MEN</NavLink>
         <NavLink to=''>WOMEN</NavLink>
@@ -167,10 +174,11 @@ const actualTotalAmount = numberWithCommas(totalAmount);
         <div className="checkOutBottomHeader">
           <span>Cart Total</span><span><TbCurrencyNaira />{actualTotalAmount}.00</span>
         </div>
-        <button className="checkOutBottomBtn"  onClick={handleAddToCart}>
+        {itemsLength != 0  ? <button className="checkOutBottomBtn" onClick={handleAddToCart}>
           <span><IoBagCheckOutline /></span>
           <span><Link to='/AllCart' style={{color:'#FFFFFF'}}>Checkout </Link></span>
-          </button>
+          </button> : <button className="checkOutBottomBtn" onClick={scrollToTop}>
+            Go to top <BiArrowToTop /></button>}
         </div>
         <Link to='/shop'>CONTINUE SHOPPING</Link>
         {/* <button className="x"><BiX /></button> */}

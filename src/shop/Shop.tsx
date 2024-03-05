@@ -14,7 +14,7 @@ const Shop = () => {
       
       <main id="trade">
         <button className='save_more'>SIGN UP  & SAVE 10%</button>
-        <span className='cart'><BiCart className='cartItem' /></span>
+        <NavLink to='/AllCart'><span className='cart'><BiCart className='cartItem' /></span></NavLink>
       </main>
       <main id="navHeader">
         <div className="left_navHeader">

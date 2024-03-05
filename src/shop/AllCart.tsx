@@ -1,3 +1,4 @@
+import { BiArrowBack } from "react-icons/bi"; 
 import { BiX } from "react-icons/bi"; 
 import { TbCurrencyNaira } from "react-icons/tb"; 
 import { Link, NavLink } from "react-router-dom";
@@ -75,7 +76,7 @@ const actualTotalAmount = numberWithCommas(totalAmount);
           <Container>
             <Row>      
               <Col xs={6} md={4}>
-                <Image src={item.id == 'home' ? home : away}  />
+                <Image src={item.id == 'home' ? home : away} alt={item.id} />
               </Col>
             </Row>
           </Container>
@@ -131,10 +132,15 @@ const actualTotalAmount = numberWithCommas(totalAmount);
         <div className="checkOutBottomHeader">
           <span>Cart Total</span><span><TbCurrencyNaira /> {actualTotalAmount}.00</span>
         </div>
-        <button className="checkOutBottomBtn">
+        {/* <button className="checkOutBottomBtn">
           <span><IoBagCheckOutline /></span>
           <span><Link to='/checkout' style={{color:'#FFFFFF'}}>Checkout </Link></span>
-          </button>
+          </button> */}
+           {itemsLength != 0 ? <button className="checkOutBottomBtn" >
+          <span><IoBagCheckOutline /></span>
+          <span><Link to='/AllCart' style={{color:'#FFFFFF'}}>Checkout </Link></span>
+          </button> : <button className="checkOutBottomBtn" >
+          <Link to='/kit'> Choose jersey <BiArrowBack /></Link></button>}
         </div>
         <Link to='/shop'>CONTINUE SHOPPING</Link>
         

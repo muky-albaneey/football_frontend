@@ -1,6 +1,6 @@
 import { TbCurrencyNaira } from "react-icons/tb"; 
 import { Link, NavLink } from "react-router-dom";
-import { BiCart } from 'react-icons/bi';
+import { BiArrowToTop, BiCart } from 'react-icons/bi';
 import ButtonsExample from './Searching';
 import { IoBagCheckOutline } from "react-icons/io5";
 import Col from 'react-bootstrap/Col';
@@ -13,14 +13,13 @@ import home from '../assets/home.jpg';
 import React from "react";
 
 const Customize = () => { 
+  
 
+  const [sizeValue, setSize] = React.useState<string>('');
+  const [id, setId] = React.useState<string>('');
+  const [qtyValue, setQty] = React.useState<number>(0);
 
   
-  const [sizeValue, setSize] = React.useState<string>('M');
-  const [id, setId] = React.useState<string>('Home');
-  const [qtyValue, setQty] = React.useState<number>(1);
-
-
   // State variables and functions from the cart store
   const { items, addToCart, calculateTotalQuantity } = useCartStore();
 
@@ -41,21 +40,37 @@ const Customize = () => {
   function numberWithCommas(amount:number) {
 
     return amount.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-}
+  }
 
 const actualTotalAmount = numberWithCommas(totalAmount);
 
-  // Event handler for adding item to cart
-  const handleAddToCart = () => {
+// Event handler for adding item to cart
+const handleAddToCart = () => {
+  // Check if all required fields are filled
+  if (id && sizeValue && qtyValue > 0) {
     // Add item to cart with selected size and quantity
     addToCart(id, sizeValue, qtyValue);
-  };
+  } else {
+    // Handle case where required fields are not filled
+    // You can show a message or perform any other action here
+    console.log("Please fill in all required fields");
+  }
+};
+
+  function scrollToTop() {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth' // Optional: adds smooth scrolling effect
+    });
+  }
+  
+
   return (  
       <section className="shopWrapperMother">
        {itemsLength == 0 ?'' :<div id="c_details" ><Link to='/AllCart' >{itemsLength} </Link></div>}
       <main id="trade">
         <button className='save_more'>SIGN UP  & SAVE 10%</button>
-        <span className='cart'><BiCart className='cartItem' /></span>
+        <NavLink to='/AllCart'><span className='cart'><BiCart className='cartItem' /></span></NavLink>
       </main>
       <main id="navHeader">
         <div className="left_navHeader">
@@ -66,7 +81,7 @@ const actualTotalAmount = numberWithCommas(totalAmount);
         {/* <div className="right_navHeader"></div> */}
       </main>
       <main id="navs">
-      <NavLink to=''>KITS</NavLink>
+      <NavLink to='/kit'>KITS</NavLink>
         <NavLink to=''>TRAINING</NavLink>
         <NavLink to=''>MEN</NavLink>
         <NavLink to=''>WOMEN</NavLink>
@@ -143,7 +158,7 @@ const actualTotalAmount = numberWithCommas(totalAmount);
               </div>
               <div className="checkOutTopRightRightInfo">
                 <div className="checkOutTopRightRightInfoItems">
-                  <span>Regular : </span><span><TbCurrencyNaira /> 23,000.00</span>
+                  <span>Regular : </span><span><TbCurrencyNaira />23,000.00</span>
                 </div>
               </div>
             </main>           
@@ -152,12 +167,13 @@ const actualTotalAmount = numberWithCommas(totalAmount);
         </div>
         <div className="checkOutBottom" id="cartCheckOutBottom">
         <div className="checkOutBottomHeader">
-          <span>Cart Total</span><span><TbCurrencyNaira /> {actualTotalAmount}.00</span>
+          <span>Cart Total</span><span><TbCurrencyNaira />{actualTotalAmount}.00</span>
         </div>
-        <button className="checkOutBottomBtn" onClick={handleAddToCart}>
+      {itemsLength != 0  ? <button className="checkOutBottomBtn" onClick={handleAddToCart}>
           <span><IoBagCheckOutline /></span>
           <span><Link to='/AllCart' style={{color:'#FFFFFF'}}>Checkout </Link></span>
-          </button>
+          </button> : <button className="checkOutBottomBtn" onClick={scrollToTop}>
+          Go to top <BiArrowToTop /></button>}
         </div>
         <Link to='/shop'>CONTINUE SHOPPING</Link>
         {/* <button className="x"><BiX /></button> */}
