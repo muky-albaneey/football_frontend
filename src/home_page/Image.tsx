@@ -18,5 +18,16 @@ function ShapeExample({img} : image){
     </Container>
   );
 }
-
+{/* <div className='heroImageWrapper'> 
+          <div className="heroImageContent">
+            <img
+              className=""
+              id='imgHero1'
+              src={hero_1}
+              alt="First slide"
+            />
+            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          </div>
+        </div>  */}
+        
 export default ShapeExample;
